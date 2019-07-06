@@ -50,14 +50,51 @@ Follow these steps for completing your project.
 
 ## Directions
 
-- Use the design files to build out your User Interfaces.
-- Start in App.js and read the comments on how to begin.
-- You have been given a Data.js file that contains some arrays. Find a way to bring the data into (import) the necessary files, but do not change the data.
-- Display the data in a way that matches to the design file. Pay close attention to what is in each array and where it should go.
-- All components can be built out using the provided files found in their respective directories.
-- Each file has been set up to work within a react.js environment. Pay attention to the notes found within each file.
-- Style your project using any of the techniques from the module.
+Using the design file, build out your User Interface. Before you start, look through the app structure to see what components you have to work with, then you'll start by following the steps below.
+
+**STEP 1**
+
+- You have been given a Data.js file that contains some arrays
+- Find a way to bring (import) the data into the necessary files, but do not change the data.
+- Data should be imported into the wrapper components (`Numbers`, `Operators`, and `Specials`)
+
+**Step 2**
+Add the data to state like this:
+
+```js
+import { numbers } from '../path/to/data';
+
+...
+
+
+const [numbers, setNumber] = useState(numbers);
+```
+
+**Step 3**
+
+- Map over the data and dynamically render components for each piece of data in the arrays.
+- You will need to import the component that you'll render in the map function
+
+**STEP 4**
+
+- Import the wrapper button components into `App.js`
+- Import the dispaly components into `App.js` as well
+- Compose all the components inside the `App` component to get your calculator rendering on the DOM
+- In each component, start designing things in a way that matches to the design file
+- Style your project using any of the techniques from the module
 - Don't forget about className vs class on your JSX elements!!
+- Don't use up all your time here. If you get stuck on something, move on to STEP 5 and come back to designs later
+
+**STEP 5**
+It's time to start thinking about functionality. Before getting into this, let's try and plan out all the moving peices you'll need.
+
+You will have some state in `App` that will keep track of the totals. This is data that you'll pass to the display component to render in the display.
+
+You'll also have some functions in `App` that run your calculations and update the totals state you're storing. You'll pass these functions down to the different button components as props. The button components will use `onClick` to invoke these functions and pass in the correct data, whether that's a number or an operator.
+
+Okay. Hands on keyboard. Let's do this!
+
+This is where you're JavaScript skills are really going to be stretched. Remember to use the 20 minute rule. Google will be your best friend!
 
 ## _MVP Requirements:_
 
@@ -73,7 +110,8 @@ Follow these steps for completing your project.
 
 - Plan your app before writing any code. How many components will you be using? And how will they fit together?
 - Where will your data be stored in state? Which components need to receive that data via props?
-- If you're unsure how to proceed, review the TK
+- What functions do you need? Where will the function live (if it updates state in a component, it needs to live in that component)? Will it be invoked in a different component? If so, pass it as props!
+- If you're unsure how to proceed, review the TK, google, use the help channel
 - There are plenty of examples of calculator logic available, but try writing on your own. And don't worry if it isn't fully functional, you'll have time come back to it and get it working. It's actually a really fun exercise to work on in small increments over time.
 - Most important have fun!!!
 
