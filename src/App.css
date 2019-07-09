@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  width: 425px;
+  height: 650px;
+  background-color: #BB1234;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

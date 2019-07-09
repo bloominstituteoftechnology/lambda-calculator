@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./App.css";
 
+
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers"
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators"
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials"
@@ -13,9 +14,19 @@ import Logo from "./components/DisplayComponents/Logo";
 
 function App() {
   const [selectNumber, setSelectNumber] = useState(null)
+  const [selectOperator, setSelectOperator] = useState(null)
+  const [total, setTotal] = useState(selectNumber)
+
+  const operatorHandler = (operator) => {
+    setSelectOperator(operator)
+  }
 
   const numberHandler = (number) => {
     setSelectNumber(number)
+  }
+
+  const totalHandler = (selectNumber, selectOperator) => {
+    setTotal( {} )
   }
 
 
@@ -29,10 +40,11 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
-        <Display selectNumber={ selectNumber }/>
+        <Display className="Display" selectNumber={ selectNumber }/>
         <Numbers numberHandler={ numberHandler }/>
-        <Operators />
         <Specials />
+        <Operators />
+
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
     </div>
