@@ -8,4 +8,4 @@ import React from "react";
     </>
   );
 };
-export default NumberButton;
+export default NumberButton
