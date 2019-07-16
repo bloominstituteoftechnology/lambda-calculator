@@ -1,4 +1,6 @@
 import React from "react";
+import { specials } from "../../../data";
+import SpecialButton from "./SpecialButton";
 
 //import any components needed
 
@@ -6,6 +8,7 @@ import React from "react";
 
 const Specials = () => {
   // STEP 2 - add the imported data to state
+  const [specialList, setSpeciaList] = useState(specials);
 
   return (
     <div>
@@ -15,3 +18,5 @@ const Specials = () => {
     </div>
   );
 };
+
+export default Specials;
