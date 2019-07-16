@@ -25,7 +25,7 @@ This project was put together using create-react-app (CRA). You will not need to
 - [ ] Create a forked copy of this project.
 - [ ] Add your team lead as collaborator on Github.
 - [ ] Clone your OWN version of the repository in your terminal
-- [ ] CD into the project base directory `cd component-calculator`
+- [ ] CD into the project base directory `cd lambda-calculator`
 - [ ] Download project dependencies by running one of these two commands `yarn` or `npm install`
 - [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
@@ -54,7 +54,7 @@ Using the design file, build out your User Interface. Before you start, look thr
 
 **STEP 1**
 
-- You have been given a Data.js file that contains some arrays
+- You have been given a Data.js file that contains some arrays.
 - Find a way to bring (import) the data into the necessary files, but do not change the data.
 - Data should be imported into the wrapper components (`Numbers`, `Operators`, and `Specials`)
 
@@ -73,7 +73,7 @@ const [numbers, setNumber] = useState(numbers);
 **Step 3**
 
 - Map over the data and dynamically render components for each piece of data in the arrays.
-- You will need to import the component that you'll render in the map function
+- You will need to import the component that you'll render in the map function.
 
 **STEP 4**
 
