@@ -1,9 +1,7 @@
-import React from "react";
-import Numbers from "./Numbers";
+import React, { useState } from "react";
 
-const NumberButton = ({ numbers }) {
-  return 
-   return <button key={number} {number}></button>
+const NumberButton = ({ number }) => {
+  return <button key={number}>{number}</button>;
 };
 
-export default Numbers;
+export default NumberButton;
