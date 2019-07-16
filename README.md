@@ -67,7 +67,7 @@ import { numbers } from '../path/to/data';
 ...
 
 
-const [numbers, setNumber] = useState(numbers);
+const [numberState, setNumberState] = useState(numbers);
 ```
 
 **Step 3**
