@@ -1,5 +1,6 @@
 import React from "react";
 import { specials } from './data.js';
+import SpecialButton from './SpecialButton.js';
 //import any components needed
 
 //Import your array data to from the provided data file
