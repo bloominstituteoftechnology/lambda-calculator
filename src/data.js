@@ -29,4 +29,4 @@ const operators = [
   }
 ];
 
-const specials = ["C", "x/-", "%"];
+const specials = ["C", "+/-", "%"];

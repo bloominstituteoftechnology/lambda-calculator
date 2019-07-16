@@ -78,14 +78,13 @@ const [numbers, setNumber] = useState(numbers);
 **STEP 4**
 
 - Import the wrapper button components into `App.js`
-- Import the dispaly components into `App.js` as well
+- Import the display components into `App.js` as well
 - Compose all the components inside the `App` component to get your calculator rendering on the DOM
-- In each component, start designing things in a way that matches to the design file
+- In each component, start designing things to match the design file
 - Style your project using any of the techniques from the module
 - Don't forget about className vs class on your JSX elements!!
-- Don't use up all your time here. If you get stuck on something, move on to STEP 5 and come back to designs later
 
-**STEP 5**
+**STEP 5 - (STRETCH)**
 It's time to start thinking about functionality. Before getting into this, let's try and plan out all the moving peices you'll need.
 
 You will have some state in `App` that will keep track of the totals. This is data that you'll pass to the display component to render in the display.
@@ -99,7 +98,6 @@ This is where you're JavaScript skills are really going to be stretched. Remembe
 ## _MVP Requirements:_
 
 - The calculator must reflect the design file and correctly display the the provided array data.
-- The calculator should function. It doesn't need to do advanced calculations but it should display some data and make a calculation or two if possible. Having the ability to clear the display would be helpful.
 - Use the state hook function to get the app to display some data.
 
 **Here is your design spec:**
@@ -119,6 +117,7 @@ This is where you're JavaScript skills are really going to be stretched. Remembe
 
 Do not attempt stretch problems until MVP has been reached and a final commit has been made.
 
+- STEP 5 from above
 - Finish the logic so the calculator is fully functional. Feel free to change the array data, or lose it entirely, as you see fit.
 - Add some icons to improve the operator characters aesthetics. Research any icon/font library and implement it into your project.
 - Convert your CSS styling to use Sass/Scss
