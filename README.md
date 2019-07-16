@@ -121,3 +121,4 @@ Do not attempt stretch problems until MVP has been reached and a final commit ha
 - Finish the logic so the calculator is fully functional. Feel free to change the array data, or lose it entirely, as you see fit.
 - Add some icons to improve the operator characters aesthetics. Research any icon/font library and implement it into your project.
 - Convert your CSS styling to use Sass/Scss
+Testing ....
