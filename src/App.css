@@ -1,0 +1,28 @@
+@import 'Sass/index.scss';
+.container{
+    display:flex;
+    border:1px solid #000;
+}
+
+.container .specialsSection{
+        display:flex;
+        border:1px solid black;
+        
+}
+
+.container .opSection{
+   
+}
+
+.container .numSection{
+    display:flex;
+    border:1px solid black;
+}
+.container .specialsSection .specButton{
+    border-radius:50%;
+    font-size:30px;
+    margin:15px;
+}
+.logo-container{
+    background-color:black;
+}
