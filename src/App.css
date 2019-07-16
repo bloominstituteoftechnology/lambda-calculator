@@ -6,15 +6,19 @@
 
 .calcButton {
   color: white;
-  background-color: #184379;
   border-radius: 10px;
+  background-color: #184379;
 }
 
 .operatorButton {
+  color: white;
+  border-radius: 10px;
   background-color: #237293;
 }
 
 .specialButton {
+  color: white;
+  border-radius: 10px;
   background-color: #225D9E;
 }
 
