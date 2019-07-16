@@ -16,7 +16,7 @@ const Numbers = (props) => {
 
   
   return (
-    <div>
+    <div class="numbers-container-2">
       {ourNumbers.map(info => (
         <NumberButton key={info} numbersMapped={info} />
       ))}
