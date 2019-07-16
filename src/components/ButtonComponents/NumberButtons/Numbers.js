@@ -1,6 +1,6 @@
 import React from "react";
 import NumberButton from "./NumberButton.js";
-import { numbers } from "./data.js";
+import { numbers } from "../../../data.js";
 //import any components needed
 
 //Import your array data to from the provided data file
