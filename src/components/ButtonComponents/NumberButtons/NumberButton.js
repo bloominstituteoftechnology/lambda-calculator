@@ -1,7 +1,7 @@
 import React from "react";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 
-const NumberButton = () => {
+const NumberButton = (props) => {
 
   return (
     <>

@@ -2,6 +2,7 @@
   border: 1px solid black;
   background-color: #A81D36;
   width: 300px;
+  border-radius: 5px;
 }
 
 .calcButton {
