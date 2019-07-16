@@ -39,6 +39,8 @@ Follow these steps for completing your project.
 - [ ] Your team lead will count the project as complete by merging the branch back into master.
 - [ ] Do your magic!
 
+done
+
 # _Project - Lambda Calculator_
 
 **A job just came down from the Big Boss!**
