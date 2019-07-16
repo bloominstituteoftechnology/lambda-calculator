@@ -20,12 +20,12 @@ function App() {
     <div className="container">
     
       <div className="App">
-        <div className="numbers-container">
+        <div className="app-container">
+          <Logo />
+          <Specials />
           <Numbers />
         </div>
         <Operators />
-        <Specials />
-        <Logo />
       </div>
     </div>
   );
