@@ -6,7 +6,7 @@ import { specials } from './data.js';
 
 const Specials = () => {
   // STEP 2 - add the imported data to state
-
+  const [specialState, setSpecialState] = useState(specials);
   return (
     <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
