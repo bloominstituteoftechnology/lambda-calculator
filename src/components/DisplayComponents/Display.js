@@ -1,5 +1,9 @@
 import React from "react";
+import "./styles.module.css";
 
-const Display = () => {
-  return <div>{/* Display any props data here */}</div>;
+const Display = (props) => {
+  return(  
+  <div className={styles.display}>{props.data}</div>
+  );
 };
+export default Display;
