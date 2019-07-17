@@ -5,8 +5,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+button {
+  height: 80px;
+  width: 80px;
+  font-size: 20px;
+}
+.clicky:active {
+  transform: translateY(2px);
 }
