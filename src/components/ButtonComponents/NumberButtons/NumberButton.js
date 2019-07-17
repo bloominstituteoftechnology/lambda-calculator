@@ -1,7 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 
-const NumberButton = ({ number }) => {
-  return <button key={number}>{number}</button>;
-};
+function NumberButton({ change, number }) {
+  if (number === "0") {
+    return (
+      <button
+        className="num-button zero-button"
+        key={number}
+        onClick={() => change(number)}
+      >
+        {number}
+      </button>
+    );
+  } else {
+    return (
+      <button
+        className="num-button"
+        key={number}
+        onClick={() => change(number)}
+      >
+        {number}
+      </button>
+    );
+  }
+}
 
 export default NumberButton;

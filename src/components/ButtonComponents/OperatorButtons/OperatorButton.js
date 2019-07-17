@@ -1,7 +1,7 @@
 import React from "react";
 
 const OperatorButton = ({ op }) => {
-  return <button key={op}>{op}</button>;
+  return <button>{op.char}</button>;
 };
 
 export default OperatorButton;

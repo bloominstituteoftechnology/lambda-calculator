@@ -1,0 +1,23 @@
+.container {
+  width: 500px;
+  margin: 30px auto;
+  height: 800px;
+  background-color: firebrick;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.calculator-keypad {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.calculator-right {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 25%;
+}
+
+.calculator-left {
+  width: 75%;
+}
