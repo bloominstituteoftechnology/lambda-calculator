@@ -3,7 +3,7 @@ import { cn } from '../../../data'
 
 const SpecialButton = props => {
   return <button
-    className={`${cn(props.special)}`}
+    style={{ gridArea: cn(props.special) }}
     onClick={() => props.setDisplay(0)}>{props.special}</button>
 
 }
