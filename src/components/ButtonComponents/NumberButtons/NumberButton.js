@@ -1,11 +1,13 @@
 import React from "react";
-import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
+// import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 
 const NumberButton = (props) => {
-
+console.log(props.num);
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button className = "numButton">
+      {props.numContent}
+    </button>
   );
 };
+
+export default NumberButton;
