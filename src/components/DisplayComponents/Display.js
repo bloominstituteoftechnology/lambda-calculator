@@ -1,9 +1,9 @@
 import React from "react";
-import "./Display.module.css";
 
-const Display = (props) => {
+
+const Display = () => {
   return(  
-  <div className="display">{props.data}</div>
+  <div> Display</div>
   );
 };
 export default Display;

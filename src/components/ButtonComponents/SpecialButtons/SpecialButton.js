@@ -1,12 +1,11 @@
 import React from "react";
+import { cn } from '../../../data'
 
-const SpecialButton = (props) => {
-  return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-      <button onClick={() => {props.changeData(props.special)}}>{props.special}</button>
+const SpecialButton = props => {
+  return <button
+    style={{ gridArea: cn(props.special) }}
+    onClick={() => props.setDisplay(0)}>{props.special}</button>
 
-    </>
-  );
-};
-export default SpecialButton;
+}
+
+export default SpecialButton
