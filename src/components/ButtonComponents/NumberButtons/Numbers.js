@@ -12,7 +12,7 @@ const Numbers = () => {
   
   return (
 
-    <div> {
+    <div className="row2"> {
       numbers.map((number) => {
     console.log("Numbers were mapped correctly");
     return <NumberButton number = {number}

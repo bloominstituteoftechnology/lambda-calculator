@@ -12,7 +12,7 @@ const Specials = () => {
   
   return (
 
-    <div> {
+    <div className= 'row1'> {
       specials.map((special) => {
     console.log("Specials were mapped correctly");
     return <SpecialButton special = {special}

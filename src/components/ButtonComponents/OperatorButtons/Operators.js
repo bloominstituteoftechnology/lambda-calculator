@@ -12,7 +12,7 @@ const Operators = () => {
   
   return (
 
-    <div> {
+    <div className='col2'> {
       operators.map((operator) => {
         return <OperatorButton operator= {operator} />
       }
