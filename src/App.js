@@ -22,10 +22,21 @@ function App() {
       <div className="App">
         <div className="app-container">
           <Logo />
-          <Specials />
-          <Numbers />
+          <div className="container-enter">
+            <span className="enter">0</span>
+          </div>
+          <div className="bigger-container">
+            <div className="container-sp-num">
+              <Specials />
+              <Numbers />
+              </div>
+            <div className="container-operators">
+              <Operators />
+            </div>
+
+          </div>
         </div>
-        <Operators />
+
       </div>
     </div>
   );

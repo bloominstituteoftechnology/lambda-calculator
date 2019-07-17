@@ -3,7 +3,7 @@ import React from "react";
 const SpecialButton = (props) => {
   return (
     <div>
-      <button>{props.specialsMapped}</button>
+      <button className="btn special-btn">{props.specialsMapped}</button>
     </div>
   );
 };

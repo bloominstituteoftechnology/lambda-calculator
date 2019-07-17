@@ -14,7 +14,7 @@ const Operators = (props) => {
 
 
   return (
-    <div class="operators-container">
+    <div className="operators-container">
       {ourOperators.map(info => (
         <OperatorButton key={info} operatorsMapped={info.char} />
       ))}
