@@ -1,18 +1,9 @@
 import React from "react"
+import { cn } from '../../../data'
 
 const SpecialButton = props => {
-  const cn = () => {
-    switch (props.special) {
-      case '+/-':
-        return 'other'
-      case '%':
-        return 'percent'
-      default:
-        return 'C'
-    }
-  }
   return <button
-    className={`${cn()}`}
+    className={`${cn(props.special)}`}
     onClick={() => props.setDisplay(0)}>{props.special}</button>
 
 }
