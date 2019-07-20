@@ -1,10 +1,10 @@
 import React from "react";
 import {numbers } from "../../../data"
-
+import NumberButton from "./NumberButton";
 //import any components needed
 
 //Import your array data to from the provided data file
-const btnStyle = {
+export const btnStyle = {
   width: '80px',
   height: '0',
   paddingBottom: '80px',
@@ -16,7 +16,7 @@ const btnStyle = {
   fontSize: '40px',
   color: 'white'    
 }
-const btn0Style = {
+export const btn0Style = {
   width: '160px',
   height: '0',
   paddingBottom: '80px',
@@ -29,13 +29,14 @@ const btn0Style = {
   color: 'white'    
 }
 
-const Numbers = () => {
+const Numbers = props => {
   // STEP 2 - add the imported data to state
   return (
     <div>
       {
-                  numbers.map((item, index) => (
-                    <button style={item === '0' ? btn0Style : btnStyle}>{item}</button>
+                  numbers.map((number) => (
+                    <NumberButton numberNB={number} dispDataNB={props.dispDataN} setDataNB={props.setDataN}/>
+                    //  <button onClick={ ()=> {props.props(item) }}  style={item === '0' ? btn0Style : btnStyle}>{item}</button>
                     ))      
         /* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
