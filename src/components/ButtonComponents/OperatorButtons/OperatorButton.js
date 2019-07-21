@@ -16,7 +16,6 @@ return x
     <button onClick={ ()=> props.setDataOB( (props.operatorOB.char === '=')  ? 
     tryit()
      : props.dispDataOB + props.operatorOB.value) }  style={btnStyle}>{props.operatorOB.char}</button>
-// Function('"use strict";return (' + obj + ')')()
     // {/* Display a button element rendering the data being passed down from the parent container on props */}
 );
 };
