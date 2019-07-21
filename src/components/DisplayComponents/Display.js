@@ -3,7 +3,7 @@ const container = {
   fontSize: '40px',
   display: 'block',
   float: 'left',
-  width: '400px',
+  width: '420px',
   paddingTop: '5%',
   paddingBottom: '5%',
   lineHeight: '1em',
