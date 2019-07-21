@@ -18,7 +18,7 @@ const Numbers = (props) => {
   return (
     <div className="numbers-container-2">
       {ourNumbers.map(info => (
-        <NumberButton key={info} numbersMapped={info} />
+        <NumberButton key={info} numbersMapped={info} numberClick={props.numberClick} />
       ))}
 
     </div>

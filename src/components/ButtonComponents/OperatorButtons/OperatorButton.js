@@ -4,7 +4,7 @@ import Operators from "./Operators";
 const OperatorButton = (props) => {
   return (
     <div>
-      <button className="btn operator-btn">{props.operatorsMapped}</button>
+      <button className="btn operator-btn" onClick={ () => props.operatorClick( props.opFunc ) }>{props.operatorsMapped}</button>
     </div>
   );
 };

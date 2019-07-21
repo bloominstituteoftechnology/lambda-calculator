@@ -10,16 +10,16 @@ const Operators = (props) => {
   // STEP 2 - add the imported data to state
 
   const [ourOperators, setOperators] = useState(operators);
-  const operatorsMapped = ourOperators.map(elements => elements.char);
-
+  //const operatorsMapped = ourOperators.map(elements => elements.char);
 
   return (
     <div className="operators-container">
       {ourOperators.map(info => (
-        <OperatorButton key={info} operatorsMapped={info.char} />
+        <OperatorButton key={info} operatorsMapped={info.char} operatorClick={props.operatorClick} opFunc={info.op} />
       ))}
     </div>
   );
 };
 
 export default Operators;
+

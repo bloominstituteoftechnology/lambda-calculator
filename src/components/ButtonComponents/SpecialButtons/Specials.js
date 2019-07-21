@@ -14,7 +14,7 @@ const Specials = (props) => {
   return (
     <div className="special-buttons-container">
       {ourSpecials.map(info => (
-        <SpecialButton key={info} specialsMapped={info} />
+        <SpecialButton key={info} specialsMapped={info} specialButtonClick={props.value} />
       ))}
 
     </div>
