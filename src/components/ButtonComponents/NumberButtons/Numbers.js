@@ -44,4 +44,5 @@ const Numbers = props => {
     </div>
   );
 };
+
 export default Numbers;
