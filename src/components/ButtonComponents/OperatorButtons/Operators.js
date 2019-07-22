@@ -16,7 +16,9 @@ export const btnStyle = {
   // background: '#407180', 
   boxShadow: '0 0 0 gray',
   fontSize: '40px',
-  color: 'white',    
+  color: 'white',
+  lineHeight: '170%'    
+    
 }
 
 const Operators = props => {

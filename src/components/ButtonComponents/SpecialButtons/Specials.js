@@ -16,7 +16,8 @@ export const btnStyle = {
   background: '#084387', 
   boxShadow: '0 0 0 gray',
   fontSize: '40px',
-  color: 'white'    
+  color: 'white',
+  lineHeight: '170%'    
 }
 specials.push('MR')
 specials.push('M=')
