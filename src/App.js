@@ -46,7 +46,6 @@ function App() {
   function specialButtonClick( itemData ) {
     const amt = amount ? amount : Number( display );
 
-    debugger;
 
     if (itemData === 'C') {
       setAmount( () => undefined);
