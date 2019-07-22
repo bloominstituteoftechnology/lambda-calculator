@@ -17,6 +17,8 @@ export const btnStyle = {
   fontSize: '40px',
   color: 'white'    
 }
+specials.push('MR')
+specials.push('M=')
 
 const Specials = props => {
   // STEP 2 - add the imported data to state
@@ -26,7 +28,7 @@ const Specials = props => {
     <div>
       {        
           specials.map((specialS) => (
-          <SpecialButton specialSB={specialS} dispDataSB={props.dispDataS} setDataSB={props.setDataS}/>
+          <SpecialButton specialSB={specialS} dispDataSB={props.dispDataS} setDataSB={props.setDataS} memData={props.memData} setMem={props.setMem}/>
           ))
                 /* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
