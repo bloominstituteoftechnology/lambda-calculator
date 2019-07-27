@@ -6,7 +6,7 @@ import SpecialButton from './SpecialButton'
 import { specials } from './../../../data'
 const Specials = () => {
   // STEP 2 - add the imported data to state
-  const [specialsState, setSpecialState] = useState(specials);
+  const [specialsState] = useState(specials);
 
   return (
     <div>

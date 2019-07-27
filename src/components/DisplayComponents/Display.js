@@ -1,7 +1,7 @@
 import React from "react";
 
 const Display = () => {
-  return <div>55378008</div>;
+  return <div>0</div>;
 };
 
 export default Display;
