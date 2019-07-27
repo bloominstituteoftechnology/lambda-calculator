@@ -1,9 +1,7 @@
 import React, { useState}  from "react";
 import "./App.css";
 
-import { Numbers } from "./data";
-import { Operators } from "./data";
-import { Specials } from "./data";
+
  
 
 // STEP 4 - import the button and display components
@@ -13,9 +11,7 @@ import { Specials } from "./data";
 import Logo from "./components/DisplayComponents/Logo";
 
 function App() {
-  const [numberState, setNumberState] = useState(Numbers)
-  const [operatorState, setOperatorState] = useState(Operators)
-  const [specialState, setSpecialState] = useState(Specials)
+ 
 
 
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
