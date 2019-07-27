@@ -13,17 +13,17 @@ const Numbers = () => {
        component matching the name on the provided file. Pass
         it any props needed by the child component*/}
       {
-        numberState.map((number, index) => {
-          <NumberButton numbers = {number} key = {index} />
+        numberState.map((number, index) => (
+          <NumberButton numbers={number} key={index} />
         ))
-        
-      }
       }
       
     </div>
   );
-  export default Numbers
-    };
+};
+
+export default Numbers
+    
     
 
 
