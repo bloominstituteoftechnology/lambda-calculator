@@ -3,10 +3,10 @@ import React , {useState} from "react";
 //import any components needed
 
 //Import your array data to from the provided data file
-import numbers from '../../../data.js';
+import {numbers , operators ,specials }  from '../../../data.js';
 
 const Numbers = () => {
-
+console.log('this is number from numbers.js' , numbers)
   // STEP 2 - add the imported data to state
   return (
     <div>

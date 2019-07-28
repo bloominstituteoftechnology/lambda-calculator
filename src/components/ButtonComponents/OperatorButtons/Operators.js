@@ -3,10 +3,11 @@ import React from "react";
 //import any components needed
 
 //Import your array data to from the provided data file
-import operators from '../../../../src/data';
+import {numbers , operators ,specials }  from '../../../../src/data';
 const Operators = () => {
+
+  console.log('this is the oprater.js',operators)
   // STEP 2 - add the imported data to state
-  const [operators, setOperators] = useState(operators)
   return (
     <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
@@ -15,3 +16,5 @@ const Operators = () => {
     </div>
   );
 };
+
+export default Operators;

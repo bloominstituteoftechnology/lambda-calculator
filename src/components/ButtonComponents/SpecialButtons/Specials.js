@@ -3,9 +3,10 @@ import React from "react";
 //import any components needed
 
 //Import your array data to from the provided data file
-
+import {numbers , operators ,specials } from '../../../data.js'
 const Specials = () => {
   // STEP 2 - add the imported data to state
+  console.log('this is specials' , specials)
 
   return (
     <div>
@@ -15,3 +16,5 @@ const Specials = () => {
     </div>
   );
 };
+
+export default Specials;
