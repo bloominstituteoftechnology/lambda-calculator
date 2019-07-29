@@ -1,0 +1,38 @@
+.App {
+    width:472px;
+    height: 709px;
+    background: #a81e36;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.display {
+    background: #323335;
+    color: #f2f3f3;
+    margin: 10px 0;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.display > span {
+    margin-right: 15px;
+    font-size: 2rem;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-container button {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+
+}
