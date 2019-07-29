@@ -1,12 +1,73 @@
+body {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+@mixin baseButton($background) {
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: $background;
+    border: none;
+    margin-bottom: 1rem;
+    margin-right: 2.1rem;
+    box-shadow: 0 4px 5px black;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 472px;
-    height: 709px;
+    height: 90vh;
+    max-height: 709px;
     border-radius: 15px;
     border: 3px solid #515151;
     margin: auto;
     margin-top: 10vh;
     background-color: #a81d36;
     padding: 30px;
+    .App {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .left {
+            width: 75%;
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .right {
+            width: 25%;
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .display {
+            width: 100%;
+            height: 110px;
+            border-radius: 55px;
+            text-align: right;
+            background-color: #323335;
+            color: white;
+            font-size: 3.3rem;
+            padding-right: 1rem;
+            vertical-align: middle;
+            line-height: 105px;
+        }
+        .specialButton {
+            @include baseButton(#225d9e);
+        }
+        .numberButton {
+            @include baseButton(#184379);
+        }
+        .operatorButton {
+            @include baseButton(#237293);
+        }
+    }
 }
