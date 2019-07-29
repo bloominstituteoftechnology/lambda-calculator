@@ -5,10 +5,9 @@ const OperatorButton = (props) => {
     // <>
     //   {/* Display a button element rendering the data being passed down from the parent container on props */}
     // </>
-    <div>
-    <button>{props.btn.char}</button>
-    <button>{props.btn.value}</button>
-    </div>
+    <>
+    <button onClick={props.clickOperatorBtn}>{props.btn.char}</button>
+    </>
   );
 };
 export default OperatorButton;
