@@ -8,12 +8,12 @@ body {
     color: white;
     border-radius: 50%;
     width: 5rem;
-    height: 5rem;
+    height: 5.2rem;
     padding: 1rem;
     text-align: center;
     background-color: $background;
     border: none;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     margin-right: 2.1rem;
     box-shadow: 0 4px 5px black;
 }
@@ -56,7 +56,7 @@ body {
             background-color: #323335;
             color: white;
             font-size: 3.3rem;
-            padding-right: 1rem;
+            padding-right: 1.2rem;
             vertical-align: middle;
             line-height: 105px;
         }
@@ -68,6 +68,10 @@ body {
         }
         .operatorButton {
             @include baseButton(#237293);
+        }
+        .zeroButton {
+            width: 12rem;
+            border-radius: 5rem;
         }
     }
 }
