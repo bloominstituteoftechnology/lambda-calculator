@@ -11,6 +11,85 @@ code {
     monospace;
 }
 
+.container {
+  background: #bb1333;
+  height: 530px;
+  width: 350px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 20px 0 10px 20px;
+  width: 30%;
+}
+
+.calculatorScreen {
+  border-radius: 30px;
+  height: 60px;
+  width: 300px;
+  padding-right: 10px;
+  margin-left: 20px;
+  background: rgb(58, 57, 57);
+  color: white;
+  text-align: right;
+  font-size: 30px;
+  outline: none;
+  border: none;
+}
+
+button {
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 20px;
+  outline: none;
+}
+
+.specialButtonContainer {
+  position: relative;
+  right: 9px;
+}
+
+.specialButton {
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: #1a61b0;
+  color: white;
+}
+
+.numberButtonContainer {
+  width: 280px;
+  left: 450px;
+  margin-left: 22px;
+}
+
+.numberButton {
+  margin-right: 35px;
+  margin-bottom: 10px;
+  background: #1a61b0;
+  color: white;
+}
+
+.numberButton:nth-child(10) {
+  width: 140px;
+  border-radius: 30px;
+}
+
+.operatorsButtonContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 612px;
+  bottom: 0px;
+}
+
+.operatorButton {
+  margin-bottom: 8px;
+  background: #3aa6e5;
+  color: white;
+}
+
 /* .container {
   background: #bb1333;
   height: 520px;
@@ -89,163 +168,83 @@ button {
   margin-bottom: 8px;
   background: #3aa6e5;
   color: white;
+}
+.container {
+  background: #bb1333;
+  height: 520px;
+  width: 350px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 20px 0 10px 20px;
+  width: 30%;
+}
+
+.calculatorScreen {
+  border-radius: 30px;
+  height: 60px;
+  width: 300px;
+  padding-right: 10px;
+  margin-left: 20px;
+  background: rgb(58, 57, 57);
+  color: white;
+  text-align: right;
+  font-size: 30px;
+  outline: none;
+  border: none;
+}
+
+button {
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+
+.specialButtonContainer {
+  position: relative;
+}
+
+.specialButton {
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: #1a61b0;
+  color: white;
+}
+
+.numberButtonContainer {
+  width: 280px;
+  position: absolute;
+  left: 450px;
+  margin-left: 20px;
+}
+
+.numberButton {
+  margin-right: 35px;
+  margin-bottom: 10px;
+  background: #1a61b0;
+  color: white;
+}
+
+.numberButton:nth-child(10) {
+  width: 130px;
+  border-radius: 30px;
+}
+
+.operatorsButtonContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 722px;
+  bottom: 806px;
+}
+
+.operatorButton {
+  margin-bottom: 8px;
+  background: #3aa6e5;
+  color: white;
 } */
-
-.container {
-  background: #bb1333;
-  height: 520px;
-  width: 350px;
-  border-radius: 10px;
-  margin: 0 auto;
-}
-
-.logo {
-  margin: 20px 0 10px 20px;
-  width: 30%;
-}
-
-.calculatorScreen {
-  border-radius: 30px;
-  height: 60px;
-  width: 300px;
-  padding-right: 10px;
-  margin-left: 20px;
-  background: rgb(58, 57, 57);
-  color: white;
-  text-align: right;
-  font-size: 30px;
-  outline: none;
-  border: none;
-}
-
-button {
-  border-radius: 50%;
-  padding: 20px;
-  font-size: 20px;
-  outline: none;
-  border: none;
-}
-
-.specialButtonContainer {
-  position: relative;
-}
-
-.specialButton {
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  background: #1a61b0;
-  color: white;
-}
-
-.numberButtonContainer {
-  width: 280px;
-  position: absolute;
-  left: 450px;
-  margin-left: 20px;
-}
-
-.numberButton {
-  margin-right: 35px;
-  margin-bottom: 10px;
-  background: #1a61b0;
-  color: white;
-}
-
-.numberButton:nth-child(10) {
-  width: 130px;
-  border-radius: 30px;
-}
-
-.operatorsButtonContainer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 722px;
-  bottom: 806px;
-}
-
-.operatorButton {
-  margin-bottom: 8px;
-  background: #3aa6e5;
-  color: white;
-}
-.container {
-  background: #bb1333;
-  height: 520px;
-  width: 350px;
-  border-radius: 10px;
-  margin: 0 auto;
-}
-
-.logo {
-  margin: 20px 0 10px 20px;
-  width: 30%;
-}
-
-.calculatorScreen {
-  border-radius: 30px;
-  height: 60px;
-  width: 300px;
-  padding-right: 10px;
-  margin-left: 20px;
-  background: rgb(58, 57, 57);
-  color: white;
-  text-align: right;
-  font-size: 30px;
-  outline: none;
-  border: none;
-}
-
-button {
-  border-radius: 50%;
-  padding: 20px;
-  font-size: 20px;
-  outline: none;
-  border: none;
-}
-
-.specialButtonContainer {
-  position: relative;
-}
-
-.specialButton {
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  background: #1a61b0;
-  color: white;
-}
-
-.numberButtonContainer {
-  width: 280px;
-  position: absolute;
-  left: 450px;
-  margin-left: 20px;
-}
-
-.numberButton {
-  margin-right: 35px;
-  margin-bottom: 10px;
-  background: #1a61b0;
-  color: white;
-}
-
-.numberButton:nth-child(10) {
-  width: 130px;
-  border-radius: 30px;
-}
-
-.operatorsButtonContainer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 722px;
-  bottom: 806px;
-}
-
-.operatorButton {
-  margin-bottom: 8px;
-  background: #3aa6e5;
-  color: white;
-}
