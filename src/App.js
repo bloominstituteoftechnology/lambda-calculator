@@ -25,7 +25,7 @@ function App() {
 
   const addOperator = (operator) => {
     if (operator === "=") {
-      setDisplayValue(displayValue => eval (displayValue));
+      setDisplayValue(displayValue => eval(displayValue));
     } else {
       setDisplayValue(displayValue => displayValue + " " + operator + " ");
     }

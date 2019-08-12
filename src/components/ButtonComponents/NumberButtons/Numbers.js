@@ -6,13 +6,15 @@ import NumberButton from "./NumberButton.js";
 //Import your array data to from the provided data file
 
 import { numbers } from "../../../data.js";
-import { tsPropertySignature } from "@babel/types";
+
 
 
 const Numbers = (props) => {
 
   const [buttonNumbers, setButtonNumbers] = useState(numbers);
   // STEP 2 - add the imported data to state
+
+  console.log(buttonNumbers);
   return (
     <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
