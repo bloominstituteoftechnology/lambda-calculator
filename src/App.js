@@ -22,9 +22,12 @@ function App() {
       <Display/>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Numbers/>
+        <div className="nums-specs">
+          <Specials/>
+          <Numbers/>
+        </div>
         <Operators/>
-        <Specials/>
+
       </div>
     </div>
   );
