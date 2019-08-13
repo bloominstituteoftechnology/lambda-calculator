@@ -12,7 +12,7 @@ const Numbers = () => {
   // STEP 2 - add the imported data to state
   //const [number, setNumber] = useState(0);
   const digits = numbers.map(digit => {
-    return <NumberButton value={digit} />
+    return <NumberButton digit={digit} />
   });
 
   console.log(numbers);
