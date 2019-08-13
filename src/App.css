@@ -1,15 +1,98 @@
+* {
+    box-sizing: border-box;
+}
 .container {
-   width: 25%;
-   height: 400px;
-   background: red;
+   width: 472px;
+   height: 709px;
+   background:#c11441;
    display: flex;
    justify-content: center;
    align-content: center;
    flex-direction: column;
+   padding: 20px;
 }
 
 .display {
     color: white;
-    background: black;
-    width: 90%;
+    background: #24292e;
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.button-box {
+    display: flex;
+
+}
+
+button {
+    color: red;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 5px 10px #24292e;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+.column-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 73%;
+    justify-content: space-between;
+    
+}
+
+.column-2 {
+    width: 27%;
+    flex-flow: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-2 div {
+    color: black;
+}
+
+
+.column-1 div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.column-2 button {
+    width: 75px;
+    background: #237293;
+}
+
+.specials button {
+    background: #215c9e;
+}
+
+.numbers button {
+    background: #184279;
+}
+
+.logo {
+    border: 1px solid black;
+    width: 25%;
+}
+
+.what-if {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.n-1 {
+    width: 150px;
 }

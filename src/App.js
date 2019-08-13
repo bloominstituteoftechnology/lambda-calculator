@@ -26,9 +26,16 @@ function App() {
         <Display />
       </div>
       <div className="button-box">
-        <Numbers />
-        <Operators />
-        <Specials />
+        <div className="column-1">
+          <Specials />
+          <Numbers />
+
+        </div>
+        <div className="column-2">
+          <Operators />
+        </div>
+        
+
       </div>
     </div>
   );
