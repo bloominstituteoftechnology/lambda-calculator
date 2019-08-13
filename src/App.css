@@ -1,0 +1,48 @@
+
+.App{
+    width:472px;
+    height: 709px;
+    background-color:#a81e36;
+    padding:20px;
+    border-radius: 20px;
+}
+
+.display {
+    background-color:#323335;
+    color:#fff;
+    margin: 10px 0;
+    height: 100px;
+    border-radius: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.display > span {
+    font-size: 2rem;
+    margin-right:15px;
+}
+
+.logo {
+    max-width:100px;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-container  {
+    display:flex;
+    justify-content: space-between;
+}
+.btn-container button {
+    border-radius: 50px;
+    width:100px;
+    height:100px;
+    font-size: 2rem;
+    margin:3px;
+    text-align: center;
+}
+.btn-container button[name='zero']{
+    width:200px
+}
