@@ -1,12 +1,12 @@
 .container {
-    background: red;
+    background: darkred;
     margin: 0 auto;
     width: 25rem;
     height: 45rem;
     padding: 1rem;
     margin-top: 1rem;
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -17,27 +17,34 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center; */
-    padding: 1rem;
+    padding: 2rem;
     color: aliceblue;
     /* margin: 0 auto; */
     background: navy;
+    border-radius: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    
 
 }
 
 .left {
+
     display: flex;
     flex: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    width: 5rem;
+    width: 20rem;
     margin: 0 auto;
     margin-top: 5%;
     align-items: flex-start;
     justify-content: space-evenly;
     padding: 1rem;
     flex-direction: row;
+    
 }
-
+/* 
 .number-button {
     display: flex;
     flex: wrap;
@@ -46,14 +53,24 @@ button {
     width: 1rem;
     border-radius: 2rem;
     
-}
+} */
 
 .display {
 
     background: black;
     color: white;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
+   
+    margin-top: 2rem;
+    width: 20rem;
 }
 
 
+.ops {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30rem;
+}

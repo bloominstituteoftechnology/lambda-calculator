@@ -39,11 +39,13 @@ function App() {
       <Display number={displayValue} />
 
       <div className="left">
-      <Numbers addNumber={addNumber} />
       <Specials />
+      <Numbers addNumber={addNumber} />      
       </div>
-
+      
+      <div className= "ops">
       <Operators addOperator={addOperator} />
+      </div>
       
       
       </div>
