@@ -5,8 +5,7 @@ import NumberButton from "./NumberButton";
 import {numbers} from "../../../data";
 const Numbers = () => {
   // STEP 2 - add the imported data to state
-  let [numbersState, changeNumber] = useState(numbers);
-  console.log(numbersState);
+  let [numbersState, setNumState] = useState(numbers);
   return (
     <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
