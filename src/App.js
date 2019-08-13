@@ -61,7 +61,7 @@ function App() {
       total.value = calculate();
       total.lastOp = event.target.value;
       console.log(total);
-      setDisplayState(event.target.value);
+      setDisplayState(total.value);
       setCalcState(true);
       setDecimalState(false);
       if (event.target.value == "=") {
