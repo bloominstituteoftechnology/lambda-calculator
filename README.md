@@ -85,7 +85,7 @@ const [numberState, setNumberState] = useState(numbers);
 - Don't forget about className vs class on your JSX elements!!
 
 **STEP 5 - (STRETCH)**
-It's time to start thinking about functionality. Before getting into this, let's try and plan out all the moving peices you'll need.
+It's time to start thinking about functionality. Before getting into this, let's try and plan out all the moving pieces you'll need.
 
 You will have some state in `App` that will keep track of the totals. This is data that you'll pass to the display component to render in the display.
 
