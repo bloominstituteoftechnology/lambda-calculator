@@ -17,24 +17,75 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   let [display, setDisplayState] = useState("0")
   let [isCalculated, setCalcState] = useState(true);
+  let [usedDecimal, setDecimalState] = useState(false);
+  let [total, setTotalState] = useState({value:0, recent:0, lastOp:null});
+  function reset(){
+    setCalcState(true);
+    setDecimalState(false);
+    setTotalState({value:0, recent:0, lastOp:null});
+  }
   let operators = ["/", "*", "-","+","="];
+  function calculate(){
+    if (total.lastOp) {
+      if (total.lastOp == "+") {
+        return total.value + total.recent;
+      } else if (total.lastOp == "-") {
+        return total.value - total.recent;
+      } else if (total.lastOp == "/") {
+        return total.value / total.recent;
+      } else {
+        return total.value * total.recent;
+      }
+    } else {
+      return Number(display);
+    }
+  }
+
   function numbersClick(event) {
     if (isCalculated) {
       setCalcState(false);
       display = "";
     }
-    setDisplayState(display + event.target.textContent)
+    if (event.target.textContent  == "." && !usedDecimal) {
+      setDecimalState(true);
+      setDisplayState(display + event.target.textContent);
+    } else if (event.target.textContent != ".") {
+      setDisplayState(display + event.target.textContent);
+    }
   }
 
-  function opClick (event) {
+  function opClick (event) { 
     if(!operators.includes(display[display.length - 1])) {
       setCalcState(false);
-      setDisplayState(display + event.target.value);
+      total.recent = Number(display);
+      total.value = calculate();
+      total.lastOp = event.target.value;
+      console.log(total);
+      setDisplayState(event.target.value);
+      setCalcState(true);
+      setDecimalState(false);
+      if (event.target.value == "=") {
+        console.log(total);
+        setDisplayState(total.value);
+        reset();
+      }
     }
   }
 
   function specialsClick(event){
-    console.log("hey");
+    if (event.target.textContent == "C") {
+      reset();
+      setDisplayState(0);
+    } else if (event.target.textContent == "+/-") {
+      if (display[0] == "-") {
+        setDisplayState(display.substring(1));
+      } else { 
+        setDisplayState("-" + display);
+      }
+    } else {
+      setDisplayState(display/100);
+      reset();
+    }
   }
   return (
     <div className="container">
