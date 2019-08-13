@@ -4,7 +4,7 @@ import React from "react";
 const NumberButton = props => {
   return (
 
-      <button>{props.digit}</button>
+      <button className={`number${props.digit}`}>{props.digit}</button>
   );
 };
 
