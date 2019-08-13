@@ -1,0 +1,61 @@
+.container {
+    background-color: maroon;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 55%;
+    height: 1000px;
+}
+
+.App {
+    border: 2px solid purple;
+    height: 900px;
+    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding: 2re;
+    align-items: center;
+}
+
+.display {
+    background-color: rgb(44, 36, 36);
+    color: white;
+    font-size: 2rem;
+    border: 2px solid yellow;
+    width: 80%;
+    height: 7rem; 
+    text-align: right;
+}
+
+.specialButton {
+    border: 2px solid black;
+    background-color: rgb(80, 90, 226);
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.numberButton {
+    background-color: rgb(66, 66, 153);
+    color: white;
+    border: 2px solid black;
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem;
+}
+
+.operatorButton {
+    display: flex;
+    flex-flow: column wrap;
+    border: 2px solid green;
+    background-color: rgb(26, 148, 179);
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 2rem;
+}
