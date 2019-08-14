@@ -12,10 +12,13 @@ const Numbers = () => {
   const [numberState, setNumberState] = useState(numbers);
 
   return (
-    <div>
-      {numberState.map((item => {
-        return <NumberButton number={item} />
-      }))}
+    <div className="button_container"> 
+      
+      { numberState.map( item => 
+      <NumberButton  numberProp={item}/>
+      )}      
+       
+
     </div>
   );
 };
