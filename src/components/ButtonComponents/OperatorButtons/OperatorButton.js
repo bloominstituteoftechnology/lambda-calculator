@@ -1,14 +1,13 @@
-import React, {useState} from "react";
-import { operators } from "../../../data";
+import React from "react";
+
 
 const OperatorButton = (props) => {
   return (
     <>
       {/* Display a button element rendering the data being passed down from the parent container on props */
-      <button className="operator_button" 
-      onClick={() => props.setOpState(props.opValue)}>{props.opChar}{props.opValue} 
+      <button className="operator_button">{props.displayOpr.char}
       </button>
-
+        
       }
     </>
   );

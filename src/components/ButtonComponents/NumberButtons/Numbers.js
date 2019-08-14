@@ -14,8 +14,7 @@ const Numbers = () => {
   return (
     <div className="button_container"> 
       
-      { numberState.map( item => 
-      <NumberButton  numberProp={item}/>
+      {numberState.map( item => <NumberButton  numberProp={item}/>
       )}      
        
 

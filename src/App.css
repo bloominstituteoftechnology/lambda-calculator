@@ -1,1 +1,47 @@
 
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 472px;
+    /* max-height: 709px; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: #a81d36;
+    border: 1px solid #404040;
+    border-radius: 8px;
+    /* align-items: center; */
+
+}
+
+.logo {
+    margin: 5%;
+}
+.display{
+    border-radius: 50px;
+    height: 60px;
+    text-align: right;
+    font-size: 3rem;
+    padding: 1.1rem;
+    margin: auto 1.6rem;
+    background: #323335;
+    color: white;
+}
+
+.horizontal-buttons {
+    display: flex;
+}
+
+
+.operator-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.App {
+    display: flex;
+    margin: 1.5rem;
+}
