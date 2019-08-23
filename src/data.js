@@ -4,13 +4,10 @@
 // file. No real tricks here just be aware of what is in each array
 // and how you'll access the data.
 
-import data, { numbers } from "./data";
 
+export const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."];
 
-
-const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."];
-
-const operators = [
+export const operators = [
   {
     char: "/",
     value: "/"
@@ -33,18 +30,4 @@ const operators = [
   }
 ];
 
-const specials = ["C", "+/-", "%"];
-
-function data() {
-  const [numberState, setNumberState] = useState(numbers);
-  return (
-
-    {data.map((item, index) => {
-      return < />
-    })}
-  )
-}
-
-
-
-export default data
+export const specials = ["C", "+/-", "%"];
