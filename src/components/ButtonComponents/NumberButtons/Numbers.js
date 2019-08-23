@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import Numbers from '../../../data'
 
 //import any components needed
 
 //Import your array data to from the provided data file
-import { numbers } from "./data";
-import NumberButton from "./NumberButton"
+import { numbers } from "../../../data";
+import NumberButton from "./NumberButton";
 
 
 const Numbers = () => {
@@ -14,7 +15,7 @@ const Numbers = () => {
   return (
     <div>
       {setNumber.map((item, index) => {
-        return <NumberButton index = {index} item = {item} />
+        return <NumberButton key={index} item = {item} />
       })}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
@@ -23,4 +24,4 @@ const Numbers = () => {
   );
 };
 
-export default Numbers
+export default Numbers;
