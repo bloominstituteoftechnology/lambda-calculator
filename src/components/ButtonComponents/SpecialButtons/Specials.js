@@ -3,8 +3,9 @@ import React from "react";
 //import any components needed
 
 //Import your array data to from the provided data file
-
+import { specials } from "../../../data"
 const Specials = () => {
+  console.log(specials)
   // STEP 2 - add the imported data to state
 
   return (
