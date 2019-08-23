@@ -28,6 +28,7 @@ span{
     margin-right: 10px;
 }
 
+
 .App {
     display: flex;
     justify-content: space-around;
@@ -75,4 +76,11 @@ button {
     color:#fff;
     box-shadow: -3px 5px 4px black;
     cursor: pointer;
+}
+
+.zero {
+  width:210px;
+  height:90px;
+  border-radius: 40px;
+  margin-right: 20px
 }

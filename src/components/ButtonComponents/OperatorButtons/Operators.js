@@ -5,7 +5,6 @@ import OperatorButton from "./OperatorButton";
 //Import your array data to from the provided data file
 import {operators} from "../../../data"
 const Operators = () => {
-  console.log(operators)
   // STEP 2 - add the imported data to state
   return (
     <div>
