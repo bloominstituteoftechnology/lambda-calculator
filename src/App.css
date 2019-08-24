@@ -1,0 +1,7 @@
+.number-button {
+  background: blue;
+  height: 50px;
+  width: 50px;
+  color: white;
+  border-radius: 50%;
+}
