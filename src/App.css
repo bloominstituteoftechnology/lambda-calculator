@@ -1,16 +1,59 @@
 .container {
-    background: 'red';
+    background-color: darkred;
 }
 
-number.map(number => {
-    return <NumberButton className={number.value === '0' ? 'button zero button': 'button'}>
-})
+.App {
+    background-color: darkred;
+    width: 75%;
+}
 
-.button{
-    color: 'blue';
+.Logo {
+    width: 100%;
+    margin: 0.5rem;
+}
+
+.Display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
     border-radius: 1.5rem;
 }
 
-.zero-button {
-    width: //2*width.button
+.SpecialsButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.0rem;
+    color: white;
+    background-color: lightskyblue;
+    border-radius: 8.0rem;
 }
+
+.NumberButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.0rem;
+    color: white;
+    background-color: rgb(6, 70, 110);
+    border-radius: 8.0rem;
+}
+
+.OperatorButton { 
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ margin: 1.0rem;
+ color: white;
+ background-color: rgb(6, 70, 110);
+ border-radius: 8.0rem;
+ }
+
+/* .zero-button {
+    width: //2*width.button
+} */
