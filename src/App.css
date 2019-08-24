@@ -1,0 +1,16 @@
+.container {
+    background: 'red';
+}
+
+number.map(number => {
+    return <NumberButton className={number.value === '0' ? 'button zero button': 'button'}>
+})
+
+.button{
+    color: 'blue';
+    border-radius: 1.5rem;
+}
+
+.zero-button {
+    width: //2*width.button
+}

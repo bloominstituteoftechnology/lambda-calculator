@@ -1,5 +1,6 @@
-import React from "react";
-import Operators from '../../../data'
+import React, { useState } from "react";
+import { operators } from '../../../data'
+import OperatorButton from './OperatorButton'
 
 //import any components needed
 
@@ -7,12 +8,12 @@ import Operators from '../../../data'
 
 const Operators = () => {
   // STEP 2 - add the imported data to state
-  const [setOperators] = useState(operators)
+  const [operatorButtons] = useState(operators)
 
   return (
     <div>
-      {setOperators.map((item, index) => {
-        return <OperatorButton key={index} item={item} />
+      {operatorButtons.map((item) => {
+        return <OperatorButton className='OperatorButton' item={item} />
       })}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
