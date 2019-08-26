@@ -1,9 +1,13 @@
 import React from "react";
-
-const NumberButton = () => {
+/*style sheets inside the folder! so under NumButt created NumButt.css & import HERE using --->import './NumberButtons.css' */
+const NumberButton = (props) => {
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <div>
+      {props.numContent}
+    </div>
   );
 };
+
+export default NumberButton;
+
+/*then see acutal number values, then at that point it's up to styling*/ 
