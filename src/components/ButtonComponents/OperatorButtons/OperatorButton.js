@@ -10,3 +10,8 @@ const OperatorButton = (props) => {
 };
 
 export default OperatorButton
+
+
+/* <button onClick{() => props.addOperator(props.operator.value)}>
+{props.operator.char}
+</button> */
