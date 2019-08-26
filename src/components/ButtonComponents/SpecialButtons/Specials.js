@@ -6,9 +6,6 @@ import SpecialButton from "./SpecialButton"
 import { specials } from "../../../data"
 const Specials = ( props) => {
   // STEP 2 - add the imported data to state
-const clickSpeBtn = btn =>{
-  btn === "C" ? props.resetValue() : props.updateValue(clickSpeBtn)
-}
   return (
     <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
@@ -17,8 +14,8 @@ const clickSpeBtn = btn =>{
        {specials.map((special,index) => {
          return <SpecialButton 
                     special={special} 
-                    key={index}
-                    clickSpeBtn={() => clickSpeBtn(special)} />
+                    key={index} 
+                    resetValue={props.resetValue} />
 
        })}
     </div>
