@@ -1,57 +1,67 @@
-/* .container {
-    background-color: darkred;
-} */
+.container {
+   width:400px;
+   border-radius: 15px;
+}
 
 .App {
     background-color: darkred;
-    width: 75%;
-}
+    width: 100%;
+   }
 
 .Logo {
+    padding-top: 20px;
     width: 100%;
-    margin: 0.5rem;
+    margin: 50px;
 }
 
 .Display {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     width: 85%;
-    border-radius: 1.5rem;
+    border-radius: 50%;
 }
 
-.SpecialsButton {
-    display: flex;
+.SpecialButton {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: 1.0rem;
     color: white;
     background-color: lightskyblue;
-    border-radius: 8.0rem;
+    border-radius: 50%;
+    width: 5%;
+    padding: 20px 30px;
 }
 
 .NumberButton {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 1.0rem;
+    justify-content: space-around;
+    margin: 10px;
     color: white;
     background-color: rgb(6, 70, 110);
-    border-radius: 8.0rem;
+    border-radius: 50%;
+    width: 5%;
+    padding: 20px 30px;
 }
+
+.NumberButton:nth-child(10) {
+    border-radius: 15px;
+    width: 20%;
+    padding: 20px 30px;
+    }
 
 .OperatorButton { 
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
- justify-content: center;
+ justify-content: space-around;
  margin: 1.0rem;
  color: white;
- background-color: rgb(6, 70, 110);
- border-radius: 8.0rem;
+ background-color: rgb(65, 137, 182);
+ border-radius: 50%;
+ width: 5%;
+ padding: 20px 30px;
  }
 
 /* .zero-button {

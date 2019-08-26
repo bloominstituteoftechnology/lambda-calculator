@@ -29,6 +29,6 @@ export default Numbers;
 
 // return (
 //   <div>
-//     {setNumber.map(number => <NumberButton text={nujmber} />)}
+//     {setNumber.map(number => <NumberButton text={number} />)}
 //   </div>
 // )
