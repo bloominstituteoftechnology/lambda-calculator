@@ -8,17 +8,15 @@ import { numbers } from '../../../../src/data.js'
 
 const Numbers = (props) => {
   const [number, setNumber] = useState(numbers);
-  console.log('Numbers',props)
   return (
     <div>
       {number.map(xNumb => {
-      return <NumberButton key={xNumb} text={xNumb} addNumb = {props.addNumb}/>
+      return <NumberButton key={xNumb} text={xNumb}/>;
     })}
     </div>
-    
   );
 };
-console.log('hello')
+
 
 
 export default Numbers;

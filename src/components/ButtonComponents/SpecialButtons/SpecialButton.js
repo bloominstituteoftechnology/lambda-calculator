@@ -1,7 +1,8 @@
 import React from "react";
 
 const SpecialButton = (props) => {
-  return( <button className='specialButton' onClick = {() => props.addSpecial(props.text)}>
+  return( 
+  <button className='specialButton'>
   {props.text}</button> );
 };
 

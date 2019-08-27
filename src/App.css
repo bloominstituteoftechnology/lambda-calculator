@@ -1,0 +1,84 @@
+.container {
+    background-color: red;
+    border-radius: 1rem;
+    width: 22rem;
+    height: 34rem;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+.logo{
+    margin-bottom: 1rem;
+}
+
+.specialsAndNumbers{
+    width: 17rem;
+    padding-top: 1rem;
+}
+
+.numbButton{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 8rem;
+    font-size: 1.5rem;
+    background-color: rgb(32, 32, 180);
+    color: white;
+    margin: .5rem;
+    order: 1;
+    
+}
+
+.specialButton{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 8rem;
+    font-size: 1.5rem;
+    background-color: rgb(78, 78, 243);
+    color: white;
+    margin: .5rem;
+    order: 0;
+}
+
+.operatorHolder{
+    margin-left: 16.5rem;
+    margin-top: -27.5rem;
+}
+.oppButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 8rem;
+    font-size: 1.5rem;
+    background-color: rgb(38, 156, 117);
+    color: white;
+    margin: .5rem;
+    margin-bottom: 1rem;
+    order: 2;
+}
+
+.displayHolder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.displayContainer{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    text-align: right;
+    padding-right: 1rem;
+    font-size: 3rem;
+    width: 23rem;
+    height: 4rem;
+    border-radius: 3rem;
+}

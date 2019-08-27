@@ -10,7 +10,7 @@ const Operators = (props) => {
     <div>
       {operator.map(xOperator =>{
         return(
-          <OperatorButton key={xOperator} text={xOperator} addOpp = {props.addOpp}/>
+          <OperatorButton key={xOperator.char} operator={xOperator} addOpp = {props.addOpp}/>
         )
       })}
     </div>
