@@ -8,11 +8,7 @@ const Operators = (props) => {
   const [operator, setOperator] = useState(operators)
   return (
     <div>
-      {operator.map(xOperator =>{
-        return(
-          <OperatorButton key={xOperator.char} operator={xOperator} addOpp = {props.addOpp}/>
-        )
-      })}
+      {operator.map(xOperator => <OperatorButton key={xOperator.char} pushOpp={props.pushOpp} operator={xOperator}/>)}
     </div>
   );
 };

@@ -2,9 +2,9 @@ import React from "react";
 
 
 const NumberButton = (props) => {
- 
+  console.log(props)
   return( 
-  <button className='numbButton'>{props.text}</button> );
+  <button onClick={()=> props.pushNumb(props.text)} className='numbButton'>{props.text}</button> );
 };
 
 export default NumberButton;

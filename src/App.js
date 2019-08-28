@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
@@ -8,7 +8,7 @@ import Logo from "./components/DisplayComponents/Logo";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
-import Display from "./components/DisplayComponents/Display"
+import Display from "./components/DisplayComponents/Display.js"
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -16,21 +16,42 @@ function App() {
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
-
+  const [displayAttr, setDisplayAttr] = useState("");
+  const addNumb = (number) => {
+    setDisplayAttr(displayAttr => displayAttr + number)
+  };
+  const addOpp = (operator) => {
+    if (operator === '='){
+      setDisplayAttr(displayAttr => eval(displayAttr))
+    } else{
+      setDisplayAttr(displayAttr => displayAttr + "" + operator + "")
+    }
+  }
+  const addSpecial = (special) => {
+    if (special === 'C'){
+      setDisplayAttr(() => setDisplayAttr(''))
+    }
+    if (special === '+/-'){
+      setDisplayAttr(displayAttr =>  "-" + displayAttr)
+    }else{
+      setDisplayAttr(displayAttr => displayAttr + special)
+    }
+    
+  } 
   return (
     <div className="container">
       <span className='logo'><Logo/></span>
       <div className="App">
         <div className='displayHolder'>
-          <Display/>
+          <Display value={displayAttr} notes={'hi'}/>
         </div>
         <div className='specialsAndNumbers'>
-          <Specials/>
-          <Numbers/>
+          <Specials pushSpecial={addSpecial}/>
+          <Numbers pushNumb={addNumb}/>
           <span></span> 
         </div>
         <div className='operatorHolder'>
-          <Operators/>
+          <Operators pushOpp={addOpp}/> 
         </div>
         
       </div>

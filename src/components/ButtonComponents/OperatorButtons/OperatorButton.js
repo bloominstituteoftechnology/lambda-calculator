@@ -1,9 +1,9 @@
 import React from "react";
 
 const OperatorButton = (props) => {
+  console.log(props)
   return (
-    <button className='oppButton'>
-    {props.operator.char}</button> 
+    <button onClick={() => props.pushOpp(props.operator.value)} className='oppButton'>{props.operator.char}</button> 
   );
 };
 

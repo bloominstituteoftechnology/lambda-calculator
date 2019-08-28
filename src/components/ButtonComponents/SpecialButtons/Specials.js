@@ -7,12 +7,10 @@ import { specials } from '../../../../src/data.js'
 
 
 const Specials = (props) => {
-
+  
   return (
     <div>
-      {specials.map(xSpecial => {
-        return <SpecialButton key={xSpecial} text={xSpecial} addSpecial = {props.addSpecial}/>
-      })}
+      {specials.map(xSpecial => <SpecialButton key={xSpecial} text={xSpecial} pushSpecial = {props.pushSpecial}/>)}
     </div>
   );
 };
