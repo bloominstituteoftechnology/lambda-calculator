@@ -27,6 +27,8 @@ const operators = [
     char: "=",
     value: "="
   }
-];
+]; 
 
 const specials = ["C", "+/-", "%"];
+
+export { numbers, operators, specials };
