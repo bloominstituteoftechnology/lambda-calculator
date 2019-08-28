@@ -13,7 +13,8 @@ const Operators = (props) => {
   return (
     <div>
       {operatorButtons.map((item) => {
-        return <OperatorButton className='OperatorButton' item={item} addOperator={props.addOperator} />
+        return <OperatorButton className='OperatorButton' item={item} 
+        addOperator={props.addOperator} />
       })}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass

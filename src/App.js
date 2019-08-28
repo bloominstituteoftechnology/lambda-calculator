@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.scss";
+import "./App.css";
 
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
@@ -26,7 +26,7 @@ function App() {
   //   if (operator === '=') {
   //     setDisplayValue(displayValue => eval(displayValue));
   //   } else {
-  //       setDisplayValue(displayValue => display Value + ' ' + operator + ' ')
+  //       setDisplayValue(displayValue => displayValue + ' ' + operator + ' ')
   //   }
   // }
 
@@ -34,12 +34,17 @@ function App() {
     <div className="container">
       <div className="App">
         <Logo />
-        <div className="Display"><Display number={displayValue} /></div> 
-        <div className="Specials"><Specials /></div>
-        <div className="Numbers"><Numbers addNumber={addNumber} /> </div>
-        <div className="Operators"><Operators /></div>
+        <div className="Display"><Display /> </div> 
 
-        {/* STEP 4 - Render (means<> </>) your components here and be sure to properly import/export all files */}
+          <div className="left-container">
+        <div className="Specials"><Specials /></div>
+          <Numbers addNumber={addNumber} /> 
+        </div>
+
+        <div className="Operators"><Operators /></div>
+       {/*  addOperator={addOperator} */}
+
+        {/* STEP 4 - Render (means<> </>) your components here and be sure to properly import/export all files. Must be in App.js. It's ike the body tag in HTML */}
         
         
         
