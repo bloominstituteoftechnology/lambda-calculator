@@ -17,16 +17,29 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [displayValue, setDisplayValue] = useState(0)
-  const addNumber = () => {
-    setDisplayValue(displayValue => displayValue +1 );
+  const addNumber = (number) => {
+    setDisplayValue(displayValue => displayValue + number )
+    
+  }
+
+  const contStyle = {
+    width: '400px',
+    backgroundColor: '#BB1233',
+    margin: '0 auto',
+    borderRadius: '5px',
+  };
+
+  const appStyle = {
+    display: 'flex',
+    flexDirection: 'column'
   }
   return (
-    <div className="container">
+    <div className="container" style={contStyle} >
       <Logo />
-      <div className="App">
+      <div className="App" >
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display number={15}/>
-        <Numbers />
+        <Display number={displayValue}/>
+        <Numbers addNumbers={ addNumber } />
         <Operators />
         <Specials />
       </div>
