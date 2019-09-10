@@ -1,8 +1,10 @@
 import React, {useState} from "react";
-import {numbers} from '../../../data';
+// import {numbers} from '../../../data';
 
-const NumberButton = () => {
-  const {number, saveNumber} = useState(numbers);
+
+
+const NumberButton = (props) => {
+  const {number, saveNumber} = props;
   return (
     <>
     <div>
