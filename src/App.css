@@ -43,7 +43,7 @@
     margin-top:10px;
 }
 
-.btn-number{
+.numbers .btn, .numbers .btn-lg{
     background-color: #174379;
 }
 
