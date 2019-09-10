@@ -9,6 +9,7 @@ import {numbers, operators, specials} from "../../data";
 const Display = () => {
   const [num,saveNum] = useState(numbers);
   const [ops, saveOps] = useState(operators);
+  const [spls, saveSpls] = useState(spls);
   
   // , ops, spls } = , operators, specials});
   return( 
