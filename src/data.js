@@ -1,3 +1,5 @@
+
+
 // STEP 1 - Get the modules here exported before building out your components
 // Don't worry about bringing all of these into the same file.
 // Export them as necessary and import each array into its appropriate
@@ -31,4 +33,6 @@ const operators = [
 
 const specials = ["C", "+/-", "%"];
 
-export default data;
+export {numbers};
+export {operators};
+export {specials};
