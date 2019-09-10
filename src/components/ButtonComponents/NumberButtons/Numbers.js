@@ -8,10 +8,12 @@ import NumberButton from "./NumberButton";
 export default function Numbers () {
   // STEP 2 - add the imported data to state
   const [numbersState] = useState(numbers);
+  console.log("numbas", useState());
+
   return (
-    <div>
+    <div className = "numbers-div">
       {numbersState.map((numbers, index) => (
-        <NumberButton key = {index} numbers = {numbers} />
+        <NumberButton key = {index} numbers={numbers} />
       ))}
     </div>
   );

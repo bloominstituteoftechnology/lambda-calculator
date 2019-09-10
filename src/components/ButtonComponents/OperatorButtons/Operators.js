@@ -10,9 +10,9 @@ export default function Operators () {
   // STEP 2 - add the imported data to state
   const [operatorsState] = useState(operators)
   return (
-<div>
-      {operatorsState.map((operators, index) => (
-        <OperatorButton key = {index} operators = {operators} />
+    <div className ="operators-div">
+      { operatorsState.map((operators, index) => (
+        <OperatorButton key = {index} operators={operators} />
       ))}
     </div>
   );

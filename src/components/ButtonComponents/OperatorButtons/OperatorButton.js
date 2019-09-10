@@ -3,13 +3,13 @@ import React from "react";
 const OperatorButton = (props) => {
   return (
     <>
-      <button className = "operator_button">
+      <button className="operator_button">
         <span role = "operator symbol" aria-label = "operator symbol">
-          {props.operators.char}
+        {props.operators.char}
         </span>
       </button>
     </>
-  );
+  )
 };
 
 
