@@ -62,3 +62,7 @@ button{
 .specialButton{
 
 }
+.zero{
+    border-radius:45%;
+    width:180px;
+}
