@@ -20,3 +20,17 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+  .numbers-container{
+      display:flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      width:50%;
+  }
+  .number-button{
+    display:flex;
+    border-radius: 10px;
+    width:33%;
+  
+
+  }
