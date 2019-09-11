@@ -12,10 +12,12 @@ const Numbers = () => {
   // STEP 2 - add the imported data to state
   return (
     <div>
-      {numbers.map((numbers) => {
-        return <button>{numbers}</button>
+      <div className="numbers-div">
+        {numbers.map((numbers) => {
+          return <button>{numbers}</button>
 
-      })}
+        })}
+      </div>
     </div>
   );
 };
