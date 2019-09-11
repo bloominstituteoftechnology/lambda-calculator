@@ -1,12 +1,12 @@
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 550px;
+    max-width: 380px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
-}
-.display {
+  }
+  .display {
     margin-top: 25px;
     height: 100px;
     width: 450px;
@@ -18,5 +18,90 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
+    font-size: 5rem;
+  }
+  
+  .numbersAndSpecial {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  
+  .App {
+    display: flex;
+  }
+  
+  .number-button {
+    border-radius: 70%;
+    height: 55px;
+    width: 55px;
+    background: blue;
+    color: white;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    border-style: solid;
+  }
+  
+  .operator-buttons {
+    border-radius: 70%;
+    height: 55px;
+    width: 55px;
+    background: rgb(135, 178, 235);
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px;
+    border-style: solid;
+    text-align: center;
+  }
+  
+  .specialss {
+    border-radius: 70%;
+    height: 55px;
+    width: 55px;
+    background: rgba(0, 153, 255, 0.548);
+    margin-right: 30px;
+    color: white;
+    border-style: solid;
+  }
+  
+  .operator-container {
+    width: 15%;
+    margin-right: 22px;
+    margin-top: 102px;
+  }
+  
+  .Special-Container {
+    width: 85%;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  
+  .NumberButton {
+    width: 85%;
+    margin-left: 30px;
+  }
+  
+  .DisplayComp {
+    border-radius: 90px;
+    height: 80px;
+    width: 100%;
+    background: black;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: right;
+    font-size: 36px;
+    border-style: solid;
+  }
+  
+  .zero-button {
+    border-radius: 90px;
+    height: 50px;
+    width: 60%;
+    background: black;
+    margin-right: 10px;
+    background: blue;
+    color: white;
+    font-size: 18px;
+    border-style: solid;
   }
