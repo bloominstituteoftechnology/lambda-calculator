@@ -19,7 +19,7 @@ const Specials = () => {
     
        {specState.map((specChar,index) => {
 
-        return <SpecialButton char={specChar} value={index}/>
+        return <SpecialButton char={specChar} key={index}/>
 
        })}
 

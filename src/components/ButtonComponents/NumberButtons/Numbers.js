@@ -13,16 +13,19 @@ const Numbers = () => {
   const [numState] = useState(data.numbers);
   console.log(numState);
 
-{/* STEP 3 - Use .map() to iterate over your array data and return a button
-       component matching the name on the provided file. Pass
-       it any props needed by the child   component*/}
 
   return (
     <div class="numbers-container">
     
        {numState.map((number,index) => {
+        if (number === '0' || number === '.'){
+          console.log("special number");
+        return <NumberButton className="button number-special" number={number} value={index}/>
+      } else {
+        console.log("normal number");
+        return <NumberButton className="button number-button" number={number} value={index}/>
 
-        return <NumberButton number={number} value={index}/>
+      }
 
        })}
 

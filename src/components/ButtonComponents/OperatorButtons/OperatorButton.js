@@ -5,7 +5,7 @@ export const OperatorButton = (props) => {
   return (
     <>
       <button>
-        {props.index}
+        {props.oper}
       </button>
     </>
   );

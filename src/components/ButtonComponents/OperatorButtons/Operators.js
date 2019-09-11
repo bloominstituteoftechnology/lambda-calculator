@@ -17,7 +17,7 @@ const Operators = () => {
   return (
     <div className="operators-container">
        {opState.map((oper,index) =>{
-        return <OperatorButton oper={oper} index={index}/>
+        return <OperatorButton oper={oper.char} index={index}/>
 
        })}
 
