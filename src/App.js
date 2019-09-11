@@ -5,7 +5,6 @@ import "./App.css";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
-import { numbers, operators, specials} from "./data";
 
 
 
