@@ -4,7 +4,7 @@ import SpecialButton from "./SpecialButton";
 export default function Specials() {
   const [ special, setSpecials ] = useState(specials);
   return (
-    <div>{special.map((special, index) =>(
+    <div className="specials">{special.map((special, index) =>(
       <SpecialButton key={index} special={special} />
     ))}</div>
   )

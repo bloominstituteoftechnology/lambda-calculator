@@ -4,7 +4,7 @@ import OperatorButton from "./OperatorButton";
 export default function Operators() {
   const [ currentOperator, setCurrentOperator ] = useState(operators);
   return (
-    <div>{currentOperator.map((operator, index) =>(
+    <div className="operators">{currentOperator.map((operator, index) =>(
       <OperatorButton key={index} operator={operator} />
     ))}</div>
   )

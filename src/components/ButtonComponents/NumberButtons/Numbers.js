@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { numbers } from '../../../data';
 import NumberButton from "./NumberButton";
 export default function Number() {
-  const [currentNumber, setCurrentNumber] = useState(numbers);
+  
   return (
-    <div>{currentNumber.map((number, index) =>(
-      <NumberButton key={index} number={number} />
-    ))}</div>
+    <div className="button-container">{numbers.map((number) =>(
+      <button className="buttons">{number}</button> 
+    ))}
+    </div>
   )
 }
 //import any components needed
