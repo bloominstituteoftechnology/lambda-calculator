@@ -1,9 +1,11 @@
 import React from "react";
+//import { numbers } from "../../../data";
 
-const NumberButton = () => {
+const NumberButton = (props) => {
+  //const { numM } = props;
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button>{props.numM}</button>
   );
 };
+
+export default NumberButton; 

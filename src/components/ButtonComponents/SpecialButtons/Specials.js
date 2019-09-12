@@ -1,4 +1,5 @@
 import React from "react";
+// import { specials } from "../../../data";
 
 //import any components needed
 
@@ -15,3 +16,5 @@ const Specials = () => {
     </div>
   );
 };
+
+export default Specials;
