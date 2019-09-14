@@ -27,6 +27,14 @@ function App() {
     return false;
   }
 
+  function maxDisplay (){
+    alert("Maximun keys Entered!, Use the Operators next else you'd loose your operation")
+  }
+
+  function maxDisplayExceeded (){
+    alert("Maximun keys Exceeded, Please restart operation.")
+  }
+
   function addCharacter(ch) {
     if(ch === "C") {
       resetdisplayCharacters();
@@ -36,6 +44,15 @@ function App() {
     if(isEqualToSignInDisplayCharacter(displayCharacters)) {
       resetdisplayCharacters();
       updateDisplayChar(ch)
+      return;
+    }
+
+    if(displayCharacters.length === 17){
+      maxDisplay();
+    }
+
+    if(displayCharacters.length === 19){
+      maxDisplayExceeded();
       return;
     }
 
@@ -49,7 +66,6 @@ function App() {
       updateDisplayChar(charaterToDisplay)
       return;
     }
-
 
     let charaterToDisplay = `${displayCharacters}${ch}`;
     updateDisplayChar(charaterToDisplay)
