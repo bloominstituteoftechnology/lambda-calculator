@@ -6,7 +6,7 @@ import { numbers } from '../../../data';
 //Import your array data to from the provided data file
 import NumberButton from './NumberButton';
 
-const Numbers = () => {
+const Numbers = ({addCharacter}) => {
   // STEP 2 - add the imported data to state
   return (
     <div className="numbers">
@@ -16,7 +16,7 @@ const Numbers = () => {
 
        {
 
-         numbers.map(character  => <NumberButton character={character} />)
+         numbers.map(character  => <NumberButton key={character} addCharacter={()=>addCharacter(character)} character={character} />)
 
        }
 

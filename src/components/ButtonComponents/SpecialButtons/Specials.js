@@ -4,7 +4,7 @@ import SpecialButton from './SpecialButton';
 
 //import any components needed
 
-const Specials = () => {
+const Specials = ({addCharacter}) => {
   // STEP 2 - add the imported data to state
 
   return (
@@ -13,7 +13,7 @@ const Specials = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
        {
-         specials.map(character => <SpecialButton character={character} />)
+         specials.map(character => <SpecialButton key={character} addCharacter={()=>addCharacter(character)} character={character} />)
        }
     </div>
   );

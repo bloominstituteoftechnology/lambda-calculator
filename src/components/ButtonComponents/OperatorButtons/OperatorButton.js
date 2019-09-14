@@ -1,5 +1,5 @@
 import React from "react";
 
-const OperatorButton = ({character}) => <button className="btn btn-operator">{character}</button> ;
+const OperatorButton = ({character, addCharacter}) => <button  onClick={addCharacter} className="btn btn-operator">{character}</button> ;
 
 export default OperatorButton;
