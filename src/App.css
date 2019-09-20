@@ -50,7 +50,7 @@ div.operators {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 22.3px;
+  margin-bottom: 21.5px;
 }
 
 div.operators button {
@@ -87,7 +87,7 @@ div.specials button {
 
 div.numbers button {
   background-color: #103c78;
-  flex-basis: 24.88%;
+  flex-basis: 24.874%;
   margin-right: 2px;
   margin-bottom: 20px;
 }
