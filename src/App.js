@@ -26,7 +26,7 @@ function App() {
         <Display display={display} />
         <div className="buttons">
           <div className="left-block">
-            <Specials />
+            <Specials setDisplay={setDisplay} display={display} />
             <Numbers setDisplay={setDisplay} display={display} />
           </div>
           <div className="right-block">
