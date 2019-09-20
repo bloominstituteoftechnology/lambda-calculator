@@ -5,7 +5,7 @@ import OperatorButton from "./OperatorButton";
 
 //Import your array data to from the provided data file
 import { operators } from "../../../data";
-console.log("operators", operators);
+
 const Operators = () => {
   // STEP 2 - add the imported data to state
   const [operatorState, setOperatorState] = useState(operators);
@@ -16,7 +16,7 @@ const Operators = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/
       operators.map(operator => {
-        return <OperatorButton operator={operator} />;
+        return <OperatorButton key={operator.char} operator={operator} />;
       })}
     </div>
   );
