@@ -34,20 +34,42 @@ div.left-block {
   flex-direction: column;
 }
 
-div.specials {
+div.specials,
+div.numbers {
   display: flex;
   justify-content: space-between;
+}
+
+div.specials {
+  margin-bottom: 15px;
+}
+
+div.numbers {
+  flex-wrap: wrap;
 }
 
 button {
   color: white;
   border: 0;
   font-size: 20px;
-}
-
-div.specials button {
   width: 86px;
   border-radius: 50%;
   height: 86px;
+  cursor: pointer;
+}
+
+div.specials button {
   background-color: #1f61b1;
+}
+
+div.numbers button {
+  background-color: #103c78;
+  flex-basis: 24.88%;
+  margin-right: 2px;
+  margin-bottom: 20px;
+}
+
+div.numbers button.zero {
+  flex-basis: 61.86%;
+  border-radius: 20px;
 }
