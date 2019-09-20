@@ -23,6 +23,11 @@
   margin-right: auto;
 }
 
+div.logo-container {
+  margin-top: 30px;
+  margin-left: 28px;
+}
+
 div.buttons {
   width: 494px;
   margin: 30px auto;
