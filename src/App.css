@@ -1,15 +1,25 @@
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 550px;
+    max-width: 450px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    justify-content: center;
 }
+
+.logo{
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    width: 50%;
+}
+
+
 .display {
     margin-top: 25px;
     height: 100px;
-    width: 450px;
+    width: 400px;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -17,6 +27,62 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 8%;
+    padding-right: 0%;
     font-size: 5.0rem;
+    margin:0 auto;
   }
+.btn{
+    width: 70px;
+    height: 70px;
+    background-color: #227293;
+    border-radius: 50%;
+    color: white;
+    font-size: 2em;
+    box-shadow: 1px 4px black;
+    border: 1px solid #227293;
+    margin-right:20px;
+    margin-top:10px;
+}
+
+.numbers .btn, .numbers .btn-lg{
+    background-color: #174379;
+}
+
+.btn-special{
+    background-color: #215c9e;
+}
+
+.btn-div{
+    color: black;
+}
+
+.btn-lg{
+    height: 70px;
+    width: 160px;
+    border-radius: 40px;
+    background-color: #227293;
+    color: white;
+    font-size: 2em;
+    box-shadow: 1px 4px black;
+    border: 1px solid #227293;
+    margin-right:20px;
+    margin-top:10px;
+    flex-grow:4;
+
+}
+
+.buttonContainer{
+    display:flex;
+    /* width: 100px;
+    height: 100px;
+    border-radius:50%;*/
+    justify-content: space-between;
+    
+
+} 
+
+.App{
+    width: 400px;
+    margin:0 auto;
+}
+
