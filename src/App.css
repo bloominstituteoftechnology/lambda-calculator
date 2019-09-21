@@ -1,3 +1,6 @@
+body {
+  box-sizing: border-box;
+}
 .container {
     background-color: #c00025;
     width: 100%;
@@ -19,4 +22,24 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+  }
+
+  .specials-container {
+   display:flex;
+   width:70%;
+   justify-content:space-around;
+   margin:1% 1%;
+
+  }
+
+  .special-button {
+
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border:1px solid steelblue;
+    font-size: 1.5rem;
+    color:white;
+    background-color: steelblue;
+    box-shadow: 1px 5px black;
   }
