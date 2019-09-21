@@ -19,4 +19,44 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+}
+.buttons {
+    border: 1px solid blue;
+    width: 350px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.specials {
+    display: flex;
+    justify-content: space-around;
+}
+.numbers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.operators {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.button {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    font-size: 2em;
+    color: ivory;
+}
+.number-button{
+    background-color: navy;
+}
+.special-button{
+    background-color: blue;
+}
+.operator-button{
+    background-color: royalblue;
+}
+.numbers button:nth-child(10) {
+    border-radius: 50px;
+    width: 150px;
+}
