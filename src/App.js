@@ -71,6 +71,7 @@ function App() {
   }
 
   const handleOperator = (event) => {
+    let operand = event.target.innerText;
     setOperator(event.target.value);
     let num1 = display.join('').toString();
     let num2 = display.join('').toString();
@@ -83,13 +84,13 @@ function App() {
         setNumber(0);
         setDisplay([]); 
         setHistory(history.push(num1));
-        setHistory(history.push( event.target.innerText));
+        setHistory(history.push( operand));
         setHistory(history);
         console.log('history', history);
       }
     } 
 
-    if (operator && event.target.innerText === '=') {
+    if (operator && operand === '=') {
       // setDisplay([]);
       setHistory(history.push(num2));
       setHistory(history);
