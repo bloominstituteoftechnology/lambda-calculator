@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { numbers } from '../../../data';
 
 //import any components needed
@@ -8,19 +8,41 @@ import { numbers } from '../../../data'
 */
 //Import your array data to from the provided data file
 
-const Numbers = () => {
+const Numbers = (props) => {
   // STEP 2 - add the imported data to state
-  const [number, setNumber] = useState(numbers);
+  // const [number, setNumber] = useState(numbers);
+  // const handleNumbers = (event) => {
+  //   console.log(event.target.innerText);
+  //   setNumber(event.target.innerText);
+
+  //   return number;
+  // }
+
+  console.log('numbers', props)
+
   return (
-    <div style={{width: '300px', justifyContent: 'center' }} >
+    <div style={ { justifyContent: 'center', width: '100%' }} >
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
        {numbers.map( (number, index) => {
          if (index === 9) {
-           return <button key={index} id="zero" className="buttons numbers">{number}</button>
+           return <button 
+                          key={index} 
+                          id="zero" 
+                          className="buttons numbers" 
+                          onClick={props.handleNumbers}
+                  >
+                    {number}
+                  </button>
          }
-          return <button key={index} className="buttons numbers">{number}</button>
+          return  <button 
+                    key={index} 
+                    className="buttons numbers" 
+                    onClick={props.handleNumbers}
+                  >
+                    {number}
+                  </button>
        })}
     </div>
   );

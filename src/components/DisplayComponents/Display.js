@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Display = (props) => {
-  const [display, setDisplay] = useState(0);
-  const { numbers } = props;
-  
-  return <div className="display">{display}</div>;
+
+  console.log('display', props)
+
+
+  return <div className="display" onChange={props.handleDisplay()}>{props.display}</div>;
 };
 export default Display;

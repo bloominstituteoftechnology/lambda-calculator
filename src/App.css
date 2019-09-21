@@ -1,6 +1,6 @@
 .container {
     background-color: #c00025;
-    width: 100%;
+    /* width: 30%; */
     max-width: 550px;
     margin: 40px auto;
     border-radius: 15px;
@@ -11,7 +11,7 @@
 .display {
     margin: 25px auto;
     height: 100px;
-    width: 450px;
+    width: 80%;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -24,23 +24,25 @@
 }
 
 .btn-container {
-    width: 400px;
+    width: 72%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .buttons {
     margin: 10px;   
     border-radius: 50%;
     border: none;
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     outline: none;
     cursor: pointer;
-    font-size: 22px;
-    box-shadow: 4px 4px 8px #322c2d;
+    font-size: 32px;
+    box-shadow: -4px 4px 8px #322c2d;
+
 }
+
 
 .numbers {
     background: blue;
@@ -48,10 +50,10 @@
 }
 
 #zero {
-    width: 180px;
+    width: 11.2rem;
     border-radius: 50px;
 }
-    
+
 .operators {
     background: dodgerblue;
     color: #fff;
@@ -60,4 +62,26 @@
 .specials {
     background:#3F3FBF;
     color: #fff;
+}
+
+
+@media (max-width: 500px) {
+
+    .display {
+        height: 50px;
+        font-size: 2.7rem;
+    }
+
+    .btn-container {
+        width: 80%;
+    }
+    .buttons {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    #zero {
+        width: 7.2rem;
+    }
 }
