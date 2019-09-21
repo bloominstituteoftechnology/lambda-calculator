@@ -19,7 +19,7 @@ const Numbers = (props) => {
        {numberState.map((number, index) => {
        return <NumberButton 
               key={index} 
-              symbol={number}
+              number={number}
               setDisplayResult={props.setDisplayResult}
               displayResult={props.displayResult} /> 
         })}

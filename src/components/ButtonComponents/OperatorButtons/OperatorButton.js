@@ -1,11 +1,24 @@
 import React from "react";
+const OperatorButton = (props) => {
+  function updateValue() {
+    if (props.symbol !== '=') {
+      console.log(props.displayResult);
+      return props.setDisplayResult(props.displayResult+props.value);
+    }
+    else {
+      console.log(props.displayResult);
+      let result = props.displayResult;
+      let result2 = eval(result);
+      console.log("result:"+result2);
+      let resultString = result2.toString();
 
-const OperatorButton = () => {
+    return  props.setDisplayResult(resultString);
+       
+    }
+  }
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button className="operator-button" onClick={() => updateValue()}>{props.symbol}</button>
   );
 };
 
-export default OperatorButton;
+export default OperatorButton
