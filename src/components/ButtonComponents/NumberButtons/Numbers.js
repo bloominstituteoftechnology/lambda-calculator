@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //import any components needed
 // example of import from data.js. Note all the ../   This is how we move through folders. 
@@ -12,10 +12,14 @@ import { NumberButton } from './NumberButton.js'
 export const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   const [numberState, setNumberState] = useState(numbers);
-  
-  const numberButtons = numbers.map(numberArray => (
-    <NumberButton dataNumbers={numberArray}
-    setNumberState={setNumberState} />
+  console.log(numberState);
+
+  const numberButtons = numberState.map(number => (
+    <NumberButton number1={number} 
+    key={number}
+
+    />
+
   ));
 
   return (
