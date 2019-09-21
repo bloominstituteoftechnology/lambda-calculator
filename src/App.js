@@ -13,34 +13,82 @@ import Logo from "./components/DisplayComponents/Logo";
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
   const [number, setNumber] = useState(0);
-  const [display, setDisplay] = useState(number);
-  const [special, setSpecial] = useState(0);
+  const [display, setDisplay] = useState([]);
+  const [decimal, setDecimal] = useState(false);
+  const [percent, setPercent] = useState(false);
+  const [operator, setOperator] = useState('');
+  const [history, setHistory] = useState('');
+  // const [special, setSpecial] = useState(0);
+  const [amount, setAmount] = useState([]);
   // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const handleNumbers = (event) => {
-    console.log(event.target.innerText);
-    setNumber(event.target.innerText);
-
+    if (event.target.innerText === '.') {
+      setDecimal(true);
+    } 
+    if (decimal && event.target.innerText === '.') {
+      return null;
+    } else {
+      setNumber(event.target.value);
+    }
   }
 
   const handleSpecials = (event) => {
-    console.log(event)
     if (event.target.innerText === 'C') {
+      setDisplay([]);
       setNumber(0);
+      setHistory('');
+      setDecimal(false);
+      setPercent(false);
     }
+
     if (event.target.innerText === '+/-') {
-      setNumber(number * -1);
+      let opposite = display.join('');
+      setDisplay([])
+      setNumber(opposite * -1)
     }
+
     if (event.target.innerText === '%') {
-      setNumber( number * .01)
+      if (percent) {
+        return null;
+      } else {
+        setDisplay([]);
+        setNumber( number * .01)
+        setPercent(true);
+      }
     }
-    
   }
 
   const handleDisplay = (event) => {
-    setDisplay( number)
+    display.push(number.toString());
+
+    if (display.length > 1 && display[0] === "0") {
+      display.shift();
+    }
+    setDisplay(display);
+  }
+
+  const handleOperator = (event) => {
+    setOperator(event.target.innerText);
+    let num1 = display.join().toString();
+    let num2 = display.join('').toString();
+
+    if (history === '') {
+      setNumber(0);
+      setDisplay([]); 
+      setHistory(`${num1} ${operator}`);
+      console.log('num1', num1);
+      console.log(operator);
+      console.log('history', history);
+    }
+    if (event.target.innerText === "=") {
+      console.log('num2', num2);
+      console.log('calculating...');
+      setHistory(history + num2);
+    }
+
   }
 
   return (
@@ -54,11 +102,11 @@ function App() {
           />
           <div className="btn-container">
             <div className="nums-specials">
-              <Specials handleSpecials={handleSpecials}/>
-              <Numbers handleNumbers={handleNumbers}/>
+              <Specials handleSpecials={handleSpecials} />
+              <Numbers handleNumbers={handleNumbers} />
             </div>
             <div>
-              <Operators  />
+              <Operators handleOperator={handleOperator} />
             </div>
           </div>
       </div>
