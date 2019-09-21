@@ -17,7 +17,7 @@ function App() {
   const [decimal, setDecimal] = useState(false);
   const [percent, setPercent] = useState(false);
   const [operator, setOperator] = useState('');
-  const [history, setHistory] = useState('');
+  const [history, setHistory] = useState([]);
   // const [special, setSpecial] = useState(0);
   const [amount, setAmount] = useState([]);
   // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
@@ -46,7 +46,7 @@ function App() {
 
     if (event.target.innerText === '+/-') {
       let opposite = display.join('');
-      setDisplay([])
+      setDisplay([]);
       setNumber(opposite * -1)
     }
 
@@ -71,23 +71,59 @@ function App() {
   }
 
   const handleOperator = (event) => {
-    setOperator(event.target.innerText);
-    let num1 = display.join().toString();
+    setOperator(event.target.value);
+    let num1 = display.join('').toString();
     let num2 = display.join('').toString();
+    
+    if (history.length === 0) {
+      if (num1 === []) {
+        return null;
+      } else {
+        setDecimal(false);
+        setNumber(0);
+        setDisplay([]); 
+        setHistory(history.push(num1));
+        setHistory(history.push( event.target.innerText));
+        setHistory(history);
+        console.log('history', history);
+      }
+    } 
 
-    if (history === '') {
-      setNumber(0);
-      setDisplay([]); 
-      setHistory(`${num1} ${operator}`);
-      console.log('num1', num1);
-      console.log(operator);
-      console.log('history', history);
-    }
-    if (event.target.innerText === "=") {
-      console.log('num2', num2);
+    if (operator && event.target.innerText === '=') {
+      // setDisplay([]);
+      setHistory(history.push(num2));
+      setHistory(history);
       console.log('calculating...');
-      setHistory(history + num2);
+      
+      // setNumber(0); // set number to result of calculation
+      if (history[1] === '+') {
+        let answer = ( Number(history[0]) + Number(history[2]));
+        setDisplay([]);
+        setNumber(answer);
+      }
+
+      if (history[1] === '-') {
+        let answer = ( Number(history[0]) - Number(history[2]));
+        setDisplay([]);
+        setNumber(answer);
+      }
+
+      if (history[1] === 'x') {
+        let answer = ( Number(history[0]) * Number(history[2]));
+        setDisplay([]);
+        setNumber(answer);
+      }
+      
+      if (history[1] === '/') {
+        let answer = ( Number(history[0]) / Number(history[2]));
+        setDisplay([]);
+        setNumber(answer);
+      }
+
     }
+    console.log('history', history);
+    
+    
 
   }
 
