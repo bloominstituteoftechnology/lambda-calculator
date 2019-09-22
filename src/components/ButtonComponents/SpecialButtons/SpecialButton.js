@@ -6,6 +6,7 @@ export const SpecialButton = (props) => {
   return (
     <button
     onClick={() => {}}
+    className="spl-btn"
     >
       <p>{props.special1}</p>
       {/* Display a button element rendering the data being passed down from the parent container on props */}

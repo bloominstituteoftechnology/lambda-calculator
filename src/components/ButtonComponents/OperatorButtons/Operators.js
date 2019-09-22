@@ -18,7 +18,7 @@ export const Operators = (props) => {
   ));
   
   return (
-    <div>
+    <div className="operatorBox" >
       {operatorButtons}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass

@@ -17,14 +17,14 @@ export const Numbers = (props) => {
   const numberButtons = numberState.map(number => (
     <NumberButton number1={number} 
     key={number}
-
+    
     />
 
   ));
 
   return (
-    <div>
-      {numberButtons};
+    <div className="numbersBox">
+      {numberButtons}
       {  /* STEP 3 - Use .map() to iterate over your array data and return a button
       component matching the name on the provided file. Pass
        it any props needed by the child component*/}

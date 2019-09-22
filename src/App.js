@@ -21,14 +21,26 @@ function App() {
 
   return (
     <div className="container">
+      <div className="logo-div">
       <Logo />
+      </div>
+      <div className="display-box">
+          <div >
+            <input className="display"
+             name="display" type="text" placeholder="0"></input>
+          </div>
+    
+      </div>
       <div className="App">
-       <div>
+      <div className="bigBox">
+       <div className="firstBox">
        <Specials/>
         <Numbers/>
         </div>
-        <Operators/>
-       
+        <div className="secondBox" >
+        < Operators/>
+        </div>
+        </div>
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
     </div>
