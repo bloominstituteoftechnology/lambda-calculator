@@ -22,10 +22,10 @@
 }
 .buttons {
     border: 1px solid blue;
-    width: 350px;
+    width: 320px;
     display: flex;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-between;
 }
 .specials {
     display: flex;
@@ -58,5 +58,5 @@
 }
 .numbers button:nth-child(10) {
     border-radius: 50px;
-    width: 150px;
+    width: 170px;
 }
