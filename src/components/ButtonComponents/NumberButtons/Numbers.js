@@ -13,12 +13,12 @@ const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   const [numberState] = useState(numbers)
   return (
-    <div>
+    <div className='numbers-container'>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
        {numberState.map((number, indexe) => {
-         return <NumberButton key={index} number={number} setDisplayResult={props.setDisplayResult} displayResult={props.displayResult} />
+         return <NumberButton  number={number} setDisplayResult={props.setDisplayResult} displayResult={props.displayResult} />
        })}
     </div>
   );
