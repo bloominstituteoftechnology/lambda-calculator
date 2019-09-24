@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function SpecialButton(props) {
+const SpecialButton = (props) => {
   return (
     <>
       <button key={props.key}>{props.special}</button>
     </>
   );
 };
+export default SpecialButton;
