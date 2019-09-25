@@ -15,9 +15,9 @@
     margin: 200px auto;
 }
 .display {
-    margin-top: 25px auto;
-    height: 80px;
-    width: 80%;
+    margin-top: 25px;
+    height: 100px;
+    width: 450px;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;

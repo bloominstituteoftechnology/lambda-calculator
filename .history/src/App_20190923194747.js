@@ -20,12 +20,9 @@ function App() {
   return (
     <div className="container">
       <Logo />
-      <Display />
       <div className="App">
-        <div className="app-row">
         <Numbers />
         <Specials />
-        </div>
         <Operators />
       </div>
     </div>
