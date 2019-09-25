@@ -1,0 +1,93 @@
+.container{
+    background: red;
+    width: max-content;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .top{
+        display: flex;
+        flex-direction: column;
+
+        .display{
+            width: 90%;
+            height: 75px;
+            margin: 10px auto;
+            border-radius: 50px;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            background: black;
+            font-size: 50px;
+        }
+    }
+
+    .App{
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-template-areas: 'C other percent div' 'one two three mult' 'four five six minus' 'seven eight nine plus' 'zero zero period equals';
+
+        .C{
+            grid-area: C;
+        }
+
+        .other{
+            grid-area: other;
+        }
+
+        .percent{
+            grid-area: percent;
+        }
+
+        .one{
+            grid-area: one;
+        }
+
+        .two{
+            grid-area: two;
+        }
+
+        .three{
+            grid-area: three;
+        }
+
+        .four{
+            grid-area: four;
+        }
+
+        .five{
+            grid-area: five;
+        }
+
+        .six{
+            grid-area: six;
+        }
+
+        .seven{
+            grid-area: seven;
+        }
+
+        .eight{
+            grid-area: eight;
+        }
+
+        .nine{
+            grid-area: nine;
+        }
+
+        .zero{
+            grid-area: zero;
+        }
+
+        .period{
+            grid-area: period;
+        }
+
+    }
+
+}

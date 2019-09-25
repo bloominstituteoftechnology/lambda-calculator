@@ -1,9 +1,10 @@
-import React, { useState}  from "react";
+import React from "react";
 import "./App.css";
+import "./index.css";
+import Numbers from './components/ButtonComponents/NumberButtons/Numbers'
+import Operators from './components/ButtonComponents/OperatorButtons/Operators'
+import Specials from './components/ButtonComponents/SpecialButtons/Specials'
 
-import { Numbers } from "./data";
-import { Operators } from "./data";
-import { Specials } from "./data";
  
 
 // STEP 4 - import the button and display components
@@ -11,11 +12,10 @@ import { Specials } from "./data";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
+import Display from './components/DisplayComponents/Display';
 
 function App() {
-  const [numberState, setNumberState] = useState(Numbers)
-  const [operatorState, setOperatorState] = useState(Operators)
-  const [specialState, setSpecialState] = useState(Specials)
+ 
 
 
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -27,9 +27,13 @@ function App() {
   return (
     <div className="container">
       <Logo />
+      <div className = 'display'><Display /></div>
       <div className="App">
         {/* STEP 3 - Render your components here and be sure to properly import/export all files */}
-        
+        <Numbers />
+        <Operators />
+        <Specials />
+
         
       </div>
     </div>
