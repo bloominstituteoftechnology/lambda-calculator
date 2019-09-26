@@ -1,22 +1,105 @@
-.container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+.special-buttons {
+    border: 2px solid red;
 }
-.display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
+
+
+.numbers-container-2 {
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    flex-wrap: wrap;
+
+}
+
+.operators-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.special-buttons-container {
+    margin-left: 35px;
+    margin-top: 50px;
+    display: flex;
+
+}
+
+
+.App {
+    display: flex;
+    background-color: #bb1233;
+    width: 350px;
+    padding: 10px;
+    height: 520px;
+    border-radius: 15px;
+
+}
+
+.special-btn {
+    background-color: #2061b0;
+
+}
+
+.number-btn {
+    background-color: #113c78;
+
+}
+
+.operator-btn {
+    background-color: #3db5e5;
+
+
+}
+
+.btn {
     color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 8px 6px -6px black;
+    margin: 2px;
+}
+
+.app-container {
+    margin: 0;
+    padding: 0;
+}
+
+.enter {
+
+    color: white;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+    font-size: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+
+}
+
+.container-enter {
+    width: 350px;
+    height: 50px;
+    background-color:  #2d2829;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.container-sp-num {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bigger-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 100px;
+}
