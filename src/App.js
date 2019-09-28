@@ -17,7 +17,7 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
-  const [display, setDisplay] = useState('');
+  const [display, setDisplay] = useState('0');
   const [amount, setAmount] = useState(undefined);
   const [operator, setOperator] = useState(undefined);
 
@@ -41,8 +41,6 @@ function App() {
 
   function specialButtonClick(itemData) {
     const amt = amount ? amount : Number(display);
-
-
     if (itemData === 'C') {
       setAmount(() => undefined);
       setDisplay(() => '');

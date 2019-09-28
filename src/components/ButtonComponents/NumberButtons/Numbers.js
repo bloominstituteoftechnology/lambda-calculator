@@ -12,7 +12,8 @@ import { numbers } from '../../../data'
 
 const Numbers = (props) => {
   // STEP 2 - add the imported data to state
-  const [ourNumbers, setNumbers] = useState(numbers);
+  const [ourNumbers] = useState(numbers);
+  //eslint-disable-next-line
   const numbersMapped = ourNumbers.map(elements => <NumberButton data={elements} />);
 
   return (

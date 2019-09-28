@@ -6,7 +6,8 @@ import SpecialButton from './SpecialButton';
 //Import your array data to from the provided data file
 const Specials = (props) => {
   // STEP 2 - add the imported data to state
-  const [ourSpecials, setSpecials] = useState(specials);
+  const [ourSpecials] = useState(specials);
+  //eslint-disable-next-line
   const specialsMapped = ourSpecials.map(elements => elements);
 
   return (
