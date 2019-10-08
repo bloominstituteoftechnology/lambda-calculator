@@ -19,4 +19,16 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+}
+
+button .numbersButton{
+    background: #be9c38;
+    color: #fff;
+    margin: 0.2rem;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 2px solid #be9c38;
+    border-radius: 2px;
+    transition: all 0.2s ease-in;
+}
