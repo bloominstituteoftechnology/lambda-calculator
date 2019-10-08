@@ -23,9 +23,9 @@ In this project you will build out a calculator using React. You have been given
 This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
 
 - [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] CD into the project base directory `cd lambda-calculator`
+- [x] Add your team lead as collaborator on Github.
+- [x] Clone your OWN version of the repository in your terminal
+- [x] CD into the project base directory `cd lambda-calculator`
 - [ ] Download project dependencies by running one of these two commands `yarn` or `npm install`
 - [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
@@ -54,9 +54,9 @@ Using the design file, build out your User Interface. Before you start, look thr
 
 **STEP 1**
 
-- You have been given a Data.js file that contains some arrays.
+- You have been given a Data.js file that contains some arrays. ok
 - Find a way to bring (import) the data into the necessary files, but do not change the data.
-- Data should be imported into the wrapper components (`Numbers`, `Operators`, and `Specials`)
+- Data should be imported into the wrapper components (numbers, `Operators`, and `Specials`)
 
 **Step 2**
 Add the data to state like this:

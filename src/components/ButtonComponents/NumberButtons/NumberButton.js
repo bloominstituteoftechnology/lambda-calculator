@@ -1,4 +1,6 @@
 import React from "react";
+import { numbers } from "../../../data.js";
+import { useState } from "react";
 
 const NumberButton = () => {
   return (
