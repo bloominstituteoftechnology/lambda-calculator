@@ -15,17 +15,13 @@ function App() {
 
   const [numberDisplay, setNumberDisplay] = useState(0);
 
-  const displayNumber = () => {
-    console.log("works");
-  };
-
   return (
     <div className="container">
       <Logo />
       <Display numberDisplay={numberDisplay} />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Numbers />
+        <Numbers setNumberDisplay={setNumberDisplay} />
         <Specials />
         <Operators />
       </div>
