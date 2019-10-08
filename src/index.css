@@ -10,3 +10,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.myNumbers {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.numButt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
