@@ -1,22 +1,85 @@
-.container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
-}
-.display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
-    color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
+body {
+    box-sizing: border-box;
   }
+  .container {
+      background-color: #c00025;
+      width: 100%;
+      max-width: 550px;
+      height: 710px;
+      border-radius: 15px;
+      border: 2px solid grey;
+      padding-bottom: 25px;
+      position:relative;
+  }
+  .display {
+      margin-top: 25px;
+  @@ -20,3 +25,69 @@
+      padding-right: 8%;
+      font-size: 5.0rem;
+    }
+  
+    .specials-container {
+     display:flex;
+     width:70%;
+     justify-content:space-around;
+     margin:2% 1%;
+  
+    }
+  
+    .special-button {
+  
+      width:100px;
+      height:100px;
+      border-radius: 50%;
+      border:1px solid steelblue;
+      font-size: 1.5rem;
+      color:white;
+      background-color: steelblue;
+      box-shadow: 1px 5px black;
+    }
+  
+    .numbers-container {
+      display:flex;
+      flex-wrap: wrap;
+      width:70%;
+      justify-content:space-around;
+      margin:1% 1%;
+      position:relative;
+    }
+    .number-button {
+      width:100px;
+      height:100px;
+      border-radius: 50%;
+      border:1px solid darkblue;
+      font-size: 1.5rem;
+      color:white;
+      background-color: darkblue;
+      box-shadow: 1px 5px black;
+      margin-top: 2%;
+    }
+  
+    .zero-button {
+      width:220px;
+      border-radius:50px;
+    }
+  
+    .operator-button {
+      width:100px;
+      height:100px;
+      border-radius: 50%;
+      border:1px solid teal;
+      font-size: 2rem;
+      color:white;
+      background-color: teal;
+      box-shadow: 1px 5px black;
+      margin-bottom: 10px;
+    }
+    .operators-container {
+      display:flex;
+      flex-direction: column;
+      width:25%;
+  
+      position:absolute;
+      top:180px;
+      left:400px;
+    }
