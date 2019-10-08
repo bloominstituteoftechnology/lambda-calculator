@@ -1,9 +1,18 @@
 import React from "react";
 
-const NumberButton = () => {
+const NumberButton = props => {
+  let button;
+
+  if(props.number !== '0'){
+    button = <button className="button darkblue" onClick={ () => props.fnc(props.number)}>{props.number}</button>;
+  } else {
+    button = <button className="bigbutton darkblue" onClick={ () => props.fnc(props.number)}>{props.number}</button>;
+  }
   return (
     <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
+      {button}
     </>
   );
 };
+
+export default NumberButton;
