@@ -9,7 +9,6 @@
 .display {
   margin-top: 25px;
   height: 100px;
-  width: 450px;
   border-radius: 50px;
   color: white;
   background-color: #322c2d;
@@ -28,4 +27,48 @@
   align-content: center;
   flex-wrap: wrap;
   width: 100%;
+}
+
+button {
+  display: flex;
+  border-radius: 20px;
+  background-color: #322c2d;
+  color: #fff;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #322c2d;
+}
+
+.numberButtonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.numberButtonContainer button {
+  width: 40%;
+  margin: 1% 0;
+}
+
+.specialButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10%;
+  align-items: center;
+}
+
+.operatorButtonContainer {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  justify-content: space-between;
+  align-items: center;
 }
