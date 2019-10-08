@@ -1,6 +1,6 @@
 .container {
     background-color: #c00025;
-    width: 100%;
+    width: 380px;
     max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
@@ -8,8 +8,8 @@
 }
 .display {
     margin-top: 25px;
-    height: 100px;
-    width: 450px;
+    height: 80px;
+    width: 300px;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -17,18 +17,18 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 8%;
+    padding-left: 12%;
     font-size: 5.0rem;
 }
 
-/* button .numbersButton{
-    background: #be9c38;
+button {
+    background: #3f66c9;
     color: #fff;
     margin: 0.2rem;
     padding: 10px;
     font-size: 16px;
     text-transform: uppercase;
-    border: 2px solid #be9c38;
-    border-radius: 2px;
+    border: 2px solid grey;
+    border-radius: 45px;
     transition: all 0.2s ease-in;
-} */
+}
