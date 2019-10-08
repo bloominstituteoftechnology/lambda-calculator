@@ -16,8 +16,27 @@ code {
   justify-content: flex-start;
 }
 
+button {
+  border: none;
+  justify-content: center;
+}
+
 .numButt {
+
+   display:flex;
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   border: none;
+   background: blue;
+   color: white;
+}
+
+.numbersContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  width: 80%;
 }

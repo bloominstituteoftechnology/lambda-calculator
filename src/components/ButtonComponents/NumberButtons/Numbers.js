@@ -12,7 +12,7 @@ const Numbers = () => {
   const [numbersArr, setNumbersArr] = useState(numbers);
   // STEP 2 - add the imported data to state
   return (
-    <div>
+    <div className = 'numbersContainer'>
       <div className = 'myNumbers'/>
         {numbersArr.map((number, index) => (
           <NumberButton key = {index} number = {number}/>
