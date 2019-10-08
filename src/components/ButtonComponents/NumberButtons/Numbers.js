@@ -1,4 +1,5 @@
 import React from "react";
+import { numbers } from '../../../data';
 
 //import any components needed
 // example of import from data.js. Note all the ../   This is how we move through folders. 
