@@ -1,0 +1,22 @@
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    margin: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.number-btn {
+    background: #113C78;
+}
+
+.special-btn {
+    background: #2061B0;
+}
+
+.operation-btn {
+    background: #3EB5E5;
+}
