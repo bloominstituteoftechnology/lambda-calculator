@@ -5,7 +5,7 @@ const SpecialButton = (props) => {
     <button  onClick={() => props.specials()}>
       {/* Display a button element rendering the data being passed down from the parent container on props */
       
-      props.buttonValue}
+      props.result}
     </button>
   );
 };

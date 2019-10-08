@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "./App.css";
 
 // STEP 4 - import the button and display components
@@ -20,17 +20,22 @@ function App() {
 
   // const [value, setValue]= useState(0);
 
-  // const values = () =>{
+  // const result = () =>{
   //   setValue (value => value +1);
   // }
 
   return (
     <div className="container">
+     
       <Logo />
+      <div className="bar ">
+
+      </div>
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Numbers />
+        
         <Operators />
+        <Numbers />
         <Specials />
       </div>
     </div>

@@ -5,6 +5,9 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+
+
+   
 }
 .display {
     margin-top: 25px;
@@ -20,3 +23,26 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+  
+
+
+.bar {
+  border: 1px solid rgb(80, 74, 74);
+  border-radius: 20px;
+  background-color: #322c2d;
+  height: 10vh;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+.App{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 5%;
+
+}
+
+
+
