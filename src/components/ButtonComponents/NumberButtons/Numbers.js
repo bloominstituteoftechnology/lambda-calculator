@@ -14,7 +14,11 @@ const Numbers = props => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {numberButtons.map((button, index) => (
-        <NumberButton key={index} button={button} />
+        <NumberButton
+          key={index}
+          button={button}
+          setNumber={() => console.log({ index })}
+        />
       ))}
     </div>
   );

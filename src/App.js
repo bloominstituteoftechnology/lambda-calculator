@@ -15,6 +15,10 @@ function App() {
 
   const [numberDisplay, setNumberDisplay] = useState(0);
 
+  const displayNumber = () => {
+    console.log("works");
+  };
+
   return (
     <div className="container">
       <Logo />
