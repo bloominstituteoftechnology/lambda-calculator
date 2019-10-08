@@ -4,7 +4,8 @@
     max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
-    padding-bottom: 25px;
+    padding: 25px;
+    margin: auto;
 }
 .display {
     margin-top: 25px;
