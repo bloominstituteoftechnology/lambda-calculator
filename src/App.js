@@ -5,12 +5,12 @@ import "./App.css";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
-import DisplayComponents from "./components/DisplayComponents/Display";
-import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton";
-import SpecialButton from "./components/ButtonComponents/SpecialButtons/SpecialButton";
-import OperatorButton from "./components/ButtonComponents/OperatorButtons/OperatorButton";
 
-
+import Display from "./components/DisplayComponents/Display";
+import Numbers from "./components/ButtonComponents/NumberButtons/NumberButton";
+import Specials from "./components/ButtonComponents/SpecialButtons/SpecialButton";
+import Operators from "./components/ButtonComponents/OperatorButtons/OperatorButton";
+import { reset } from "ansi-colors";
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -18,10 +18,52 @@ function App() {
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
+const [calc, setCalc] = useState('error');
+const onClick = button => {
+  if (calc === 'error'){
+    console.log('error before click');
+    setCalc("");
+  }
+  if (button === "=") {
+    calculate();
+  } else (button === "+/-") {
+    if (calc.charAt(0)=== "-") {
+      setCalc(calc.substr(1));
+    } else {
+      setCalc("-" + calc);
+    }
+  } else (button === "C") {
+    reset();
+  }
+  else {
+    setCalc(calc + button);
+  }
+};
+
+const calculate = () => {
+  let checkResult = "";
+  checkResult = calc;
+  checkResult = checkResult.replace("-", "+");
+
+  let {
+    setCalc(eval(checkResult) || "0");
+  } catch(e) {
+    setCalc("error");
+  }
+};
+
+const reset = () => {
+  console.log("reset");
+  setCalc("");
+};
+
+console.log(calc);
 
   return (
     <div className="container">
       <Logo />
+      <Display myCalc={calc} />
+
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
