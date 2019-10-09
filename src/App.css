@@ -11,7 +11,6 @@
     border-radius: 50%;
     color:#fff;
     margin:5px;
-    border:2px solid #FFF4;
 }
 
 .bigbutton{
@@ -20,30 +19,29 @@
     border-radius: 40px;
     color:#fff;
     margin:5px;
-    border:2px solid #FFF4;
 }
 
 .lightblue{
-    background-color:#00758B;
+    background-color:#237293;
 }
 
 .mediumblue{
-    background-color:#0C5D9E;
+    background-color:#225d9e;
 }
 
 .darkblue{
-    background-color:#014885;
+    background-color:#184379;
 }
 
 .container{
     display:flex;
     flex-direction: column;
-    background-color:#AE1E39;
+    background-color:#a81d36;
     width: 260px;
     padding:10px 10px;
-    border-radius: 10px;
-    border: 2px solid #FFF5;
     margin:0 auto;
+    border-radius:5%;
+
 }
 
 
@@ -59,6 +57,7 @@
 }
 
 .logo{
+    margin: 5%;
     width:60px;
 }
 
@@ -67,13 +66,13 @@
     align-items:center;
     justify-content: flex-end;
     background-color:#323335;
-    width:100%;
+    margin: 0% 4%;
+    width:92%;
     height:60px;
     border-radius:80px;
     padding:0 10px;
     color:#fff;
     font-size:40px;
-    overflow:hidden;
 }
 .specials{
     width:180px;

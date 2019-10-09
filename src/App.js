@@ -25,29 +25,32 @@ function App() {
   const numberHandler = value => {
     setInputState(inputState => {
       inputState = inputState + value;
-      console.log(inputState);
       return inputState;
     });
   };
 
   const solveEquation = () => {
-    dataStorage.forEach( () =>{
-      if(dataStorage.includes('x')){
-        console.log('Handle Multiplication');
-      }
-      
-      if(dataStorage.includes('/')){
-        console.log('Handle Division')
-      }
+    if(dataStorage.includes('x')){
+      console.log('Handle Multiplication');
+      console.log(dataStorage);
+      setInputState(() => Number(dataStorage[0]) * Number(dataStorage[2]))
+    }
+    
+    if(dataStorage.includes('/')){
+      console.log('Handle Division')
+      setInputState(() => Number(dataStorage[0]) / Number(dataStorage[2]))
+    }
 
-      if(dataStorage.includes('+')){
-        console.log('Handle Addition');
-      }
+    if(dataStorage.includes('+')){
+      console.log('Handle Addition');
+      setInputState(() => Number(dataStorage[0]) + Number(dataStorage[2]))
+    }
 
-      if(dataStorage.includes('-')){
-        console.log('Handle Subtraction');
-      }
-    });
+    if(dataStorage.includes('-')){
+      console.log('Handle Subtraction');
+      setInputState(() => Number(dataStorage[0]) - Number(dataStorage[2]))
+    }
+    setDataStorage(() => []);
   };
 
   const clear = () => {
@@ -56,9 +59,13 @@ function App() {
 
   const specialHandler = value => {
     if (value === "C") {
+      setDataStorage(() => [])
       clear();
     } else if (value === '+/-') {
       setInputState(() => inputState*-1)
+    } else if (value === '%') {
+      //this is where we will do our percentage.  First need to save value.
+      setInputState(() => inputState)
     }
   };
 
@@ -77,9 +84,13 @@ function App() {
     clear();
 
     if (value === "=") {
+      dataStorage.push(inputState);
       solveEquation();
+      console.log('this is data', dataStorage);
+      console.log('this is input', inputState);
     }
   };
+  
 
   return (
     <div className="container">
