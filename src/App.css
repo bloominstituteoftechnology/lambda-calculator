@@ -6,6 +6,7 @@
     border: 2px solid grey;
     padding-bottom: 25px;
 }
+
 .display {
     margin-top: 25px;
     height: 100px;
@@ -18,5 +19,9 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
-  }
+    font-size: 5rem;
+}
+
+.logo-container {
+    margin: 10px;
+}
