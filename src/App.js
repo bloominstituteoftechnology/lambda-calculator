@@ -14,15 +14,19 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
   const [numberDisplay, setNumberDisplay] = useState(0);
+  const [operatorDisplay, setOperatorDisplay] = useState("");
 
   return (
     <div className="container">
       <Logo />
-      <Display numberDisplay={numberDisplay} />
+      <Display
+        numberDisplay={numberDisplay}
+        operatorDisplay={operatorDisplay}
+      />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Specials />
-        <Operators />
+        <Operators setOperatorDisplay={setOperatorDisplay} />
         <Numbers setNumberDisplay={setNumberDisplay} />
       </div>
     </div>
