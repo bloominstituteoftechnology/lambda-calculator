@@ -5,9 +5,7 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
-    
-  
-   
+
 }
 
 
@@ -19,21 +17,14 @@
     color: white;
     background-color: #322c2d;
     box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+    margin-left: 25px;
+    
   }
   
 
-.App{
-  display:flex;
-  flex-direction: column;
-  margin-left: 5%;
-  
 
-}
 
 
 button {
@@ -47,56 +38,68 @@ button {
   font-size: 1.8rem;
   box-shadow: 0px 5px 0px rgb(37, 37, 39);
   border:none;
-  display:flex;
   
 }
 
 .numbers-btn{
-  height:90px;
-  width: 90px;
+  height:70px;
+  width: 70px;
   border-radius: 50%;
   display: inline-block;
   margin: 5%;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: row2-start;
-  grid-row-end: 5;
+
 }
 
 .operators-btn{
-  height:90px;
-  width: 90px;
+  height:70px;
+  width: 70px;
   border-radius: 50%;
-  display: inline-block;
-  margin: 5%;
-  grid-area: 1 / col4-start / last-line / 6;
+  margin-top:8%;
+  margin-bottom: 25%;
+  padding-top: 2%;
 
 
 }
 
 .specials-btn{
   grid-area: top;
-  height:90px;
-  width: 90px;
+  height:70px;
+  width: 70px;
   border-radius: 50%;
   display: inline-block;
   margin: 5%;
+ margin-bottom:0%;
 
 }
 
 .btns-grid {
+
   display: grid;
-  justify-content: space-between;
-  grid-template-columns: 80px 80px 80px 80px;
-  grid-template-rows: 80px 80px;
-  grid-template-areas: 
-  "header header header header" 
-  "main main main main main" 
-  "main main main main main" 
-  "main main main main main" 
-  "footer  footer footer";
- 
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 0fr 29fr 0fr 8fr;
+    grid-template-areas:
+        "top top top side"
+        "main main main side"
+        "main main main side"
+        "main main main side"
+        "footer footer footer side";
 }
 
 
 
+.numbers-grid{
+  grid-area: main;
+  
+}
+
+.specials-grid{
+  grid-area: top;
+}
+.Operator-grid{
+  grid-area: side;
+
+
+
+
+}

@@ -55,8 +55,10 @@ function App() {
         <Display  />
 
         <div className="btns-grid">
-        <Specials />
         <Operators />
+         
+        <Specials />
+   
         <Numbers />
         </div>
        

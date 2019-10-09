@@ -12,7 +12,7 @@ import OperatorButton from "./OperatorButton";
 
 
   return (
-    <div className = "Operator-btn">
+    <div className = "Operator-grid">
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/
