@@ -9,6 +9,7 @@ import Logo from "./components/DisplayComponents/Logo";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers"
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators"
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials"
+import Display from "./components/DisplayComponents/Display";
 
 
 function App() {
@@ -18,27 +19,53 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
-  // const [value, setValue]= useState(0);
+  // const [count,setCount]= useState(0);
+  // const [display, setDisplay] = useState(0)
 
-  // const result = () =>{
-  //   setValue (value => value +1);
+  // const resetNumber = () => {
+  //   setCount(0);
+  // };
+ 
+  // const addNumber = () => {
+  //   setDisplay(display => display +1 );
   // }
+
+  // const multiplyNumber = () => {
+  //   setCount(count => count * {Numbers});
+  // };
+  // const subtractNumber = () => {
+  //   setCount(count => count - {Numbers});
+  // };
+
+  // const divideNumber = () => {
+  //   setCount(count => count / {Numbers});
+  // };
+
+
+
 
   return (
     <div className="container">
      
       <Logo />
-      <div className="bar ">
-
-      </div>
+      
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         
+        <Display  />
+
+        <div className="btns-grid">
+        <Specials />
         <Operators />
         <Numbers />
-        <Specials />
+        </div>
+       
       </div>
+    
+     
     </div>
+
+    
   );
 }
 

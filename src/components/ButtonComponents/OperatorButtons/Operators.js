@@ -10,7 +10,7 @@ import OperatorButton from "./OperatorButton";
   // STEP 2 - add the imported data to state
   const [buttons] = useState(operators);
 
-console.log("test",operators, buttons)
+
   return (
     <div className = "Operator-btn">
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
@@ -18,7 +18,7 @@ console.log("test",operators, buttons)
        it any props needed by the child component*/
        buttons.map((button,index) => (
       
-        <OperatorButton key={index} result={(button.char)} value ={(button.value)}/>
+        <OperatorButton key={index} result={(button.char)} value ={(button.value)} />
        
       ))}
 
