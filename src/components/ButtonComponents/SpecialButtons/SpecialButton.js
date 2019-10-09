@@ -7,7 +7,7 @@ const SpecialButton = props => {
 
       <button className=" button_Specials">
 
-      {/* <span role= 'special button' aria-label = 'special button'></span> */}
+      <span role= 'special button' aria-label = 'special button'></span>
       {props.button}
 
 </button>
