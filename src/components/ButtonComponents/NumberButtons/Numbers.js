@@ -8,14 +8,14 @@ import { numbers } from '../../../data'
 */
 //Import your array data to from the provided data file
 
-const Numbers = () => {
+const Numbers = (props) => {
   const [numbersArr, setNumbersArr] = useState(numbers);
   // STEP 2 - add the imported data to state
   return (
     <div className = 'numbersContainer'>
       <div className = 'myNumbers'/>
         {numbersArr.map((number, index) => (
-          <NumberButton key = {index} number = {number}/>
+          <NumberButton key = {index} number = {number} setScreen = {props.setScreen}/>
         ))}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass

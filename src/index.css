@@ -14,6 +14,7 @@ code {
 .myNumbers {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 button {
@@ -37,7 +38,17 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
+  padding-top: 2%;
   width: 80%;
   height: 50%;
+  margin: 0 auto;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 20%;
+  margin: 0 auto;
+  background: grey;
 }
