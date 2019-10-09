@@ -5,8 +5,9 @@ const NumberButton = props => {
     <>
       {/* Display a button element rendering the data being passed down from the parent container on props */}
 
-      <button className="buttonNumber">
-      {props.data.numbers}
+      <button className="button" onClick={()=> props.setValue(props.button)}>
+      <span role ='number' aria-label ='number'></span>
+      {props.button}
       </button>
     </>
   );

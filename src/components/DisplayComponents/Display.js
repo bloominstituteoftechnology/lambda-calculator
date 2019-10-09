@@ -1,9 +1,17 @@
-import React from "react";
+// import React from "react";
+import React, {useState} from 'react';
+import Numbers from '../ButtonComponents/NumberButtons/Numbers';
 
-const Display = () => {
-  return <div className="display">{
+const Display = props => {
+
+  return <div className="display"> {props.value}
     
     
     
-    /* Display any props data here */}</div>;
+    
+    
+    
+    </div>;
 };
+
+export default Display;
