@@ -1,15 +1,20 @@
 import React, {useState} from "react";
-import {OperatorButton} from '../OperatorButtons';
+//import {OperatorButton} from '../OperatorButtons';
 //import {OperatorButton} from '../../../data';
-import { tsPropertySignature } from "@babel/types";
+//import { tsPropertySignature } from "@babel/types";
 
-//const OperatorButton = props => {
+const OperatorButton = (props) => {
   console.log(props);
   return (
-    <button>
-    <span>{props.button.value}</span>
+    <div className = "button-container">
+    <button className='button'>
+
+    <span>{props.button}</span>
       {/* Display a button element rendering the data being passed down from the parent container on props */}
     </button>
+  
+  </div>
   );
+};
 
-//export OperatorButton;
+export default OperatorButton;

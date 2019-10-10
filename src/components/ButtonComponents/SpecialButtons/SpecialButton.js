@@ -1,15 +1,15 @@
 import React, {useState} from "react";
-import {SpecialButton} from '../SpecialButton';
+//import {SpecialButton} from '../SpecialButton';
 //import {SpecialButton} from '../../../data';
-import { tsPropertySignature } from "@babel/types";
+//import { tsPropertySignature } from "@babel/types";
 
-//const SpecialButton = props => {
+const SpecialButton = (props) => {
   return (
-    <button>
-    <span>{props.button.value}</span>
-
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
+    <div className ="button-container">
+      <button className="button">
+      {props.button}
     </button>
+    </div>
   );
-
-//export SpecialButton;
+};
+export default SpecialButton;
