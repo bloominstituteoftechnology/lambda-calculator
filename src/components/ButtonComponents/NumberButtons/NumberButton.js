@@ -1,4 +1,6 @@
 import React from "react";
+import { numubers } from '../../../data';
+
 
 const NumberButton = () => {
   return (
