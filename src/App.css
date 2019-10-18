@@ -1,10 +1,11 @@
 .container {
-    background-color: #c00025;
+    background-color: #BA1233;
     width: 100%;
     max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    
 }
 .display {
     margin-top: 25px;
@@ -14,9 +15,55 @@
     color: white;
     background-color: #322c2d;
     box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex; */
+    /* justify-content: flex-end;
+    jus */
     align-items: flex-end;
-    padding-right: 8%;
+    /* padding-right: 8%; */
     font-size: 5.0rem;
+  }
+
+  .App{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+  }
+  button {
+    background: #1F60B0;
+    color: #fff;
+    margin: 0.2rem;
+    padding: 10px;
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    text-transform: uppercase;
+    border: 1px solid #8f8182;
+    border-radius: 50%;
+    transition: all 0.2s ease-in; 
+
+  }
+
+  button:hover {
+    background: #fff;
+    color: #282c34;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+
+  .sectionLogo{
+    padding-top:20px;
+    padding-left:35px;
+  }
+
+  .sectionDisplay{
+      padding-left: 40px;
+  }
+
+  .specials{
+      display: flex;
+      flex-direction: row;
+      /* display: inline; */
+      display: inline-block;
+    /* background: blue; */
   }
