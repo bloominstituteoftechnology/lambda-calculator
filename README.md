@@ -124,3 +124,4 @@ Do not attempt stretch problems until MVP has been reached and a final commit ha
 - Finish styling all of the buttons and get your calculator to closely resemble the given design spec. 
 - Add some icons to improve the operator characters aesthetics. Research any icon/font library and implement it into your project.
 - Convert your CSS styling to use Sass/Scss
+pull request initial
