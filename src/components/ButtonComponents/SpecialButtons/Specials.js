@@ -1,6 +1,4 @@
 import React,  { useState } from "react";
-//import SpecialButton from './SpecialButton'
-// import NumberButton from '../NumberButtons/NumberButton'
 import ButtonMaker from '../ButtonMaker'
 import { specials } from '../../../data'
 
@@ -16,7 +14,7 @@ const Specials = () => {
     <div>
       {
         button.map((value, index) => {
-          return <ButtonMaker
+          return <ButtonMaker onClick={console.log('i was clicked Specials Button')}
               key={index}
               buttonLabel={value}
             />

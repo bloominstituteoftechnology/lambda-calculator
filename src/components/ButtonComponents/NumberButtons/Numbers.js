@@ -8,7 +8,8 @@ import { numbers } from '../../../data'
 */
 //Import your array data to from the provided data file
 
-const Numbers = () => {
+const Numbers = (props) => {
+  console.log(`Numbers Console.log`, props)
   // STEP 2 - add the imported data to state
   const [number, setNumber] = useState(numbers);
   console.log(`Numbers: Data from state`, number)
@@ -20,6 +21,7 @@ const Numbers = () => {
            return <ButtonMaker 
               key={`${number} ${index}`} 
               buttonLabel={number}
+              displayChanger={props.displayChanger}
               />
          })
        }
