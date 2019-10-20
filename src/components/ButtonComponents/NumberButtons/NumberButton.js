@@ -1,21 +1,12 @@
 import React from "react";
 
-const NumberButton = (number, props) => {
+const NumberButton = (number, onClickNumber) => {
   function fn() {
-    var currentNumber = "";
-
-    if (props.number !== "0") {
-      currentNumber = props.number;
-    }
-
-    const newNumber = currentNumber + number;
-    props.setNumber(newNumber);
+    onClickNumber(number)
   }
 
   return (
-    <button className="button" key={number} onClick={fn}>{number}
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </button>
+    <button className="button" key={number} onClick={fn}>{number}</button>
   );
 };
 

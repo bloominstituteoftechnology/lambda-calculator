@@ -2,8 +2,9 @@
   width: 460px;
   height: 700px;
   border: 3px solid  rgb(34, 30 ,31);
-  border-radius: 5px;
-  background-color: rgb(171, 0 ,39);
+  border-radius: 20px;
+  background-color:black;
+  margin: 0 auto;
 }
 
 .logo {
@@ -14,7 +15,7 @@
 
 .displayContainer {
     margin: 20px;
-    background-color: rgb(34, 30 ,31);
+    background-color: black;
     border-radius: 50px;
     height: 100px;
     display: flex;
@@ -34,6 +35,10 @@
     display: flex;
     flex-direction: row;
     /* padding: 20px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .buttonContainer {
@@ -69,7 +74,7 @@
 }
 
 .button {
-    background-color: rgb(16, 43, 101);
+    background-color: rgb(38, 38, 38);
     color: white;
     font-size: 30px;
     border-radius: 50%;
@@ -82,9 +87,9 @@
 }
 
 .button.operator {
-    background-color: rgb(52, 165, 222);    
+    background-color:rgb(252, 130, 10);    
 }
 
 .special {
-    background-color: rgb(26, 75, 160);
+    background-color: rgb(149, 149, 149);
 }
