@@ -23,6 +23,7 @@ function App() {
 
   const changeData = (input) =>{
     setData(input);
+    
   }
 
   return (
@@ -30,7 +31,7 @@ function App() {
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display data ={total}/>
+        <Display data ={data}/>
         <Numbers changeData ={changeData}/>
         <Operators changeData ={changeData}/>
         <Specials changeData ={changeData}/>
