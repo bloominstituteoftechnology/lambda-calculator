@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import ButtonMaker from '../ButtonMaker'
 import { operators } from '../../../data'
 
+// displayChanger_TypeObject={props.value.value}
+
 //import any components needed
 
 //Import your array data to from the provided data file
 
-const Operators = () => {
+const Operators = (props) => {
   const [operator, setOperator] = useState(operators)
-  console.log(`Operators: Data from State`, operator)
+  //console.log(`Operators: Data from State`, operator)
   // STEP 2 - add the imported data to state
   return (
     <div>
@@ -20,6 +22,7 @@ const Operators = () => {
            return <ButtonMaker 
             key={`${value} ${index}`}
             buttonLabel={value.value}
+
             />
          })
        }

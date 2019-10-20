@@ -6,7 +6,7 @@ import { specials } from '../../../data'
 
 //Import your array data to from the provided data file
 
-const Specials = () => {
+const Specials = (props) => {
   // STEP 2 - add the imported data to state
   const [button, setButton] = useState(specials)
   console.log(`Specials: Data from state`, button)
@@ -14,9 +14,10 @@ const Specials = () => {
     <div>
       {
         button.map((value, index) => {
-          return <ButtonMaker onClick={console.log('i was clicked Specials Button')}
+          return <ButtonMaker
               key={index}
               buttonLabel={value}
+              displayChanger={props.displayChanger}
             />
         })
       }
