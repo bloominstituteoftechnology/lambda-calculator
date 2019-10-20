@@ -1,22 +1,52 @@
 .container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+  background-color: #c00025;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  padding-bottom: 25px;
 }
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
+  margin-top: 25px;
+  height: 100px;
+  width: 450px;
+  border-radius: 50px;
+  color: white;
+  background-color: #322c2d;
+  box-shadow: 1px 1px #322c2d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 8%;
+  font-size: 5rem;
+}
+
+.number-buttons {
+    border-radius: 50%;
+    background: blue;
     color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+    height: 70px;
+    width: 70px;
+    font-size: 1.8rem;
+    margin: 10px;
+}
+
+.operator-buttons {
+    border-radius: 50%;
+    background: teal;
+    color: white;
+    height: 70px;
+    width: 70px;
+    font-size: 1.8rem;
+    margin: 10px;
+}
+
+.special-buttons {
+    border-radius: 50%;
+    background: lightblue;
+    color: white;
+    height: 70px;
+    width: 70px;
+    font-size: 1.8rem;
+    margin: 10px;
+}
