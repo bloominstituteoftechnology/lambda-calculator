@@ -4,8 +4,10 @@
     max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
-    padding-bottom: 25px;
+    padding: 25px;
 }
+
+
 .display {
     margin-top: 25px;
     height: 100px;
@@ -19,4 +21,42 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+    }
+
+.allButtons {
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftButtons {
+    max-width: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.rightButtons {
+    max-width: 20%;
+}
+
+.button {
+    color: white;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    font-size: 1.7rem;
+}
+
+.operatorButtons {
+    background-color: #5fd1e3;
+    
+}
+
+.numberButtons {
+    background: #14589c;
+}
+
+.specialButtons {
+    background: #3581cc;
+}
+
