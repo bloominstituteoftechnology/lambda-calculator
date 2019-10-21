@@ -30,7 +30,7 @@ function App() {
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Display copy={displayData}/>
         <Numbers displayChanger={setDisplayData}/>
-        <Operators displayChanger_typeObject={setDisplayData}/>
+        <Operators displayChanger={setDisplayData}/>
         <Specials displayChanger={setDisplayData}/>
         
       </div>

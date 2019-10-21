@@ -1,7 +1,8 @@
 import React from "react";
 
+
 function ButtonMaker(props) {
-    // console.log(`ButtonMaker Log`, props)
+    console.log(`ButtonMaker Log`, props)
   return (
     <>
       <button
@@ -15,8 +16,15 @@ function ButtonMaker(props) {
 export default ButtonMaker;
 
 
-// onClick={() => props.displayChanger(props.buttonLabel)}
+// {
+//   props.displayChanger ? (
+//     <button
+//       onClick={() => props.displayChanger(props.buttonLabel)}>
+//       {props.buttonLabel}
+//     </button> 
+//   ) : (
+//     onClick={() => props.displayChanger(props.buttonLabel)}>
+//     {props.buttonLabel}
+//   )
+// }
 
-// onClick={props.displayChanger ? 
-//     props.displayChanger(props.buttonLabel):
-//     console.log(false)}>

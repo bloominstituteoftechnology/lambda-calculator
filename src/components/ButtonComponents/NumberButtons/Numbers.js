@@ -7,12 +7,11 @@ import ButtonMaker from '../ButtonMaker'
 import { numbers } from '../../../data' 
 */
 //Import your array data to from the provided data file
-
 const Numbers = (props) => {
-  console.log(`Numbers Console.log`, props)
+  // console.log(`Numbers Console.log`, props)
   // STEP 2 - add the imported data to state
   const [number, setNumber] = useState(numbers);
-  console.log(`Numbers: Data from state`, number)
+  // console.log(`Numbers: Data from state`, number)
   
   return (
     <div>
