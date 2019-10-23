@@ -12,11 +12,11 @@ import { numbers } from '../../../data'
 const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   const[num] = useState(numbers);
-  console.log(num);
+  //console.log(num);
 
-  const handlerNumber = (trey) => {
-    console.log(trey)
-    props.setState(trey);
+  const handlerNumber = (number) => {
+    //console.log(number)
+    props.setState(number)
   }
 
   return (

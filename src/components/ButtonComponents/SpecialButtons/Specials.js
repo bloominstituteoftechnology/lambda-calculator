@@ -5,14 +5,20 @@ import SpecialButton from './SpecialButton'
 
 //Import your array data to from the provided data file
 
-const Specials = () => {
+const Specials = (props) => {
   // STEP 2 - add the imported data to state
   const [spec] = useState(specials);
-  console.log(spec);
+  //console.log(spec);
+
+  const handlerSpecial = (special) => {
+    //console.log(special);
+    props.setState(special);
+  }
+
   return (
     <div>
        {spec.map((spec, index) => (
-        <SpecialButton key={index} special={spec} />
+        <SpecialButton handlerSpecial={handlerSpecial} key={index} special={spec} />
       ))}
     </div>
   );

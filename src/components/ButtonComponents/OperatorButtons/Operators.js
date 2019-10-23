@@ -5,16 +5,21 @@ import OperatorButton from './OperatorButton'
 
 //Import your array data to from the provided data file
 
-const Operators = () => {
+const Operators = (props) => {
   // STEP 2 - add the imported data to state
   const [ops] = useState(operators);
-  console.log(ops);
+  //console.log(ops);
+
+  const handlerOperator = (operator) => {
+    //console.log(operator);
+    props.setState(operator);
+  }
+
   return (
     <div>
       {ops.map((op, index) => {
-       return <OperatorButton key={index} operator={op} />
+       return <OperatorButton handlerOperator={handlerOperator} key={index} operator={op} />
       })}
-      
     </div>
   );
 };
