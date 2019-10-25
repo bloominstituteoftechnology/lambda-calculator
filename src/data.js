@@ -29,4 +29,6 @@ export const operators = [
   }
 ];
 
+export default numbers; 
+
 export const specials = ['C', '+/-', '%'];
