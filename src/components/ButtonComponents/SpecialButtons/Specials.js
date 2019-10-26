@@ -9,7 +9,8 @@ import { specials } from "../../../data.js";
 const Specials = props => {
   // STEP 2 - add the imported data to state
   const [especial, setEspecial] = useState(specials);
-  console.log(specials);
+  console.log(especial);
+  setEspecial(specials);
   return (
     <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
@@ -24,4 +25,4 @@ const Specials = props => {
   );
 };
 
-export default SpecialButton;
+export default Specials;
