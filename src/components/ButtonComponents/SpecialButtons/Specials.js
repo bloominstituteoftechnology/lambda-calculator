@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import SpecialButton from "./SpecialButton";
 import { specials } from "../../../data.js";
 
@@ -10,7 +10,12 @@ const Specials = props => {
   // STEP 2 - add the imported data to state
   const [especial, setEspecial] = useState(specials);
   console.log(especial);
-  setEspecial(specials);
+  
+  useEffect(() => {
+    setEspecial(specials);
+    // STEP 2 - add the imported data to state
+  }, [])
+
   return (
     <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
