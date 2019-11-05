@@ -14,7 +14,7 @@ const Numbers = () => {
   // STEP 2 - add the imported data to state
   return (
     <div>
-      <div className="numbers-containter">
+      <div className="numbers">
       {numberState.map((number, index) => (
         <NumberButton key={index} button={number} />
       ))}

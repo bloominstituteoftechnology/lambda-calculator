@@ -11,7 +11,7 @@ const Specials = () => {
   const [specialState] = useState(specials)
   return (
     <div>
-      <div className="specials-containter">
+      <div className="specials">
       {specialState.map((number, index) => (
         <SpecialButton key={index} button={number} />
       ))}

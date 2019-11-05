@@ -10,7 +10,7 @@ const Operators = () => {
   const [operatorState] = useState(operators)
   return (
     <div>
-            <div className="numbers-containter">
+      <div className="operators">
       {operatorState.map((number, index) => (
         <OperatorButton key={index} button={number} />
       ))}
