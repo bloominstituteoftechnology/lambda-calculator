@@ -1,5 +1,6 @@
-import React from "react";
-import {NumberButton} from "./NumberButton"
+import React, {useState} from "react";
+import NumberButton from "./NumberButton"
+
 //import any components needed
 // example of import from data.js. Note all the ../   This is how we move through folders. 
 
@@ -28,3 +29,5 @@ const Numbers = () => {
   
        )
       }
+
+      export default Numbers;
