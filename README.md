@@ -16,28 +16,7 @@ Commit your code regularly and meaningfully. This helps both you and your team l
 
 In this project you will build out a calculator using React. You have been given a design file to follow, and a data file to include for your button components to display.
 
-## Project Set Up
 
----
-
-This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
-
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] CD into the project base directory `cd lambda-calculator`
-- [ ] Download project dependencies by running one of these two commands `yarn` or `npm install`
-- [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-      Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
-
-Follow these steps for completing your project.
-
-- [ ] Submit a Pull-Request to merge Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
 
 # _Project - Lambda Calculator_
 
@@ -52,21 +31,25 @@ Follow these steps for completing your project.
 
 Using the design file, build out your User Interface. Before you start, look through the app structure to see what components you have to work with, then you'll start by following the steps below.
 
-**STEP 1**
+
+### Task #1
 
 - You have been given a Data.js file that contains some arrays.
 - Find a way to bring (import) the data into the necessary files, but do not change the data.
 - Data should be imported into the wrapper components (`Numbers`, `Operators`, and `Specials`)
 
-**Step 2**
-Add the data to state like this:
+```javascript
+import { numbers } from "../../../data";
+import { operators } from "../../../data";
+import { specials } from "../../../data";
+```
 
-```js
-import { numbers } from '../path/to/data';
+### Task #2
+Add the data to ```state```.
 
-...
-
-
+```javascript
+const [operatorState, setOperatorState] = useState(operators);
+const [specialState, setSpecialState] = useState(specials);
 const [numberState, setNumberState] = useState(numbers);
 ```
 
