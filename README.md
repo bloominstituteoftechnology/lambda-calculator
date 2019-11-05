@@ -6,7 +6,7 @@ In this module project you will build your very own calculator app. You have bee
 
 ---
 
-Read these instructions carefully. Understand exactly what is expected before starting this project.
+Read these instructions carefully Understand exactly what is expected before starting this project.
 
 ## Commits
 
