@@ -29,9 +29,12 @@ function App() {
             <Display value = {displayValue}/>
           </div>
           <div>
+            <Operators/>
             <Numbers/>
             <Specials/>
-            <Operators/>
+          </div>
+          <div>
+
           </div>
       </div>
     </div>
