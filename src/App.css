@@ -1,4 +1,9 @@
+body {
+    background-color: #322c2d;
+}
+
 .container {
+    margin: 0 auto;
     background-color: #c00025;
     width: 100%;
     max-width: 470px;
@@ -71,6 +76,12 @@
     /* width: 20%; */
     flex-wrap: wrap;
 }
+
+.button0{
+    width:190px;
+    border-radius:50px;
+}
+
 
 button{
     background-color: #003c76;

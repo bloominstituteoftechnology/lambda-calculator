@@ -3,8 +3,7 @@ import React from "react";
 const NumberButton = (props) => {
   return (
     <div>
-    <button>{props.button}</button>
-      
+    <button className={`button${props.button}`} onClick={() => props.displayChanger(props.button)}>{props.button}</button>
     </div>
   );
 };
