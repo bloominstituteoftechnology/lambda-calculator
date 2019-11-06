@@ -23,7 +23,7 @@ function App() {
   const displayChanger = (number) => {
     if (number === "C"){
       setDisplayState ("")
-    }else if (number === "+" || number === "-" || number === "x" || number === "/"){
+    }else if (number === "x" || number === "/" || number === "+" || number === "-"){
       // Store current display into calcState, store which operation to complete in operState, clear screen
       setCalcState(Number(displayState))
       setOperState(number)
