@@ -1,6 +1,6 @@
 import React from "react";
 
-export const OperatorButton = (props) => {
+ const OperatorButton = (props) => {
   return (
     <>
     <button>
@@ -10,3 +10,4 @@ export const OperatorButton = (props) => {
     </>
   );
 };
+export default OperatorButton

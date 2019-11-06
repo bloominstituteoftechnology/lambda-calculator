@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {specials} from "../../../data"
-import {SpecialButton} from "../SpecialButtons/SpecialButton"
+import SpecialButton from "../SpecialButtons/SpecialButton"
 
 //import any components needed
 

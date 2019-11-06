@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SpecialButton = (props) => {
+ const SpecialButton = (props) => {
   return (
     <>
     <button>
@@ -10,3 +10,5 @@ export const SpecialButton = (props) => {
     </>
   );
 };
+
+export default SpecialButton
