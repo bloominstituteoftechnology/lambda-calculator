@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import {operators} from '../../../data';
+import OperatorButton from './OperatorButton';
 
 //import any components needed
 
@@ -7,11 +8,15 @@ import {operators} from '../../../data';
 
 const Operators = () => {
   // STEP 2 - add the imported data to state
+  const [operator, setOperator] = useState(operators);
+  
   return (
     <div>
-      {number.map((item, index) => (
+      {operator.map((item, index) => (
         <OperatorButton key={index} button={item.char}/>
       ))}
     </div>
   );
 };
+
+export default Operators;
