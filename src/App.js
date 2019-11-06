@@ -18,17 +18,28 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [displayState, setDisplayState] = useState("")
-  let [calcState, setCalcState] = useState(1)
+  const [calcState, setCalcState] = useState(1)
+  const [operState, setOperState] = useState("")
   const displayChanger = (number) => {
     if (number === "C"){
       setDisplayState ("")
-    }else if (number === "+"){
-      console.log (number, displayState)
-      setCalcState = (Number(displayState))
+    }else if (number === "+" || number === "-" || number === "x" || number === "/"){
+      // Store current display into calcState, store which operation to complete in operState, clear screen
+      setCalcState(Number(displayState))
+      setOperState(number)
       setDisplayState ("")
     }else if (number === "="){
-      console.log (calcState, displayState)
-      setDisplayState (displayValue => calcState + Number(displayValue))
+      // Calculator logic here
+      console.log (calcState, operState, displayState)
+      if (operState === "+"){
+        setDisplayState (displayValue => calcState + Number(displayValue))
+      }else if (operState === "-"){
+        setDisplayState (displayValue => calcState - Number(displayValue))
+      }else if (operState === "x"){
+        setDisplayState (displayValue => calcState * Number(displayValue))
+      }else if (operState === "/"){
+        setDisplayState (displayValue => calcState / Number(displayValue))
+      }
     }else {
       setDisplayState (displayValue => displayValue + number)
     }
