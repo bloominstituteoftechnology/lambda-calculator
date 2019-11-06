@@ -7,7 +7,7 @@
     padding-bottom: 25px;
 }
 .display {
-    margin-top: 25px;
+    margin: 25px;
     height: 100px;
     width: 450px;
     border-radius: 50px;
@@ -19,4 +19,18 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+  }
+
+  button {
+    color: black;
+    background: lightseagreen;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+  }
+
+  .logo-container {
+      margin: 25px;
+
   }
