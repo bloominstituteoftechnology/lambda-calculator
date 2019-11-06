@@ -1,14 +1,8 @@
 import React from "react";
 
 const NumberButton = props => {
-  const { number } = props;
-  return (
-    <>
-      <div className="btn-cont">
-        <button>{number}</button>
-      </div>
-    </>
-  );
+  const { number, class0 } = props;
+  return <button className={class0}>{number}</button>;
 };
 
 export default NumberButton;
