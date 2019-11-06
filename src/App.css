@@ -1,22 +1,72 @@
 .container {
-    background-color: #c00025;
+    max-width: 450px;
     width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
+    padding: 2rem;
+    background-color: #c00025;
     border: 2px solid grey;
-    padding-bottom: 25px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.logo-container {
+    width: 450px;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .display {
-    margin-top: 25px;
     height: 100px;
     width: 450px;
-    border-radius: 50px;
-    color: white;
+    margin: 2rem 0px;
     background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
+    font-size: 5rem;
+    color: white;
+    border-radius: 2rem;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+}
+
+.App {
+    width: 450px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-div {
+    width: 75%;
+}
+
+.left-div div button {
+    height: 5rem;
+    width: 5rem;
+    margin: 10px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+.right-div {
+    width: 25%;
+}
+
+.right-div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-div div button {
+    height: 5rem;
+    width: 5rem;
+    margin: 10px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
