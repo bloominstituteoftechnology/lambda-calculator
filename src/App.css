@@ -20,3 +20,17 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+
+
+  .App {
+      display: grid;
+      grid-template: repeat(5, 1fr)/
+      repeat(4, 1fr);
+  }
+
+  .number_button{
+
+    background: lightgreen;
+    
+  }
