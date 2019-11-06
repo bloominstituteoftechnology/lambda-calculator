@@ -8,4 +8,4 @@ const OperatorButton = (props) => {
     </button>
   );
 };
-export default OperatorButton
+export default OperatorButton;
