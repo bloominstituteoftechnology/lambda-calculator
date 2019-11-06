@@ -81,8 +81,8 @@ const [numberState, setNumberState] = useState(numbers);
 - Import the display components into `App.js` as well
 - Compose all the components inside the `App` component to get your calculator rendering on the DOM
 
-
 **STEP 5 - (STRETCH)**
+
 - In each component, start designing things to match the design file
 - Style your project using any of the techniques from the module
 - Don't forget about className vs class on your JSX elements!!
@@ -121,6 +121,6 @@ Do not attempt stretch problems until MVP has been reached and a final commit ha
 
 - STEP 5 from above
 - Finish the logic so the calculator is fully functional. Feel free to change the array data, or lose it entirely, as you see fit.
-- Finish styling all of the buttons and get your calculator to closely resemble the given design spec. 
+- Finish styling all of the buttons and get your calculator to closely resemble the given design spec.
 - Add some icons to improve the operator characters aesthetics. Research any icon/font library and implement it into your project.
 - Convert your CSS styling to use Sass/Scss
