@@ -24,13 +24,54 @@
 
 
   .App {
-      display: grid;
-      grid-template: repeat(5, 1fr)/
-      repeat(4, 1fr);
-  }
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+}
+.numbersContainer {
+    grid-column: 1 / 4;
+    grid-row: 2 / 6;
+}
 
-  .number_button{
+.specialsContainer {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+}
 
-    background: lightgreen;
-    
-  }
+.operatorsContainer {
+    grid-column: 4 / 5;
+    grid-row: 1 / 6;
+}
+
+.button {
+    border-radius: 50%;
+    font-size: 3rem;
+    padding: 1.5rem 1.75rem;
+    background-color: #113C78;
+    color: white;
+    font-family: 'B612 Mono', monospace;
+    border: none;
+    box-shadow: 0 4px #420108;
+    margin: 1rem;
+}
+
+.button:hover {
+    color: black;
+}
+
+.button:active {
+    transform: translateY(10px);
+}
+
+.numberButton {
+    background: #113C78;
+    margin-right: 2.05rem;
+}
+
+.specialButton {
+    background: #1F60AF;
+}
+
+.operatorButton {
+    background: #3DB5E5;
+}
