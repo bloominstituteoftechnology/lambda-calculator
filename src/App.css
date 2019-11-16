@@ -5,7 +5,11 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    box-shadow: 0px 5px 0px rgb(37, 37, 39);
+    margin: 2%;
 }
+
+
 .display {
     margin-top: 25px;
     height: 100px;
@@ -13,10 +17,96 @@
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    box-shadow: 2px 2px #322c2d;
     padding-right: 8%;
     font-size: 5.0rem;
+    margin-left: 25px;
+    
   }
+  
+
+
+
+
+button {
+  text-transform: uppercase; 
+  height: 25px;
+  width: 25px;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1.8rem;
+  box-shadow: 0px 5px 0px rgb(37, 37, 39);
+  border:none;
+
+  
+}
+
+.numbers-btn{
+  height:100px;
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5%;
+  margin-right: 0;
+  margin-bottom: 0%;
+  background-color: #184379;
+  font-size: 3rem;
+
+}
+
+.operators-btn{
+  height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 18%;
+    background-color: #237293;
+    font-size: 3rem;
+}
+
+.specials-btn{
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5%;
+    margin-right: 0;
+    margin-bottom: 0%;
+    background-color: #225d9e;
+    font-size: 3rem;
+}
+
+.btns-grid {
+
+  display: grid;
+  margin: 5%;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    grid-template-columns: 0fr 29fr 0fr 8fr;
+    grid-template-areas:
+        "top top top side"
+        "main main main side"
+        "main main main side"
+        "main main main side"
+        "footer footer footer side";
+
+}
+
+
+
+.numbers-grid{
+  grid-area: main;
+  
+}
+
+.specials-grid{
+  grid-area: top;
+}
+.Operator-grid{
+  grid-area: side;
+
+
+
+
+}
