@@ -16,7 +16,47 @@
     box-shadow: 1px 1px #322c2d;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     padding-right: 8%;
     font-size: 5.0rem;
+  }
+
+  .logo-container{
+    padding: 24px 0px 15px 24px;
+  }
+
+  .allButtons{
+    display: flex;
+    padding: 20px;
+}
+
+.left-body{
+    width: 75%
+  }
+
+  .right-body{
+      width: 25%;
+  }
+
+  .button{
+    color: white;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    margin: 20px;
+    font-size: 2rem;
+    border: none;
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.75);
+  }
+
+  .specialButton {
+    background-color: rgb(44, 138, 231);
+  }
+
+  .numberButton {
+    background-color: rgb(36, 36, 230);
+  }
+
+  .operatorButton {
+    background-color: teal;
   }
