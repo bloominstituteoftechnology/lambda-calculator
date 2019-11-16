@@ -1,5 +1,7 @@
 import React from "react";
-
+import {
+  numbers
+} from '../../../Operators';
 //import any components needed
 
 //Import your array data to from the provided data file
