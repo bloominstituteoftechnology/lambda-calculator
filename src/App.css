@@ -1,22 +1,94 @@
 .container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+  background-color: #c00025;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  padding-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
 }
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
-    color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+  margin-top: 25px;
+  margin-bottom: 35px;
+  margin-left: 2%;
+  height: 100px;
+  width: 450px;
+  border-radius: 50px;
+  color: white;
+  background-color: #322c2d;
+  box-shadow: 1px 1px #322c2d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 8%;
+  font-size: 5rem;
+}
+
+button {
+  border-radius: 50%;
+  border: none;
+  height: 90px;
+  width: 90px;
+  background-color: #184179;
+  color: white;
+  filter: drop-shadow(0px 5px 1px #322c2d);
+  font-size: 40px;
+}
+
+.btns {
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  height: 600px;
+  padding-left: 2%;
+}
+
+.btns1 {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  width: 70%;
+  padding-right: 8%;
+}
+
+.opBtns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 20%;
+  padding-bottom: 4%;
+  align-content: space-between;
+}
+
+.specBtns {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: flex-end;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+
+.numBtns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  height: 81%;
+}
+
+.zeroBtn {
+  width: 63%;
+  border-radius: 45px;
+}
+
+.specColors {
+  background-color: #2259a9;
+}
+
+.opColors {
+  background-color: #227293;
+}
