@@ -1,22 +1,99 @@
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 550px;
+    margin:0px auto;
+    max-width: 220px;
     border-radius: 15px;
-    border: 2px solid grey;
+    border: 1px solid grey;
     padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+   width: 30%;
+   padding: 20px 100px 10px 15px; 
+}
+.logo-div{
+   margin:0px; 
+}
+.display-box{
+margin:0 15px;
+
 }
 .display {
     margin-top: 25px;
-    height: 100px;
-    width: 450px;
+    height: 35px;
+    margin:0px auto;
+    width: 88%;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
+    box-shadow: 1px 1px #111010;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
+    font-size: 1.3rem;
+    text-align:right;
+    margin-bottom: 15px;
+    border:1px solid black;
+  }
+
+  .bigBox{
+      display: flex;
+      margin:0 15px 0 15px;
+
+  }
+  .firstBox{
+      width:75%
+
+  }
+
+  .numbersBox{
+display:flex;
+flex-wrap: wrap;
+
+  }
+  .num-btn,
+  .spl-btn,
+  .opr-btn{
+    text-align: center;
+      border:1px solid rgb(70, 69, 69);
+      margin:3%;
+      border-radius: 50px;
+      color:white;
+      box-shadow: -1px 2px 4px rgb(37, 33, 33);
+      height: 37px;
+      font-weight:bold;
+  }
+  .num-btn{
+    background-color: DarkSlateBlue;
+    width:26%;
+    
+    
+  }
+  .num-btn:nth-child(10) {
+    width:60%;
+  }
+  .spl-btn{
+    background-color:rgb(85, 131, 218);
+    width:26%;
+
+  }
+  .opr-btn{
+    background-color: rgb(98, 180, 231);
+    width:81%;
+    margin-bottom:8px;
+    
+  }
+
+  .secondBox{
+      width:25%
+  }
+  .operatorBox{
+    display: flex;
+    flex-direction: column;
   }
