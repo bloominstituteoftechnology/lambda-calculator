@@ -1,0 +1,11 @@
+.number_button{
+    background-color: darkblue;
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50%;
+    border: none;
+    padding:35px;
+    margin: 10px 5px;
+    font-size: 30px;
+}
