@@ -1,7 +1,7 @@
 import React from "react";
 import {
-  numbers
-} from '../../../Operators';
+  operators
+} from '../../../data';
 //import any components needed
 
 //Import your array data to from the provided data file
