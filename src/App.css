@@ -20,3 +20,64 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+  .allBtn {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template: "special special special operator"
+                    "number number number operator"
+                    "number number number operator"
+                    "number number number operator"
+                    "number number number operator";
+  }
+.specialContainer {
+    display: flex;
+    justify-content:space-evenly ;
+    grid-area: special;
+}
+.numberContainer {
+    flex-wrap: wrap;
+    display: flex;
+    grid-area: number;
+    justify-content: space-around;
+}
+
+.operatorContainer {
+    display: flex;
+    flex-direction: column;
+    grid-area: operator;
+}
+.btn {
+    margin: .5rem 0;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-op button{
+    background-color:#3DB5E4;
+}
+
+.btn-number button {
+    background-color:#113B78;
+}
+.btn-sepecial button {
+    background-color:#2060B0;
+}
+
+.btn button {
+    font-size: 2rem ;
+    outline: none;
+    color:white;
+    border-radius: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-content: center;
+}
+.btn.double > button { 
+    width: 15rem;
+}
