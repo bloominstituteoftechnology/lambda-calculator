@@ -1,22 +1,82 @@
 .container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+  background-color: #c00025;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  padding: 30px;
 }
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
-    color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+  margin-top: 25px;
+  height: 100px;
+  width: 450px;
+  border-radius: 50px;
+  color: white;
+  background-color: #322c2d;
+  box-shadow: 1px 1px #322c2d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 8%;
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+/* Button Container Styling */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: [col1] 25% [col2] 25% [col3] 25% [col4] 25%;
+  grid-template-rows: [row1] 20% [row2] 20% [row3] auto [row4] 20% [row5] 20%;
+}
+
+.op-contain {
+  grid-area: row1 / col3 / row5 / col4;
+}
+
+.spec-contain {
+  grid-area: row1 / col1 / row2 / col3;
+}
+
+.num-contain {
+  grid-area: row2 / col1 / row5 / col3;
+}
+
+/* Button Styling */
+
+button:focus {
+  outline: 0;
+}
+
+.btn {
+  height: 70px;
+  width: 70px;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 5px;
+  box-shadow: 0px 7px #555;
+  border: none;
+  color: white;
+}
+
+.btn:active {
+  box-shadow: 0 5px #333;
+  transform: translateY(4px);
+}
+
+.special-btn {
+  background: #1d56a7;
+}
+
+.number-btn {
+  background: #12336d;
+}
+
+.number-btn:nth-child(10) {
+  width: 145px;
+  border-radius: 50px;
+}
+
+.operator-btn {
+  background: #35ade1;
+}
