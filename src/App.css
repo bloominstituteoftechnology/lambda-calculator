@@ -21,3 +21,15 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+  .specials button{
+     background-color: navy;
+     color:  white;
+     padding: 2% 2%;
+     height: 100%;
+     width: 15%;
+     border-radius: 50%;
+     font-size: 2rem;
+     text-align: center;
+    
+  }

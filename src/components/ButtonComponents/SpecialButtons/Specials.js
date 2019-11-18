@@ -14,7 +14,7 @@ const Specials = () => {
     const [specialState, setSpecialState] = useState(specials);
 
     return ( 
-        <div>  {
+        <div className="specials">  {
             specialState.map((special, index) => {
                 return <SpecialButton key = {
                     index
