@@ -6,7 +6,7 @@ import React, {
 import SpecialButton from "./SpecialButton";
 
 // import array data from data.js file
-import specials from "../../../data";
+import {specials} from "../../../data";
 
 
 const Specials = () => {
@@ -28,3 +28,4 @@ const Specials = () => {
         </div>
     );
 };
+export default Specials;
