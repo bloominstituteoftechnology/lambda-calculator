@@ -13,7 +13,7 @@
     border-radius: 50px;
     color: white;
     /* background-color: #322c2d; */
-    background-color: dodgerblue;
+    background-color: black;
     box-shadow: 1px 1px #322c2d;
     display: flex;
     justify-content: flex-end;
@@ -51,4 +51,17 @@ padding: 1% 8%;
     width: 15%;
     border-radius: 50%;
   }
-      
+  
+  .operators {
+    padding: 1% 8%;
+  }
+
+  .operators button {
+    background-color: lightblue;
+    color:white;
+    font-size: 2rem;
+    padding: 2% 2%;
+    height: 100%;
+    width: 15%;
+    border-radius: 50%;
+  }
