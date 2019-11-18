@@ -22,6 +22,10 @@
     font-size: 5.0rem;
   }
 
+  .specials{
+      padding: 4% 8%;
+  }
+
   .specials button{
      background-color: navy;
      color:  white;

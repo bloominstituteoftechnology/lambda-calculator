@@ -16,13 +16,7 @@ const Specials = () => {
     return ( 
         <div className="specials">  {
             specialState.map((special, index) => {
-                return <SpecialButton key = {
-                    index
-                }
-                special = {
-                    special
-                }
-                />
+                return <SpecialButton key = {index} special = {special } />
             })
         } 
         </div>
