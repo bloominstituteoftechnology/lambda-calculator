@@ -14,7 +14,7 @@ const Numbers = () => {
     console.log(numberState);
     
     return (
-      <div>
+      <div className = "numbers">
         {
           numberState.map((number, index) => {
             return <NumberButton key={index} number={number} />

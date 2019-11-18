@@ -23,17 +23,32 @@
   }
 
   .specials{
-      padding: 4% 8%;
+      padding: 4% 8% 1%;
   }
 
   .specials button{
-     background-color: navy;
+     background-color: blue;
      color:  white;
      padding: 2% 2%;
      height: 100%;
      width: 15%;
      border-radius: 50%;
      font-size: 2rem;
-     text-align: center;
-    
+     text-align: center; 
   }
+
+  .numbers {
+padding: 1% 8%;
+
+  }
+
+  .numbers button {
+    background-color: navy;
+    color:white;
+    font-size: 2rem;
+    padding: 2% 2%;
+    height: 100%;
+    width: 15%;
+    border-radius: 50%;
+  }
+      
