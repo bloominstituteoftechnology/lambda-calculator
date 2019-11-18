@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import "./App.css";
+import "./App.scss";
 
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
@@ -22,13 +22,13 @@ function App() {
 	const [num1, setNum1] = useState(0)
 	const [num2, setNum2] = useState(0)
 	const [operation, setOperation] = useState(null)
-	const [currDisplay, setCurrDisplay] = useState(0)
+	const [currDisplay, setCurrDisplay] = useState("enter numbers")
 
 	const clearDisplay = () => {
 		setNum1(0);
 		setNum2(0);
 		setOperation(null);
-		setCurrDisplay(null);
+		setCurrDisplay("enter numbers");
 	}
 
   return (
@@ -37,7 +37,7 @@ function App() {
 				<Logo />
 				<div id="app">
 					<Display currDisplay={currDisplay} />
-					<div id="numpad">
+					<div id="input">
 						<Specials clearDisplay={clearDisplay} />
 						<Numbers setNum1={setNum1} setNum2={setNum2} nums={{ num1: num1, num2: num2 }} setCurrDisplay={setCurrDisplay} operation={operation} />
 					</div>

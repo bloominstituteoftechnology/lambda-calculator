@@ -6,6 +6,10 @@ import NumberButton from  "./NumberButton";
 // import array data from data.js file
 import { numbers } from "../../../data";
 
+// import styles
+import "./numberButton.scss"
+
+
 const Numbers = (props) => {
     // STEP 2 - add the imported data to state
   

@@ -1,5 +1,8 @@
 import React from "react";
 
+//  import styles 
+import "./operatorButton.scss"
+
 const OperatorButton = (props) => {
 
 	const division = (n1, n2) => {
@@ -53,4 +56,4 @@ const OperatorButton = (props) => {
 	);
 };
 
-export default OperatorButton
+export default OperatorButton;
