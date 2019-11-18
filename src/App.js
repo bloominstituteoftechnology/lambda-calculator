@@ -24,7 +24,7 @@ function App() {
 	const [operation, setOperation] = useState(null)
 	const [currDisplay, setCurrDisplay] = useState(0)
 
-	const clearEverything = () => {
+	const clearDisplay = () => {
 		setNum1(0);
 		setNum2(0);
 		setOperation(null);
@@ -38,7 +38,7 @@ function App() {
 				<div id="app">
 					<Display currDisplay={currDisplay} />
 					<div id="numpad">
-						<Specials clearEverything={clearEverything} />
+						<Specials clearDisplay={clearDisplay} />
 						<Numbers setNum1={setNum1} setNum2={setNum2} nums={{ num1: num1, num2: num2 }} setCurrDisplay={setCurrDisplay} operation={operation} />
 					</div>
 					<Operators operation={operation} setOperation={setOperation} setCurrDisplay={setCurrDisplay} nums={{ num1: num1, num2: num2 }} />

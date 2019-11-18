@@ -9,14 +9,14 @@ import SpecialButton from "./SpecialButton";
 import {specials} from "../../../data";
 
 
-const Specials = () => {
+const Specials = (props) => {
     //  add the imported data to state
     const [specialState, setSpecialState] = useState(specials);
 
     return ( 
         <div className="specials">  {
             specialState.map((special, index) => {
-                return <SpecialButton key = {index} special = {special } />
+                return <SpecialButton key = {index} special = {special } clearDisplay = {props.clearDisplay} />
             })
         } 
         </div>

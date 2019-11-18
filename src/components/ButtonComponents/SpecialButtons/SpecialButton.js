@@ -2,7 +2,8 @@ import React from "react";
 
 const SpecialButton = (props) => {
     return (
-        <button>{props.special}</button>
+    //    <button onClick={() => props.clearEverything()}>{props.special}</button>
+          <button onClick={() => props.clearDisplay()}>{props.special}</button>
     );
 };
 
