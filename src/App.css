@@ -2,11 +2,14 @@
     background-color: #c00025;
     width: 100%;
     max-width: 550px;
+    height: 550px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
-}
-.display {
+  
+    
+  }
+  .display {
     margin-top: 25px;
     height: 100px;
     width: 450px;
@@ -18,5 +21,82 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
+    font-size: 5rem;
   }
+  .firstButtons {
+    width: 33%;
+    margin-left: 120px;
+    margin-top: 50px;
+  }
+  
+  .buttonDisplay1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5%;
+  }
+  .buttonDisplay2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .button {
+    width: 50%;
+    background: blue;
+    color: white;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    padding: 5% 0;
+  }
+ 
+  .allButtons {
+    width: 100%;
+    display: flex;
+  }
+  .operators {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 58px;
+    margin-left: 60px;
+  
+  }
+    
+
+
+    /* .numberButtons{
+        border-radius: 50%;
+    background: blue;
+    color: white;
+    height: 70px;
+    width: 70px;
+    font-size: 1.8rem;
+    margin: 10px;
+    }  */
+
+  /* .operatorButtons {
+    border-radius: 50%;
+    background: teal;
+    color: white;
+    height: 70px;
+    width: 70px; 
+    font-size: 1.8rem;
+    margin: 10px;
+  } */
+
+  /* .specialButtons{
+    border-radius: 50%;
+    background: lightblue;
+    color: white;
+    height: 70px;
+    width: 70px;
+    font-size: 1.8rem;
+    margin: 10px; 
+  }  */
