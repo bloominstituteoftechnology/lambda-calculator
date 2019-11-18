@@ -12,7 +12,8 @@
     width: 450px;
     border-radius: 50px;
     color: white;
-    background-color: #322c2d;
+    /* background-color: #322c2d; */
+    background-color: dodgerblue;
     box-shadow: 1px 1px #322c2d;
     display: flex;
     justify-content: flex-end;
