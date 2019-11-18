@@ -5,11 +5,18 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    margin: 30px;
 }
+
+.logo-container {
+    margin: 30px;
+
+}
+
 .display {
     margin-top: 25px;
     height: 100px;
-    width: 450px;
+    width: 410px;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -19,4 +26,55 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+    margin: 30px;
+}
+
+button {
+    font-size: 26px;
+    background-color: #094377ff;
+    color: white;
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 3px solid black;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.button-container {
+    display: flex;
+    margin: 30px;
+}
+
+.left-side {
+    width: 70%;
+}
+
+.operator-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.special-button {
+    background-color: #0b5d9bff;
+}
+
+.operator-button {
+    background-color: #007291ff;
+}
+
+.special-container {
+    display: flex;
+}
+
+.number-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button:nth-child(10) {
+    width: 200px;
+    border-radius: 60px;
+}
