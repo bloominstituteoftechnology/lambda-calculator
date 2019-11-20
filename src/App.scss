@@ -1,0 +1,63 @@
+.container {
+    background-color: #BFC1C3;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 2px solid grey;
+    padding-bottom: 25px;
+    padding: 25px;
+  }
+  
+  .display {
+    margin-top: 25px;
+    height: 100px;
+    width: 450px;
+    border-radius: 50px;
+    color: #006BB8;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px #322c2d;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 8%;
+    font-size: 5.0rem;
+    margin-bottom: 25px;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    padding: 0;
+    margin: 5px;
+    background: #F58522;
+    border-radius: 100px;
+    font-size: 4rem;
+    color: white;
+  
+    outline: none;
+  }
+  
+  #app {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+    #input {
+        width: 75%;
+    }
+
+    .logo {
+        width: 30%;
+    }

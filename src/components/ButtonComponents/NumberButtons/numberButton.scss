@@ -1,0 +1,11 @@
+.numbers {
+	display: flex;
+	flex-wrap: wrap;
+	
+	button {
+        background: #F58522;
+    }
+	button.zero {
+        width: 210px;
+    }
+}
