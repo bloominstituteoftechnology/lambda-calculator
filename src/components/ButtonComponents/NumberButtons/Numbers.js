@@ -10,7 +10,7 @@ import { numbers } from '../../../data'
 */
 //Import your array data to from the provided data file
 
-const Numbers = () => {
+const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   const [numberState, setNumberState]= useState(numbers);
   console.log(numberState);
@@ -20,6 +20,7 @@ const Numbers = () => {
         <NumberButton
           numberKeys = {index}
           numberString = {number} 
+          setDisplay = {props.setDisplay}
         />
       ))
       }
