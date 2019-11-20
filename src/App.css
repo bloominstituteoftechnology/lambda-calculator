@@ -1,22 +1,73 @@
+
 .container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
-}
+      background-color: #af1e39ff;
+      width: 500px;
+      height: 800px;
+      padding: 20px;
+      border: 3px solid #323335ff;
+      margin: 0 auto;
+}	
+
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
+    background-color: #323335ff;
     color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
+    font-size: 30px;
+    border-radius: 10px;
+    height: 50px;
+    width: 85%;
+    padding: 10px 20px;
+    margin-top: 25px;
+    height: 100px;		 
+}
+
+button {
+    font-size: 26px;
+    background-color: #094377ff;
+    color: white;
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 3px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.button-container {
     display: flex;
+    margin-top: 30px;
+
+ }
+ .left-side {
+    width: 75%;
+}
+.operator-container {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+    align-items: flex-end;		
+    padding-right: 8%;		 
+}
+
+.special-button {
+    background-color: #007291ff;
+}
+
+ .operator-button {
+    background-color: #0b5d9bff;
+}
+
+ .special-container {
+    display: flex;
+
+ }
+
+ .number-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ button:nth-child(10) {
+    width: 200px;
+    border-radius: 60px;
+}
