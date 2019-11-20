@@ -6,10 +6,9 @@ const OperatorButton = props => {
     <button
        className="operator-button"
        onClick={() => props.addOperator(props.operatorText.value)}
-     ></button>
+     ></button>;
       {props.operatorText.value}
-     
-     </button>
+     </>
   );
 };
 export default OperatorButton;
