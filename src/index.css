@@ -10,3 +10,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.myNumbers {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  justify-content: center;
+}
+
+.numButt {
+
+   display:flex;
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   border: none;
+   background: blue;
+   color: white;
+}
+
+.numbersContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2%;
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 20%;
+  margin: 0 auto;
+  background: grey;
+}
