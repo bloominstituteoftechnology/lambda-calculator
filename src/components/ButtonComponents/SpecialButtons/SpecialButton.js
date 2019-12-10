@@ -1,4 +1,5 @@
 import React from "react";
+import { numbers, operators, specials } from "../../../data"
 
 const SpecialButton = () => {
   return (
