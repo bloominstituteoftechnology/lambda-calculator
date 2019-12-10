@@ -20,3 +20,12 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+.buttons {
+    border: 1px solid black; 
+    border-radius: 100%;
+    padding: 5%;
+    margin: 2%;
+    color: white;
+    background-color: navy;
+}
