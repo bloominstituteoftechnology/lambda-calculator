@@ -1,7 +1,7 @@
 .container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
+    background-color: #A81D36;
+    width: 550px;
+    /* max-width: 550px; */
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
@@ -19,4 +19,18 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+}
+button {
+    /* line-height: 2rem; */
+    /* text-align: center; */
+    background-color: steelblue;
+    width: 90px;
+    border-radius: 50%;
+    padding: 33px;
+    border:  double 1px;
+    margin: 15px;
+    font-size: 2.0rem;
+    color: white;
+    /* box-shadow: 3px;     */
+}
+
