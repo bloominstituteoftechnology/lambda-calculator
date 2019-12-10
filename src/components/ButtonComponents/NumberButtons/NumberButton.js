@@ -5,7 +5,7 @@ import React from "react";
 
     return (
       <>
-      <button onClick = {() => props.addNumber(props.text)}>
+      <button class="nums" onClick = {() => props.addNumber(props.text)}>
         {props.text}
       </button>
       </>

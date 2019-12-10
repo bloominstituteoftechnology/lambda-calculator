@@ -11,7 +11,7 @@ import { specials } from '../../../data';
 const Specials = (props) => {
     
   return (
-    <div>
+    <div className="specDiv">
       {specials.map(special => <SpecialButton text={special} />)}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
       component matching the name on the provided file. Pass

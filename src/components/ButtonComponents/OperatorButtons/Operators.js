@@ -9,7 +9,7 @@ import { operators } from '../../../data';
 const Operators = (props) => {
   // STEP 2 - add the imported data to state
   return (
-    <div>
+    <div className="opsDiv">
       {operators.map(operator => <OperatorButton operator={operator}
       addOperator={props.addOperator} />)}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button

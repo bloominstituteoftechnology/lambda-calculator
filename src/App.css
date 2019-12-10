@@ -1,36 +1,81 @@
+img {
+    /* background-color: purple; */
+    padding: 40px;
+    padding-bottom: 15px;
+    display: flex;
+    align-content: space-around;
+}
 .container {
     background-color: #A81D36;
-    width: 550px;
-    /* max-width: 550px; */
+    width: 480px;
+    max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    height: 720px;
+    margin-left: 6px;
+    /* padding-left: 12px; */
+    justify-content: center;
 }
 .display {
     margin-top: 25px;
     height: 100px;
-    width: 450px;
+    width: 80%;
     border-radius: 50px;
+    /* border-bottom: 30px; */
     color: white;
     background-color: #322c2d;
     box-shadow: 1px 1px #322c2d;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
+    margin: 0 auto;
     padding-right: 8%;
     font-size: 5.0rem;
 }
-button {
-    /* line-height: 2rem; */
-    /* text-align: center; */
+.allBtn {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template: "specs specs specs ops"
+                    "num num num ops"
+                    "num num numb ops"
+                    "num num num ops"
+                    "num num num ops";
+}
+button {    
+    justify-content: center;
+    /* display: grid; */
+    /* grid-template-columns: auto auto; */
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
     background-color: steelblue;
-    width: 90px;
-    border-radius: 50%;
-    padding: 33px;
-    border:  double 1px;
-    margin: 15px;
+    width: 18%;
+    border-radius: 60px;
+    padding: 17px;
+    border:  double .5px;
+    margin: 7px;
     font-size: 2.0rem;
     color: white;
-    /* box-shadow: 3px;     */
+}
+.numDiv {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
+.opsDiv {
+    display: grid;
+    grid-template-columns: auto;
+}
+button.specs {
+    background-color: purple;
+    /* display: flex; */
+    flex-direction: row;
+
+}
+button.ops {
+    /* display: flex; */
+    /* flex-direction:; */
+    /* align-items: column; */
+    /* align-content: column; */
+    /* flex-direction: column-reverse; */
 }
 

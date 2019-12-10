@@ -28,6 +28,13 @@ function App() {
       setDisplayValue(displayValue => displayValue + ' ' + operator + ' ');
     }
   };
+  // const addSpecial = (special) => {
+  //   if (special === '=') {
+  //     setDisplayValue(displayValue => eval(displayValue));
+  //   } else {
+  //     setDisplayValue(displayValue => displayValue + ' ' + special + ' ');
+  //   }
+  // };
 
   return (
     <div className="container">
@@ -35,6 +42,7 @@ function App() {
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Display number={displayValue} />
+        <div className="allBtn"/>
         <Numbers addNumber={addNumber} />
         <Operators addOperator={addOperator} />
         <Specials />
