@@ -1,4 +1,6 @@
 import React from "react";
+import OperatorButton from "./OperatorButton";
+import {operators} from "../../../data"
 
 //import any components needed
 
