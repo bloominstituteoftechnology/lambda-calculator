@@ -33,7 +33,8 @@ img {
     padding-right: 8%;
     font-size: 5.0rem;
 }
-.allBtn {
+/* .allBtn {
+    background-color: purple;
     display: grid;
     grid-auto-columns: 1fr;
     grid-template: "specs specs specs ops"
@@ -41,7 +42,7 @@ img {
                     "num num numb ops"
                     "num num num ops"
                     "num num num ops";
-}
+} */
 button {    
     justify-content: center;
     /* display: grid; */
@@ -57,7 +58,7 @@ button {
     font-size: 2.0rem;
     color: white;
 }
-.numDiv {
+/* .numDiv {
     display: grid;
     grid-template-columns: auto auto auto ;
 }
@@ -68,14 +69,14 @@ button {
 button.specs {
     background-color: purple;
     /* display: flex; */
-    flex-direction: row;
+    /* flex-direction: row; */
 
-}
+/* }
 button.ops {
-    /* display: flex; */
-    /* flex-direction:; */
-    /* align-items: column; */
-    /* align-content: column; */
-    /* flex-direction: column-reverse; */
-}
+    display: flex;
+    flex-direction:;
+    align-items: column;
+    align-content: column;
+    flex-direction: column-reverse;
+} */ 
 

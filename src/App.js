@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useState } from "react";
 import "./App.css";
 // STEP 4 - import the button and display components
@@ -23,6 +24,7 @@ function App() {
   };
   const addOperator = (operator) => {
     if (operator === '=') {
+      // eslint-disable-next-line
       setDisplayValue(displayValue => eval(displayValue));
     } else {
       setDisplayValue(displayValue => displayValue + ' ' + operator + ' ');
@@ -46,7 +48,8 @@ function App() {
         <Numbers addNumber={addNumber} />
         <Operators addOperator={addOperator} />
         <Specials />
-      </div>
+        
+        </div>
     </div>
   );
 };
