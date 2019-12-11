@@ -5,18 +5,81 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    margin: 50px;
 }
 .display {
     margin-top: 25px;
     height: 100px;
-    width: 450px;
+    width: 100%;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
+    box-shadow: 0 2px 5px #322c2d;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
+    padding-right: 2%;
+    font-size: 5rem;
   }
+  
+  .display-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  .operation-container {
+    display: flex;
+  }
+  
+  .left {
+    width: 75%;
+    margin: 6% 0 0 15%;
+  }
+  
+  .right {
+    width: 35%;
+    margin: 6% 8% 0 0;
+  }
+  
+  .specials {
+    width: 90%;
+    margin-left: 10%;
+  }
+  
+  .numbers {
+    width: 90%;
+    margin-left: 10%;
+  }
+  
+  .operators {
+    width: 20%;
+    margin-right: 0;
+  }
+  
+  .buttonNumber {
+    border: 1px solid black;
+    box-shadow: 0 20px 20px #322c2d;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    background-color: white;
+    font-size: 40px;
+  }
+  
+  .button:nth-child(10) {
+    width: 150px;
+    border-radius: 40%;
+  }
+
+  .button {
+    border: 1px solid black;
+    box-shadow: 0 20px 20px #322c2d;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    background-color: white;
+    font-size: 40px;
+  }
+  
