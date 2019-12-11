@@ -5,6 +5,8 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 }
 .display {
     margin-top: 25px;
@@ -17,6 +19,68 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 8%;
+    /* padding-right: 8%; */
     font-size: 5.0rem;
+    margin-left: 7%;
+    margin-bottom: 4%;
   }
+  .App{
+      display: flex;
+      flex-wrap: wrap;
+  }
+.numberButton{
+    background-color:#113C78;
+    color:white;
+    /* width:5rem; */
+    width: 33%;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin: 20px;
+}
+.numberButtonContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.operatorButton{
+    background-color:#1AB0D5;
+    color:white;
+    width:100%;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.operatorContainer{
+    flex-direction: row;
+    width: 30%;
+   justify-content: center;
+}
+.specialButton{
+    background-color:#2061b0;
+    color:white;
+    width:100%;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin: 20px;
+}
+.specialContainer{
+    display: flex;
+    flex-direction: row;
+}
+.logo-container{
+    /* display: flex; */
+    margin-top: 2%;
+}
+.SpecialsAndNumbers{
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    justify-content: center;
+}
+.numberButtonContainer :nth-child(10){
+    width: 178px;
+    height:80px;
+    border-radius:20%;
+}
