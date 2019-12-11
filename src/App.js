@@ -8,13 +8,18 @@ import Display from "./components/DisplayComponents/Display.js";
 import Logo from "./components/DisplayComponents/Logo";
 
 function App() {
-  const [displayValue, setDisplayValue] = useState("0");
+  const [displayValue, setDisplayValue] = useState("");
   const addNumber = (number) => {
     setDisplayValue(displayValue => displayValue + number);
   };
-  const addOperator = (operator => {
-    setDisplayValue(displayValue => displayValue + " " + operator + " ");
-  })
+
+  const addOperator = (operator) => {
+    if (operator === "=") {
+      setDisplayValue(displayValue => eval(displayValue))
+    } else{
+      setDisplayValue(displayValue => displayValue + " " + operator + " ");
+    }
+  };
 
   return (
     <div className="container">
