@@ -2,9 +2,9 @@ import React from "react";
 
 const SpecialButton = (props) => {
   return (
-    <>
-      {<button onClick = {() => props.addSpecial(props.value)}>{props.text}</button>}
-    </>
+    <button onClick = {() => props.addSpecial(props.value)}>
+      {props.text}
+    </button>
   );
 };
 
