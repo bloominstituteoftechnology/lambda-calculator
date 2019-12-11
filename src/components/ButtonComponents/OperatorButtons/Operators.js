@@ -6,7 +6,9 @@ const Operators = (props) => {
   return (
     <div>
       {operators.map(operator => {
-          return <OperatorButton operator={operator} addOperator={props.addOperator} />
+          return <OperatorButton 
+            operator={operator} 
+            addOperator={props.addOperator} />
       })}
     </div>
   );

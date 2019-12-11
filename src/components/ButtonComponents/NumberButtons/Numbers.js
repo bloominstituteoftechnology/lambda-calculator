@@ -8,7 +8,10 @@ const Numbers = (props) => {
   return (
     <div>
       {numberButton.map(number => {
-          return <NumberButton key={number} text={number} />;
+          return <NumberButton 
+            key={number} 
+            text={number} 
+            addNumber={props.addNumber} />;
       })}
     </div>
   ); 
