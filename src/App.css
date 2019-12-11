@@ -4,7 +4,7 @@
     max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
-    padding-bottom: 25px;
+    padding: 30px 30px;
 }
 .display {
     margin-top: 25px;
@@ -20,3 +20,70 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+  .numbersAndSpecials{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 412px;
+    margin-right: 0;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.number-button {
+width: 115px;
+height:115px;
+color: white;
+border-radius: 50%;
+background: #094377;
+margin: 10px;
+font-size: 2.5rem;
+box-shadow: #322c2d 3.5px 3.5px;
+border: transparent;
+}
+
+.number-button-zero {
+    width: 250px;
+height:115px;
+color: white;
+border-radius: 75px;
+background: #094377;
+margin: 10px;
+font-size: 2.5rem;
+box-shadow: #322c2d 3.5px 3.5px;
+border: transparent;
+}
+
+.operator-button {
+    width: 115px;
+    height:115px;
+    color: white;
+    border-radius: 50%;
+    background: #007291;
+    margin: 10px;
+    font-size: 2.5rem;
+    box-shadow: #322c2d 3.5px 3.5px;
+border: transparent;
+}
+
+.special-button {
+    width: 115px;
+    height:115px;
+    color: white;
+    border-radius: 50%;
+    background: #0B5D9B;
+    margin: 10px;
+    font-size: 2.5rem;
+    box-shadow: #322c2d 3.5px 3.5px;
+border: transparent;
+}
+
+.rowDisplay {
+    display: flex;
+    flex-direction: row;
+}
