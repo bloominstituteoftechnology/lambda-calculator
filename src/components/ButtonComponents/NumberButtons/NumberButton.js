@@ -1,14 +1,9 @@
 import React from "react";
 
 const NumberButton = (props) => {
-  console.log(props)
   return (
-    <button>
-    <span> 
-       
+    <button class="number-btn" onClick={() => props.addNumber(props.button)}>
       {props.button}
-    </span>
-      
     </button>
   );
 };

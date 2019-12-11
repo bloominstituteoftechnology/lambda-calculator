@@ -1,22 +1,84 @@
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 550px;
+    max-width: 300px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
 }
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
+    margin-top: 4px;
+    height: 70px;
+    width: 250px;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
     box-shadow: 1px 1px #322c2d;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
+    font-size: 2rem;
+  }
+
+  .display p{
+    margin-bottom: 5%;
+  }
+  .App{
+    padding-left: 5%;
+    padding-right: 5%;
+
+  }
+
+  .btn-container{
+      display:flex;
+      padding-top:5%;
+      
+  }
+
+  .number-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    width:75%;
+  }
+
+  .operation-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:25%;
+
+  }
+  button{
+    border: none;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 50%;
+    margin:1%;
+    width: 30%;
+    background-color:#0B4371;
+
+  }
+.special-btn{
+  background-color: #115794;
+}
+  .op-button{
+    border: none;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 50%;
+    margin:1%;
+    width: 30%;
+    background-color:#0A6D8C;
+  }
+
+  .logo-container{
+      padding-left:5%;
+      padding-top:5%;
   }
