@@ -1,0 +1,30 @@
+#root {
+    height: auto;   
+    width: 400px;
+    margin: 0 auto;
+   }
+   
+.container {
+    background-color: #c00025;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid grey;
+    padding-bottom: 25px;
+    margin: 200px auto;
+}
+.display {
+    margin-top: 25px auto;
+    height: 80px;
+    width: 80%;
+    border-radius: 50px;
+    color: white;
+    background-color: #322c2d;
+    box-shadow: 1px 1px #322c2d;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 8%;
+    font-size: 5.0rem;
+  }

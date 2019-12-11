@@ -16,7 +16,6 @@
 }
 .display {
     margin-top: 25px auto;
-    margin: 21px;
     height: 80px;
     width: 80%;
     border-radius: 50px;
@@ -54,11 +53,11 @@
     color: white;
     font-size: 2.5rem;
     background: lightskyblue;
-    border-radius: 100px;
-    border: 1.8px solid black;
+    border-radius: 150px;
+    border: 1px solid black;
     margin: 5px;  
     height: auto;
-    width: 29%;  
+    width: 28%;  
   }
 
 

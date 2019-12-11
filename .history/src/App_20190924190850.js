@@ -30,7 +30,7 @@ function App() {
       <Display value = { value }/>
       <div className="App">
         <div className="app-row">
-        <Specials clickFunction ={ specialsClick }/>
+        <Specials clickFucnction ={ specialsClick }/>
         <Numbers setValue = { setValue }/>
       
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import Display from "./components/DisplayComponents/Display";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
@@ -17,22 +17,14 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
-  const [value, setValue] = useState(0);
-  
-  function specialsClick(input) {
-    if (input === "C") {setValue(0)}; // reset button
-  }
-
-
   return (
     <div className="container">
       <Logo />
-      <Display value = { value }/>
+      <Display />
       <div className="App">
         <div className="app-row">
-        <Specials clickFunction ={ specialsClick }/>
-        <Numbers setValue = { setValue }/>
-      
+        <Numbers />
+        <Specials />
         </div>
         <Operators />
       </div>
