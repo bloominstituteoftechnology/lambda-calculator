@@ -56,7 +56,7 @@
     margin-right: 0;
   }
   
-  .button {
+  .buttonNumber {
     border: 1px solid black;
     box-shadow: 0 20px 20px #322c2d;
     border-radius: 50%;
@@ -71,3 +71,15 @@
     width: 150px;
     border-radius: 40%;
   }
+
+  .button {
+    border: 1px solid black;
+    box-shadow: 0 20px 20px #322c2d;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    background-color: white;
+    font-size: 40px;
+  }
+  
