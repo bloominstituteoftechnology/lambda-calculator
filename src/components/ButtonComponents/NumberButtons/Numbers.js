@@ -9,15 +9,24 @@ import { numbers } from '../../../data'
 */
 //Import your array data to from the provided data file
 
-const Numbers = () => {
-  const [NumberButton, setNumberButton] = useState(numbers);
+// const Numbers = ({ updatedValue }) => {
+//   const [NumberState] = useState(numbers);
  
-  // STEP 2 - add the imported data to state
+//   // STEP 2 - add the imported data to state
+//   return (
+//     <div>
+//          {NumberState.map((number, index) => (
+//          <NumberButton key={index} number={number} clickNumberBtn={() => updatedValue(number)}/>
+//        ))}
+//     </div>
+//   );
+// };
+
+const Numbers = (props) => {
+  const [buttonNumbers, setbuttonNumbers ] = useState(numbers);
   return (
     <div>
-         {NumberButton.map((button, index) => (
-         <NumberButton key={index} button={button} />
-       ))}
+      { buttonNumbers.map(number => <NumberButton key={number} text={number} addNumber={props.addNumber} />) }
     </div>
   );
 };
