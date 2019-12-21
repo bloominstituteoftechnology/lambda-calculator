@@ -5,7 +5,7 @@ import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButt
 // import Operators from "./components/ButtonComponents/OperatorButtons/Operators"
 import OperatorButton from "./components/ButtonComponents/OperatorButtons/OperatorButton"
 // import Specials from "./components/ButtonComponents/SpecialButtons/Specials"
-// import Specials from "./components/ButtonComponents/SpecialButtons/SpecialButton"
+import SpecialButton from "./components/ButtonComponents/SpecialButtons/SpecialButton"
 // import Display from "./components/DisplayComponents/Display"
 
 
@@ -29,6 +29,7 @@ function App() {
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <NumberButton />
         <OperatorButton />
+        <SpecialButton />
       </div>
     </div>
   );
