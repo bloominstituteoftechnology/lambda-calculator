@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { numbers } from "../../../data";
+import NumberButton from "./NumberButton";
 
 //import any components needed
 // example of import from data.js. Note all the ../   This is how we move through folders. 
@@ -18,7 +19,7 @@ const Numbers = (props) => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
 
-      {props.data.map((number, index) => <button key={index}>{number}</button>)}
+      {numbersState.map((number, index) => <NumberButton number={number} key={index}/>)}
 
     </div>
   );
