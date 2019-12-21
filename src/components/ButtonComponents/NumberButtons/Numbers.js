@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { numbers } from "../../../data.js";
+import { numbers } from "../../../data";
 import NumberButton from "./NumberButton";
 // import NumberButton from "./NumberButton.js";
 
@@ -20,7 +20,7 @@ const Numbers = (props) => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
 
-      {props.map((number, index) => <NumberButton />)}
+      {props.data.map((number, index) => <button key={index}>{number}</button>)}
 
     </div>
   );
