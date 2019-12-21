@@ -4,10 +4,11 @@ import Numbers from "./Numbers"
 
 
 const NumberButton = (props) => {
-  console.log(props);
   return (
-    <Numbers data={numbers}/>
+    <div>
+      <Numbers data={numbers}/>
+    </div>
   );
 };
 
-export default NumberButton
+export default NumberButton;
