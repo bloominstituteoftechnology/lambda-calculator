@@ -23,6 +23,7 @@ const Numbers = (props) => {
        it any props needed by the child component*/}
 
       {props.data.map((number, index) => <button key="{index}">{number}</button>)}
+      
     </div>
   );
 };
