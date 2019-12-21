@@ -6,6 +6,7 @@
     border: 2px solid grey;
     padding-bottom: 25px;
 }
+
 .display {
     margin-top: 25px;
     height: 100px;
@@ -18,5 +19,35 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
-    font-size: 5.0rem;
-  }
+    font-size: 5rem;
+}
+
+.number-buttons {
+    border-radius: 50%;
+    background: blue;
+    color: white;
+    height: 70px;
+    width: 70px;
+    font-size: 1.8rem;
+    margin: 10px;
+}
+
+.operator-buttons {
+    border-radius: 50%;
+    background: teal;
+    color: white;
+    height: 70px;
+    width: 70px;
+    font-size: 1.8rem;
+    margin: 10px;
+}
+
+.special-buttons {
+    border-radius: 50%;
+    background: lightblue;
+    color: white;
+    height: 70px;
+    width: 70px;
+    font-size: 1.8rem;
+    margin: 10px;
+}
