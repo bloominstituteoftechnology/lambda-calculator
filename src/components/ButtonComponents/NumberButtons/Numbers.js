@@ -12,8 +12,8 @@ import { numbers } from '../../../data'
 const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   const [numbersState, setNumbersState] = useState(numbers);
-  const [operatorsState, setOperatorsState] = useState(operators);
-  const [specialsState, setSpecialsSate] = useState(specials);
+  
+  
 
 
   return (
