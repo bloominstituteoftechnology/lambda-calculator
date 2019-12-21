@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-// import Numbers from "./components/ButtonComponents/NumberButtons/Numbers"
+import Numbers from "./components/ButtonComponents/NumberButtons/Numbers"
 // import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton"
 // import Operators from "./components/ButtonComponents/OperatorButtons/Operators"
 // import OperatorButton from "./components/ButtonComponents/OperatorButtons/OperatorButton"
