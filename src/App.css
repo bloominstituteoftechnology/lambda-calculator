@@ -26,25 +26,35 @@
     width         : 100%;
     display       : flex;
     flex-direction: row;
+
 }
 
 .innerContent {
     width         : 80%;
     display       : flex;
     flex-direction: column;
+    align-items   : center;
 }
 
 .rightContent {
-    width: 15%;
+    width         : 15%;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    margin-right  : 20%;
 }
 
 .numbers {
-    width: 90%;
+    width          : 60%;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
 
     border: 1px solid;
 }
 
 .numButtons {
+
     font-size       : 2.0rem;
     color           : white;
     padding         : 5%;
@@ -56,8 +66,10 @@
 }
 
 .specialButtons {
-    border: 1px solid;
-    width : 90%;
+    border         : 1px solid;
+    width          : 60%;
+    display        : flex;
+    justify-content: space-around;
 }
 
 .specButtons {
@@ -73,11 +85,11 @@
 }
 
 .operatorButtons {
-    width: 100%;
-
+    width          : 100%;
+    margin-top     : 1%;
     display        : flex;
     flex-direction : column;
-    justify-content: space-between;
+    justify-content: space-around;
     border         : 1px solid blue;
 }
 
