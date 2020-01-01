@@ -32,22 +32,23 @@
 }
 
   .col-1{
+      padding-left: 5%;
       display: flex;
       flex-wrap: wrap;
       width: 60%;
       height: 70%;
-      justify-content: center;
       justify-content: space-evenly;
 }
 
   .col-2{
+      padding-left: 1.5%;
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
-      width: 11%;
+      width: 30%;
       height: 510px;
-      justify-content: center;
-      justify-content: space-evenly;
+      align-items: center;
+      justify-content: space-around;
+      
 }
 
   button{
@@ -60,14 +61,16 @@
   .special-button {
     width: 30%;
     height: 100px;
-    margin: 1%;
-    color: white;
+    margin: 1.5%;
+    color: rgb(168, 166, 166);
+    align-content: center;
     justify-content: center;
     background-color: rgb(0,114,145);
 }
 
   .operator-button{
-    width: 160%;
+    
+    width: 60.72%;
     height: 90px;
     color: white;
     display: flex;
@@ -78,6 +81,7 @@
 }
 
   .number-button{
+    
       width: 30%;
       height: 100px;
       margin: 1%;
@@ -89,6 +93,8 @@
 
   button{
       border-radius: 100%;
+      font-size: xx-large;
+      box-shadow: 7px 7px #322c2d;
 }
 
   .number-section{
