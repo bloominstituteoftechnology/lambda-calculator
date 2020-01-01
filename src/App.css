@@ -8,6 +8,7 @@
 }
 .display {
     margin-top: 25px;
+    margin-left: 25px;
     height: 100px;
     width: 450px;
     border-radius: 50px;
@@ -15,8 +16,100 @@
     background-color: #322c2d;
     box-shadow: 1px 1px #322c2d;
     display: flex;
+    justify-content: center;
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+}
+
+  .body{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      
+}
+
+  .col-1{
+      padding-left: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      width: 60%;
+      height: 70%;
+      justify-content: space-evenly;
+}
+
+  .col-2{
+      padding-left: 1.5%;
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 510px;
+      align-items: center;
+      justify-content: space-around;
+      
+}
+
+  button{
+      height: 75px;
+      width: 75px;
+      margin: 1%;
+      
+}
+
+  .special-button {
+    width: 30%;
+    height: 100px;
+    margin: 1.5%;
+    color: rgb(168, 166, 166);
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(0,114,145);
+}
+
+  .operator-button{
+    
+    width: 60.72%;
+    height: 90px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: rgb(0,114,145);
+  
+}
+
+  .number-button{
+    
+      width: 30%;
+      height: 100px;
+      margin: 1%;
+      color: white;
+      background-color: rgb(5, 13, 90);
+                        
+}
+
+
+  button{
+      border-radius: 100%;
+      font-size: xx-large;
+      box-shadow: 7px 7px #322c2d;
+}
+
+  .number-section{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      justify-content: space-evenly;
+}
+
+.number-button {
+    &:nth-child(10){
+        width:50%;
+        height: 100px;
+    }
+}
+
