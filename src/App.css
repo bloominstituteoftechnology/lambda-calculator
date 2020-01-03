@@ -1,27 +1,12 @@
 .container {
-    background-color: #c00025;
+    background-color: navy;
     width: 100%;
     max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
 }
-.operators {
-    display: flex;
-    flex-direction: column;
-}
-.numbers {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-}
-button {
-    color: white;
-    background-color: teal;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-}
+
 .display {
     margin-top: 25px;
     height: 100px;
@@ -36,3 +21,48 @@ button {
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+.App {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+} 
+.cal1 {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+
+}
+.cal2 {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+
+button {
+  width: 75px;
+  height: 75px;
+  margin: 2%;
+}
+
+.op_button {
+  background-color: teal;
+}
+
+.number_button {
+  width: 30%;
+  margin: 1%;
+}
+
+.number_button:nth-child(10){
+  width: 62%;
+}
+
+.sp_button {
+  width: 30%;
+  margin: 1%;
+  height: 75px;
+
+}
+
