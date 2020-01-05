@@ -6,6 +6,7 @@ const NumberButton = (props) => {
   const numBtnClick = (e)=>{
     const displayValue = e.target.textContent;
     setNumState(displayValue);
+    console.log(displayValue);
   }
   return (
     <>
