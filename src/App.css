@@ -1,11 +1,12 @@
 .container {
-    background-color: #c00025;
+    background-color: #a81d36;
     width: 100%;
     max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
 }
+
 .display {
     margin-top: 25px;
     height: 100px;
@@ -20,3 +21,58 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+.App {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  margin-top: 20px;
+} 
+.cal1 {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+
+}
+.cal2 {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+}
+
+button {
+  width: 75px;
+  height: 75px;
+  margin: 2%;
+  border-radius: 100%;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.op_button {
+  background-color: teal;
+  margin-bottom: 10px;
+}
+
+.number_button {
+  width: 25%;
+  height: 75px;
+  margin-bottom: 2px;
+  background-color: midnightblue;
+}
+
+.number_button:nth-child(10){
+  width: 55%;
+  border-radius: 45px;
+}
+
+.sp_button {
+  width: 25%;
+  height: 75px;
+  background-color: darkslateblue;
+}
+
+.numbers {
+  width: 100%
+}
