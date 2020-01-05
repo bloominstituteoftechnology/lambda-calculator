@@ -30,20 +30,21 @@
 } 
 .cal1 {
   display: flex;
-  width: 70%;
+  width: 50%;
   flex-direction: column;
 
 }
 .cal2 {
   display: flex;
   flex-direction: column;
-  width: 10%;
+  width: 15%;
 }
 
 button {
   width: 75px;
   height: 75px;
   margin: 2%;
+  border-radius: 100%;
 }
 
 .op_button {
@@ -51,18 +52,22 @@ button {
 }
 
 .number_button {
-  width: 30%;
-  margin: 1%;
+  /* width: 30%;
+  height: 75px;
+  margin: 1%; */
 }
 
-.number_button:nth-child(10){
+/* .number_button:nth-child(10){
   width: 62%;
-}
+} */
 
 .sp_button {
-  width: 30%;
+  /* width: 30%;
   margin: 1%;
-  height: 75px;
+  height: 75px; */
 
 }
 
+.numbers {
+  width: 100%
+}

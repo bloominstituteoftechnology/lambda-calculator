@@ -12,7 +12,7 @@ const Specials = () => {
   // STEP 2 - add the imported data to state
 
   return (
-    <div className="specials">
+    <div className="numbers">
       {special.map((button, index) => (
         <SpecialButton key={index} button={button} />
       ))}
