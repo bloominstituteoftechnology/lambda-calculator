@@ -1,5 +1,5 @@
 .container {
-    background-color: navy;
+    background-color: #a81d36;
     width: 100%;
     max-width: 550px;
     border-radius: 15px;
@@ -27,6 +27,7 @@
   width: 100%;
   height: 100%;
   justify-content: space-evenly;
+  margin-top: 20px;
 } 
 .cal1 {
   display: flex;
@@ -45,27 +46,31 @@ button {
   height: 75px;
   margin: 2%;
   border-radius: 100%;
+  font-size: 2rem;
+  color: aliceblue;
 }
 
 .op_button {
   background-color: teal;
+  margin-bottom: 10px;
 }
 
 .number_button {
-  /* width: 30%;
+  width: 25%;
   height: 75px;
-  margin: 1%; */
+  margin-bottom: 2px;
+  background-color: midnightblue;
 }
 
-/* .number_button:nth-child(10){
-  width: 62%;
-} */
+.number_button:nth-child(10){
+  width: 55%;
+  border-radius: 45px;
+}
 
 .sp_button {
-  /* width: 30%;
-  margin: 1%;
-  height: 75px; */
-
+  width: 25%;
+  height: 75px;
+  background-color: darkslateblue;
 }
 
 .numbers {
