@@ -5,6 +5,7 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    padding: 25px;
 }
 .display {
     margin-top: 25px;
@@ -19,4 +20,33 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+  }
+  .App{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sym_Btn_Div{
+    border: 2px solid lightslategray;
+  }
+  .spec_Btn_Div{
+    border: 2px solid white;
+  }
+  .num_Btn_Div{
+    border: 2px solid hotpink;
+  }
+  .btn{
+    width: 75px;
+    height: 75px;
+    border-style: none;
+    //border: 1px solid hotpink;
+    padding: 2.5px;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: 2px 3px #00091a;
+    background-color: #002966;
+    font-size: 2rem;
+    color: white;
+  }
+  .symbol_Button, .special_Button{
+    background-color: #0052cc;
   }

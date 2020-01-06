@@ -10,7 +10,7 @@ const SpecialButton = (props) => {
   }
   return (
     <>
-    <button className="special_Button" onClick={specButtonClick}>
+    <button className="special_Button btn" onClick={specButtonClick}>
       {props.specialSymbol}
       </button>
     </>
