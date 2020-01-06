@@ -5,12 +5,12 @@ const NumberButton = (props) => {
   //console.log(props);
   const numBtnClick = (e)=>{
     const displayValue = e.target.textContent;
-    setNumState(displayValue);
+    setNumState(props.input);
     console.log(displayValue);
   }
   return (
     <>
-    <button className="number_Button btn" onClick={numBtnClick}>{props.number}</button>
+    <button className="number_Button btn" onClick={props.updateDisplay}>{props.number}</button>
       {/* Display a button element rendering the data being passed down from the parent container on props */}
     </>
   );
