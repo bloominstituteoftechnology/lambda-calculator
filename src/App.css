@@ -1,22 +1,139 @@
 .container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+	margin: 0 auto;
+	background: #a71d36;
+	width: 300px;
+	height: 500px;
+	padding: 35px;
+	border-radius: 50px;
+	border: 7px solid #000000;
+	box-shadow: 10px 10px 60px 2px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 10px 10px 60px 2px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 60px 2px rgba(0, 0, 0, 0.75);
 }
-.display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
-    color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+
+/* GRID DISPLAY */
+.App {
+	display: grid;
+	justify-items: center;
+	margin: -20px;
+	grid-template-columns: [col-one] 80px [col-two] 80px [col-three] 80px [col-four]110px;
+	grid-template-rows: [row-one]80px [row-two]80px [row-three]80px [row-four]80px [row-five]80px;
+}
+/* SPECIALS GRID PLACEMENT */
+
+.s0 {
+	grid-column-start: col-one;
+}
+.s1 {
+	grid-column-start: col-two;
+}
+.s2 {
+	grid-column-start: col-three;
+}
+
+/* NUMBERS GRID PLACEMENT */
+.n0 {
+	grid-column-start: col-one;
+	grid-row-start: row-two;
+}
+.n1 {
+	grid-column-start: col-two;
+	grid-row-start: row-two;
+}
+.n2 {
+	grid-column-start: col-three;
+	grid-row-start: row-two;
+}
+.n3 {
+	grid-column-start: col-one;
+	grid-row-start: row-three;
+}
+.n4 {
+	grid-column-start: col-two;
+	grid-row-start: row-three;
+}
+.n5 {
+	grid-column-start: col-three;
+	grid-row-start: row-three;
+}
+.n6 {
+	grid-column-start: col-one;
+	grid-row-start: row-four;
+}
+.n7 {
+	grid-column-start: col-two;
+	grid-row-start: row-four;
+}
+.n8 {
+	grid-column-start: col-three;
+	grid-row-start: row-four;
+}
+.n9 {
+	grid-column-start: col-one;
+	grid-row-start: row-five;
+	/* grid-column-end: span col-three; */
+	place-self: center stretch;
+}
+.n10 {
+	grid-column-start: col-three;
+	grid-row-start: row-five;
+}
+
+.o4 {
+	grid-column-start: col-four;
+	grid-row-start: row-five;
+}
+
+.numButton.n9 {
+	width: 200%;
+}
+
+.logo {
+	width: 100px;
+	margin-bottom: 10px;
+}
+.disScreen {
+	color: white;
+	text-align: end;
+	padding-right: 20px;
+	font-size: 3rem;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	background: black;
+	width: 100%;
+	height: 70px;
+	border-radius: 100px;
+}
+
+/* BUTTONS COLORS */
+
+.numButton {
+	background: #1a438f;
+	border-radius: 360px;
+	border: 2px solid #000000;
+	color: white;
+	width: 75px;
+	height: 70px;
+	padding: 10px;
+	font-size: 1.4rem;
+}
+
+.opButton {
+	background: red;
+	border-radius: 360px;
+	border: 2px solid #000000;
+	color: white;
+	width: 70px;
+	height: 70px;
+	font-size: 1.4rem;
+}
+
+.specButton {
+	background: purple;
+	border-radius: 360px;
+	border: 2px solid #000000;
+	color: white;
+	width: 70px;
+	height: 70px;
+	font-size: 1.4rem;
+}
