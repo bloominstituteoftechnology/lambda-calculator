@@ -1,6 +1,5 @@
 import React from "react";
 
-const OperatorButton = () => {
 const OperatorButton = props => {
   return (
     <>
