@@ -32,6 +32,7 @@ body {
 
 .horizontal-buttons {
     display: flex;
+    
 }
 
 
@@ -43,5 +44,6 @@ body {
 
 .App {
     display: flex;
-    margin: 1.5rem;
+    margin: .5rem;
 }
+
