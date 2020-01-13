@@ -19,6 +19,7 @@ In this project you will build out a calculator using React. You have been given
 ## Project Set Up
 
 ---
+npm
 
 This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
 

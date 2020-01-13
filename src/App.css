@@ -1,22 +1,138 @@
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 550px;
+    max-width: 475px;
     border-radius: 15px;
     border: 2px solid grey;
-    padding-bottom: 25px;
+    margin: auto;
 }
+
+.logo-container {
+    padding: 1em 0em 0em 2em;
+}
+
+.logo {
+    padding-top: 1em;
+}
+
+.App {
+    padding: 0em 2em;
+}
+
+.display-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
+    margin: 25px 0px;
+    height: 130px;
+    width: 443px;
     border-radius: 50px;
-    color: white;
     background-color: #322c2d;
     box-shadow: 1px 1px #322c2d;
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 8%;
     font-size: 5.0rem;
+    padding-right: 8%;
+    padding-left: 8%;
+    overflow: hidden;
+    word-break: break-all;
+    text-align: right;
   }
+
+.display-text {
+  height: 5.5rem;
+  color: white;
+  padding-bottom: 5px;
+  margin: 0;
+  line-height: 1.0em;
+}
+
+.computation {
+  margin-bottom: 0;
+  color: lightgray;
+  font-size: 1.0rem;
+  overflow: hidden;
+  word-break: break-all;
+  text-align: right;
+
+}
+
+.buttons {
+    display: flex;
+}
+
+.btn {
+    color: white;
+    border-radius: 50%;
+    border-color: transparent;
+    box-shadow: 1px 3px black;
+    width: 5rem;
+    height: 5rem;  
+    font-size: 1.75rem;
+    font-weight: bold;
+    outline: 0;
+    margin: 0.5rem 1.7rem 0.5rem 0rem;
+}
+
+.btn:active {
+    box-shadow: 0 2px black;
+    transform: translateY(3px);
+}
+
+.btn:hover {
+    background-color: #080878;
+}
+
+.numbers, .specials {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20.5rem;
+    justify-content: space-between;
+}
+
+.numberBtn {
+    background-color:  #343382;
+}
+
+.numberBtn:nth-child(10) {
+    width: 11.7rem;
+    border-radius: 3rem;
+}
+
+.operators-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.operators {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+
+.operatorBtn {
+    background-color: #1fd7e0;
+    margin: 0.5rem 0rem;
+}
+
+.operatorBtn:active {
+    box-shadow: 0 2px black;
+    transform: translateY(3px);
+  }
+
+.operatorBtn:nth-child(10) {
+    width: 11.5rem;
+    border-radius: 3rem;
+}
+
+.specialBtn {
+    background-color:  #0257bf;
+}
