@@ -43,10 +43,10 @@ Follow these steps for completing your project.
 
 **A job just came down from the Big Boss!**
 
-- A prospective client has tasked you with building a calculator app. They need you to build the app using the file structure and component wire frame provided.
-- Get all necessary files connected and either taking in or sending out data.
-- The design file should be followed as close as possible but doesn't have to be pixel perfect - budget your time wisely.
-- The client will provide their own proprietary calculator software so your app only needs basic functionality, enough for a demo.
+- [ ] A prospective client has tasked you with building a calculator app. They need you to build the app using the file structure and component wire frame provided.
+- [ ] Get all necessary files connected and either taking in or sending out data.
+- [ ] The design file should be followed as close as possible but doesn't have to be pixel perfect - budget your time wisely.
+- [ ] The client will provide their own proprietary calculator software so your app only needs basic functionality, enough for a demo.
 
 ## Directions
 
@@ -54,9 +54,9 @@ Using the design file, build out your User Interface. Before you start, look thr
 
 **STEP 1**
 
-- You have been given a Data.js file that contains some arrays.
-- Find a way to bring (import) the data into the necessary files, but do not change the data.
-- Data should be imported into the wrapper components (`Numbers`, `Operators`, and `Specials`)
+- [ ] You have been given a Data.js file that contains some arrays.
+- [ ] Find a way to bring (import) the data into the necessary files, but do not change the data.
+- [ ] Data should be imported into the wrapper components (`Numbers`, `Operators`, and `Specials`)
 
 **Step 2**
 Add the data to state like this:
@@ -72,20 +72,21 @@ const [numberState, setNumberState] = useState(numbers);
 
 **Step 3**
 
-- Map over the data and dynamically render components for each piece of data in the arrays.
-- You will need to import the component that you'll render in the map function.
+- [ ] Map over the data and dynamically render components for each piece of data in the arrays.
+- [ ] You will need to import the component that you'll render in the map function.
 
 **STEP 4**
 
-- Import the wrapper button components into `App.js`
-- Import the display components into `App.js` as well
-- Compose all the components inside the `App` component to get your calculator rendering on the DOM
+- [ ] Import the wrapper button components into `App.js`
+- [ ] Import the display components into `App.js` as well
+- [ ] Compose all the components inside the `App` component to get your calculator rendering on the DOM
 
 **STEP 5 - (STRETCH)**
 
-- In each component, start designing things to match the design file
-- Style your project using any of the techniques from the module
-- Don't forget about className vs class on your JSX elements!!
+- [ ] In each component, start designing things to match the design file
+- [ ] Style your project using any of the techniques from the module
+- [ ] Don't forget about className vs class on your JSX elements!!
+
 
 It's time to start thinking about functionality. Before getting into this, let's try and plan out all the moving pieces you'll need.
 
@@ -99,8 +100,8 @@ This is where you're JavaScript skills are really going to be stretched. Remembe
 
 ## _MVP Requirements:_
 
-- Get at least one set of buttons(numbers, operators, or special buttons) to reflect the design spec.
-- Use the state hook function to get the app to display some data.
+- [ ] Get at least one set of buttons(numbers, operators, or special buttons) to reflect the design spec.
+- [ ] Use the state hook function to get the app to display some data.
 
 **Here is your design spec:**
 
@@ -119,8 +120,9 @@ This is where you're JavaScript skills are really going to be stretched. Remembe
 
 Do not attempt stretch problems until MVP has been reached and a final commit has been made.
 
-- STEP 5 from above
-- Finish the logic so the calculator is fully functional. Feel free to change the array data, or lose it entirely, as you see fit.
-- Finish styling all of the buttons and get your calculator to closely resemble the given design spec.
-- Add some icons to improve the operator characters aesthetics. Research any icon/font library and implement it into your project.
-- Convert your CSS styling to use Sass/Scss
+
+- [ ] STEP 5 from above
+- [ ] Finish the logic so the calculator is fully functional. Feel free to change the array data, or lose it entirely, as you see fit.
+- [ ] Finish styling all of the buttons and get your calculator to closely resemble the given design spec. 
+- [ ] Add some icons to improve the operator characters aesthetics. Research any icon/font library and implement it into your project.
+- [ ] Convert your CSS styling to use Sass/Scss
