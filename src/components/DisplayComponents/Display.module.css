@@ -1,0 +1,12 @@
+.display {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   width: 40%;
+   height:100px;
+   margin:0 auto;
+   background: yellow;
+   color:red;
+   font-size:68px;
+}
