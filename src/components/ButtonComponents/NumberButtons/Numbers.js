@@ -1,6 +1,8 @@
+
 import React, {useState} from "react";
 import NumberButton from './NumberButton';
 import numbers from '../../../data';
+
 //Import your array data to from the provided data file
 
 const Numbers = (props) => {
