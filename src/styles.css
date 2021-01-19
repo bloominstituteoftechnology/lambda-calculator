@@ -1,0 +1,31 @@
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: darkblue;
+    font-size: 2rem;
+    color: white;
+    margin: 5px;
+}
+.buttons:nth-last-child(2) {
+    width: 172px;
+    border-radius: 50px;
+  }
+
+.operator-button{
+    background-color: blue;
+}
+
+.special-button{
+    background-color:teal;
+}
+.row{
+    display:flex;
+    width: 82%;
+}
+.column{
+    width: 62%;
+}
+.operators{
+    width: 20%;
+}
