@@ -1,5 +1,11 @@
 import React from "react";
 
 const Display = () => {
-  return <div className="display">{/* Display any props data here */}</div>;
+  return (
+    <div>
+      <button className="DisplayComp">0</button>
+    </div>
+  );
 };
+
+export default Display;
